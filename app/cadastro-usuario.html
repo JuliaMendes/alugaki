@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro-usuario.css">
+    <title>Crie sua conta | Alugaki </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <button class="btn-voltar" onclick="window.history.back()">
+                        <img src="./img/seta.svg" alt="Seta voltar página"> <span>voltar</span>
+                    </button>
+                    <a ref="index.html">
+                        <img class="logo" src="./img/alugaKi-removebg-preview.png" alt="Logo do site">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+
+        <section class="card-cadastre-se">
+            <h1>Crie sua conta na&nbsp;<span id="aluga">aluga</span><span>Ki</span></h1>
+            <form>
+                <label for="fullname">Nome completo</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Nome Sobrenome"><br>
+
+                <label for="email">E-mail</label><br>
+                <input type="text" id="email" name="email" placeholder="meuemail@email.com"><br>
+
+                <label for="pass">Senha</label><br>
+                <input type="password" id="pass" name="password" placeholder="Use no mínimo 8 caracteres" minlength="8"
+                    required><br>
+
+                <hr>
+
+                <div class="checkboxes">
+                    <input type="checkbox" id="novidades" name="novidades" value="novidades">
+                    <label for="novidades"> aceito receber novidades da alugaKi</label>
+                </div>
+                
+                <div class="checkboxes">
+                    <input type="checkbox" id="termos" name="termos" value="termo">
+                    <label for="termos"> estou de acordo com os termos de serviços e as politicas de privacidade da
+                        alugaKi</label>
+                </div>
+
+                <div class="btn-criar-conta">
+                    <button>Criar conta</button>
+                </div>
+
+            </form>
+
+            <div class="line">
+                <hr>
+                <span>ou</span>
+                <hr>
+            </div>
+
+            <div class="btn-facebook">
+                <button>Cadastre-se com o facebook</button>
+            </div>
+
+            <div class="tem-cadastro">
+                <h2>Já tem cadastro? <a href="login.html">Entrar</a></h2>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

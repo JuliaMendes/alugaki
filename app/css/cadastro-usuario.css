@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../img/img_background.png');
+}
+
+header {
+    background-color:#F2F1F1;
+    height: 100px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-voltar {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: transparent;
+    border: none;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-voltar span {
+    font-size: 15px;
+    font-weight: bold;
+    color: #757575;
+    
+}
+
+.btn-voltar img {
+    width: 15px;
+}
+
+.container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .card-cadastre-se {
+
+    background-color: #F2F1F1;
+    width: 420px;
+    border-radius: 5px;
+    margin: 50px 0;
+    padding: 32px 56px 24px;
+}
+
+.container .card-cadastre-se h1 {
+    font-family: 'ABeeZee', sans-serif;
+    color: #212121;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .card-cadastre-se #aluga {
+    color: #FF5722;
+}
+.container .card-cadastre-se span {
+    color: #009688;
+}
+
+.container .card-cadastre-se form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 50px
+}
+
+.container .card-cadastre-se form label {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+}
+
+
+.container .card-cadastre-se form input[type=text],
+.container .card-cadastre-se form input[type=password] {
+  width: 310px;
+  height: 40px;
+  background-color: #FFFAFA;
+  border-radius: 4px;
+  border: solid 1px #757575;
+  padding-left: 20px;
+}
+
+input::placeholder {
+    color: #757575;
+    opacity: 60%;
+    font-family:'Montserrat', sans-serif;
+}
+
+hr {
+    width: 310px;
+    border-bottom: -1px solid #757575;
+    opacity: 60%;
+}
+
+.container .card-cadastre-se form .checkboxes {
+   display: flex;
+   gap: 10px;
+}
+
+ .container .card-cadastre-se form .checkboxes label {
+    font-family: 'Montsserat', sans-serif;
+    font-size: 15px;
+    color: #212121;
+ }
+
+  .container .card-cadastre-se form .btn-criar-conta button {
+      width: 310px;
+      height: 45px;
+      background-color: #FF5722;
+      border-radius: 30px;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: bold;
+      font-family:  'Montserrat', sans-serif;
+      border:none;
+      cursor: pointer;
+      margin-top: 30px;
+  }
+
+  .container .card-cadastre-se form .btn-criar-conta button:hover {
+      opacity: 80%;
+  }
+  .container .card-cadastre-se form .btn-criar-conta button:active {
+    border: none;
+}
+
+  
+
+  .container .card-cadastre-se .line {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      gap: 10px;
+  }
+
+  .container .card-cadastre-se .line hr {
+    width: 145px;
+    opacity: 60%;
+  }
+
+  .container .card-cadastre-se .line span {
+    font-size: 15px;
+      color: #212121;
+  }
+
+  .container .card-cadastre-se .btn-facebook button {
+    width: 310px;
+    height: 45px;
+    background-color: #2C54AE;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border:none;
+    cursor: pointer;
+}
+.container .card-cadastre-se .btn-facebook button:hover {
+    opacity: 80%;
+}
+
+.container .card-cadastre-se .tem-cadastro {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card-cadastre-se .tem-cadastro h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+    font-size: 16px;
+}
+
+.container .card-cadastre-se .tem-cadastro a {
+    color: #757575;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
