@@ -4,31 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/perfil-privado.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
 
+    <header>
+        <div class="container">
+            <div class="logo-e-barra">
+                <div class="logo">
+                    <img src="img/alugaKi-removebg-preview.png" alt="Logo da Página">
+                </div>
+                <div class="barra">
+                    <input type="text" id="barra" name="barra">
+                    <div class="lupa">
+                        <img src="img/lupa.png" alt="Icone de lupa">
+                    </div>
+                </div>
+            </div>
+            <div class="botoes">
+                <button>Anunciar</button>
+                <button><img src="img/btn_login.png" alt="Botao de Menu"></button>
+            </div>
+        </div>
     </header>
 
-    <section class="dados">
+<div class="container-flex">
 
+    <section class="barra-lateral">
+            <div class="foto">
+                <img src="img/bolinha_perfil.png" alt="Foto de Perfil">
+            </div>
+            <div class="botao"><button>Alterar</button></div>
+            <div class="menu">
+                <h3>Minha Conta</h3>
+                <ul>
+                    <li>Dados Pessoais</li>
+                    <li>Login e Segurança</li>
+                    <li>Privacidade</li>
+                    <li>Excluir conta</li>
+                </ul>
+            </div>
     </section>
 
-    <section class="login">
+    <section class="conteudo">
+        <section class="dados">
 
-    </section>
 
-    <section class="privacidade">
+                <h1>Dados Pessoais</h1>
 
-    </section>
+                <form>
+                    <label for="nome">Nome Completo</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Nome Sobrenome">
+                </form>
 
-    <section class="excluir">
+                <form>
+                    <label for="telefone">Telefone</label><br>
+                    <input type="text" id="telefone" name="telefone" placeholder="(xx) 9xxxx-xxxx">
+                </form>
 
-    </section>
+        </section>
+
+        <section class="login">
+                <h1>Login e Segurança</h1>
+
+                <form>
+                    <label for="email">E-mail</label><br>
+                    <input type="text" id="email" name="email" placeholder="meuemail@email.com">
+                </form>
+
+                <form>
+                    <label for="pass">Senha</label><br>
+                    <input type="password" id="pass" name="password" placeholder="********">
+                    <button>Alterar senha</button>
+                </form>
+        </section>
+
+        <section class="privacidade">
+                <h1>Privacidade</h1>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <p>Aceito receber novidades da alugaKi</p>
+        </section>
+
+        <section class="excluir">
+                <h1>Excluir conta</h1>
+                <p>Todos os dados serão excluídos definitivamente.<br>
+                Não será possível recuperar sua conta.</p>
+                <button>Excluir</button>
+        </section>
+    </section> 
+</div>
+
 
     <footer>
+        <div class="container">
+            <div class="logo-e-menu">
+                <div class="logo">
+                    <img src="img/alugaKi-removebg-preview.png" alt="Logo alugaki">
+                </div>
 
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Atendimento</a></li>
+                        <li><a href="#">Central de ajuda</a></li>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Acessibilidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="redes-sociais">
+                <small>Siga-nos!</small>
+                <ul>
+                    <li><a href="#"><img src="img/twitter.png" alt="Logo twitter"></a></li>
+                    <li><a href="#"><img src="img/insta.png" alt="Logo instagram"></a></li>
+                    <li><a href="#"><img src="img/face.png" alt="Logo facebook"></a></li>
+                    <li><a href="#"><img src="img/whatsapp.png" alt="Logo whatsapp"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>copyright © alugaKi-2021</small>
+        </div>
     </footer>
+
 </body>
 </html>
