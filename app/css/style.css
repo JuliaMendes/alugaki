@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #F2F1F1;
+}
+
+header .container .logo img {
+    width: 120px;
+
+}
+
+header .container .botoes {
+    display: flex;
+    justify-content: center;
+}
+
+header .container .botoes button {
+    background-color: transparent;
+    border: solid 2px #FF5722;
+}
+
+header .container .botoes button:first-child {
+    margin-right: 20px;
+    border-radius: 40px;
+    color: #FF5722;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    padding: 10px 20px;
+
+}
+
+header .container .botoes button:last-child {
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+
+header .container .botoes button img {
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
