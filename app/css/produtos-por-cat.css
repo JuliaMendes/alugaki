@@ -1,7 +1,8 @@
+/*fontes*/
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+/*config. gerais da página*/
 * {
     box-sizing: border-box;
 }
@@ -16,6 +17,10 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
+/*config. header*/
+header {
+    background-color: #F2F1F1;
+}
 
 header .container {
     display: flex;
@@ -23,19 +28,23 @@ header .container {
     justify-content: space-between;
 }
 
-header {
-    background-color: #F2F1F1;
-}
-
 header .container .logo-e-barra {
     display: flex;
     align-items:center ;
     justify-content: space-between;
 }
-
+/*config. logo*/
 header .container .logo img {
     width: 120px;
     margin-right: 45px;
+}
+/*config. barra de pesquisa*/
+header .container .barra {
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 header .container .barra input {
@@ -43,14 +52,6 @@ header .container .barra input {
     height: 40px;
     border-radius: 20px;
     border: solid 2px #419488;
-}
-
-header .container .barra {
-    position: relative;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 header .container .barra .lupa {
@@ -70,7 +71,7 @@ header .container .barra .lupa img {
     width: 20px;
 
 }
-
+/*config. botoes de anunciar e menu*/
 header .container .botoes {
     display: flex;
     align-items: center;
@@ -81,8 +82,8 @@ header .container .botoes button {
     background-color: transparent;
     border: solid 2px #FF5722;
 }
-
-header .container .botoes button:first-child {
+/*first-child: botao anunciar*/
+header .container .botoes button:first-child { 
     margin-right: 20px;
     border-radius: 40px;
     color: #FF5722;
@@ -92,16 +93,15 @@ header .container .botoes button:first-child {
     width: 130px;
     height: 40px;
 }
-
+/*first-child: botao menu*/
 header .container .botoes button:last-child {
     border-radius: 50%;
     padding: 8px 12px;
 }
-
 header .container .botoes button img {
     width: 20px;
 }
-
+/*footer*/
 footer {
     background-color: #484848;
 }
@@ -111,18 +111,18 @@ footer .container {
     align-items: center;
     justify-content: space-between;
 }
-
-footer .container .logo img {
-    width: 120px;
-    margin-right: 30px ;
-}
-
+/*config. logo e menu*/
 footer .container .logo-e-menu {
     display: flex;
     align-items:center ;
     justify-content: space-between;
 }
-
+/*logo*/
+footer .container .logo img {
+    width: 120px;
+    margin-right: 30px ;
+}
+/*menu*/
 footer .container .menu ul li {
     list-style: none;
     font-family:'Roboto';
@@ -135,7 +135,8 @@ footer .container .menu ul li a {
     color: #FFFF;
     text-decoration: none;
 }
-
+/*redes sociais*/
+/*título*/
 footer .container .redes-sociais small {
     color: #FFFF;
     font-family:'Roboto';
@@ -144,17 +145,17 @@ footer .container .redes-sociais small {
     display: flex;
     justify-content: center;
 }
+/*lista de redes sociais*/
 footer .container .redes-sociais ul {
     list-style: none;
     display: flex;
     padding: 0;
 }
-
 footer .container .redes-sociais ul li img {
     width: 30px;
     margin: 0 10px 10px 0;
 }
-
+/*copyright*/
 footer .copyright {
     color: #FFFF;
     font-family:'Roboto';
