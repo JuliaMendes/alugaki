@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../img/img_background.png');
+}
+
+.container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color:#F2F1F1;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header .container .logo img {
+    width: 120px;
+    cursor: pointer;
+}
+
+header .container .btn-header {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+header .container .btn-header .btn-voltar {
+    top: 30px;
+    left: 30px;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+header .container .btn-header .btn-voltar span {
+    font-size: 15px;
+    font-weight: bold;
+    color: #757575;
+}
+
+header .container .btn-header .btn-voltar img {
+    width: 15px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .card-cadastre-se {
+    background-color: #F2F1F1;
+    width: 420px;
+    border-radius: 5px;
+    margin: 40px 0;
+    padding: 20px 48px 18px;
+    box-shadow: 1px 3px 3px rgb(0 0 0 / 25%);
+}
+
+.container .card-cadastre-se h1 {
+    font-family: 'ABeeZee', sans-serif;
+    color: #212121;
+    font-size: 22px;
+    text-align: center;
+}
+
+.container .card-cadastre-se span {
+    color: #FF5722;
+}
+
+.container .card-cadastre-se #ki{
+    color: #009688
+}
+
+.container .card-cadastre-se form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 50px
+}
+
+.container .card-cadastre-se form label {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    margin: 0;
+}
+
+.container .card-cadastre-se form input[type=text],
+.container .card-cadastre-se form input[type=password] {
+  width: 310px;
+  height: 40px;
+  background-color: #FFFAFA;
+  border-radius: 4px;
+  border: solid 1px #757575;
+  padding-left: 20px;
+  margin: 0;
+  color: #212121;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+}
+
+.container .card-cadastre-se form .input-icone {
+    position: relative;
+}
+
+.container .card-cadastre-se form input[type=password] {
+    padding-right: 50px;
+}
+
+.container .card-cadastre-se form .olho {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    width: 42px;
+    margin-right: 12px;
+}
+
+input::placeholder {
+    color: #757575;
+    opacity: 60%;
+    font-family:'Montserrat', sans-serif;
+}
+
+.container .card-cadastre-se form .input-icone .esqueci-senha {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.container .card-cadastre-se form .input-icone .esqueci-senha a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #FF5722;
+    font-weight: 700;
+}
+
+  .container .card-cadastre-se form .btn-continuar button {
+      width: 310px;
+      height: 45px;
+      background-color: #FF5722;
+      border-radius: 30px;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      border: none;
+      cursor: pointer;
+      margin-top: 22px;
+  }
+
+  .container .card-cadastre-se form .btn-continuar button:hover,
+  .container .card-cadastre-se .btn-facebook button:hover {
+      opacity: 80%;
+  }
+  .container .card-cadastre-se form .btn-continuar button:active,
+  .container .card-cadastre-se .btn-facebook button:active {
+    transform: scale(0.99);
+ }
+
+ .container .card-cadastre-se form .btn-continuar button:focus,
+ .container .card-cadastre-se .btn-facebook button:focus {
+     outline: 0;
+ }
+
+  .container .card-cadastre-se .line {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      gap: 10px;
+  }
+
+  .container .card-cadastre-se .line hr {
+    width: 145px;
+    opacity: 60%;
+  }
+
+  .container .card-cadastre-se .line span {
+    font-size: 14px;
+      color: #212121;
+  }
+
+  .container .card-cadastre-se .btn-facebook button {
+    width: 310px;
+    height: 45px;
+    background-color: #2C54AE;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border:none;
+    cursor: pointer;
+}
+
+.container .card-cadastre-se .tem-cadastro {
+    margin: 14px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card-cadastre-se .tem-cadastro h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+    font-size: 16px;
+}
+
+.container .card-cadastre-se .tem-cadastro a {
+    color: #757575;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
