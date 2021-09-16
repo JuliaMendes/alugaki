@@ -135,6 +135,7 @@ footer .container .menu ul li a {
     color: #FFFF;
     text-decoration: none;
 }
+
 /*redes sociais*/
 /*título*/
 footer .container .redes-sociais small {
@@ -145,6 +146,7 @@ footer .container .redes-sociais small {
     display: flex;
     justify-content: center;
 }
+
 /*lista de redes sociais*/
 footer .container .redes-sociais ul {
     list-style: none;
