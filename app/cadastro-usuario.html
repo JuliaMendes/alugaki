@@ -11,23 +11,23 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <button class="btn-voltar" onclick="window.history.back()">
-                        <img src="./img/seta.svg" alt="Seta voltar página"> <span>voltar</span>
-                    </button>
-                    <a ref="index.html">
-                        <img class="logo" src="./img/alugaKi-removebg-preview.png" alt="Logo do site">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="btn-header">
+                <button class="btn-voltar" onclick="window.history.back()">
+                    <img src="./img/seta.svg" alt="Seta voltar página"><span>voltar</span>
+                </button>
+            </div>
+
+            <div class="logo">
+                <a href="index.html"><img src="img/alugaKi-removebg-preview.png" alt="Logo alugaki"></a>
+            </div>
+        </div>
     </header>
+
     <main class="container">
 
         <section class="card-cadastre-se">
-            <h1>Crie sua conta na&nbsp;<span id="aluga">aluga</span><span>Ki</span></h1>
+            <h1>Crie sua conta na&nbsp;<span>aluga</span><span id="ki">Ki</span></h1>
             <form>
                 <label for="fullname">Nome completo</label><br>
                 <input type="text" id="fullname" name="fullname" placeholder="Nome Sobrenome"><br>
@@ -36,8 +36,11 @@
                 <input type="text" id="email" name="email" placeholder="meuemail@email.com"><br>
 
                 <label for="pass">Senha</label><br>
-                <input type="password" id="pass" name="password" placeholder="Use no mínimo 8 caracteres" minlength="8"
-                    required><br>
+                <div class="input-icone">
+                    <input type="password" id="pass" name="password" placeholder="Use no mínimo 8 caracteres"
+                        minlength="8" required>
+                    <img class="olho" src="img/icone_olho.png" alt="Ícone olho">
+                </div><br>
 
                 <hr>
 
@@ -45,10 +48,11 @@
                     <input type="checkbox" id="novidades" name="novidades" value="novidades">
                     <label for="novidades"> aceito receber novidades da alugaKi</label>
                 </div>
-                
+
                 <div class="checkboxes">
                     <input type="checkbox" id="termos" name="termos" value="termo">
-                    <label for="termos"> estou de acordo com os termos de serviços e as politicas de privacidade da
+                    <label for="termos"> estou de acordo com os <span>termos de serviços</span> e as <span>politicas de
+                            privacidade</span> da
                         alugaKi</label>
                 </div>
 
