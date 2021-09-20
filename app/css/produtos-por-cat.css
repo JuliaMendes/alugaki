@@ -101,6 +101,29 @@ header .container .botoes button:last-child {
 header .container .botoes button img {
     width: 20px;
 }
+
+/*filtros*/
+.produtos .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.produtos .filtros h3{
+    font-family: Roboto;
+    color: #419488;
+}
+
+.produtos .filtros ul{
+    list-style: none;
+    padding: 0;
+    font-family: Roboto;
+    color: #419488;
+    line-height: 27px;
+}
+
+
+
 /*footer*/
 footer {
     background-color: #484848;
