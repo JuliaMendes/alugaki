@@ -108,19 +108,31 @@ header .container .botoes button img {
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-top: 80px;
+    margin-top: 130px;
 }
 
 .produtos .titulo{
-    width: 100%;
-    margin-left: 215px;
     font-family: Abeezee;
+    font-size: 30px;
     color: #FF5722;
+    position: absolute;
+    top: -120px;
+}
+
+.produtos .filtros .titulo-filtro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .produtos .filtros h3{
     font-family: Roboto;
     color: #419488;
+}
+
+.produtos .filtros img{
+    width: 75%;
 }
 
 .produtos .filtros ul{
@@ -132,13 +144,15 @@ header .container .botoes button img {
 }
 
 .produtos .lista-produtos{
-    margin-left: 50px;
+    margin-left: 20px;
+    position: relative;
+    margin-top: 53px;
 }
 .produtos .lista-produtos{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 75%;
+    width: 70%;
 }
 
 .produtos .lista-produtos .card-produto{
