@@ -105,8 +105,17 @@ header .container .botoes button img {
 /*filtros*/
 .produtos .container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.produtos .titulo{
+    width: 100%;
+    margin-left: 215px;
+    font-family: Abeezee;
+    color: #FF5722;
 }
 
 .produtos .filtros h3{
@@ -120,6 +129,10 @@ header .container .botoes button img {
     font-family: Roboto;
     color: #419488;
     line-height: 27px;
+}
+
+.produtos .lista-produtos{
+    margin-left: 50px;
 }
 
 
