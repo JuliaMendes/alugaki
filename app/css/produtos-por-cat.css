@@ -134,8 +134,61 @@ header .container .botoes button img {
 .produtos .lista-produtos{
     margin-left: 50px;
 }
+.produtos .lista-produtos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 75%;
+}
 
+.produtos .lista-produtos .card-produto{
+    width: 30%;
+    margin-right: 60px;
+}
 
+.produtos .lista-produtos .card-produto .thumb{
+    width: 240px;
+    height: 150px;
+}
+
+.produtos .lista-produtos .card-produto h3{
+    font-family: Roboto;
+    color: 484848;
+    margin-bottom: 5px;
+}
+.produtos .lista-produtos .card-produto img{
+    width: 25px;
+    height: 21px;
+    margin-right: 2px;
+}
+
+.produtos .lista-produtos .card-produto .info > div {
+    display: flex;
+    align-items: center;
+}
+
+.produtos .lista-produtos .card-produto .info small{
+    font-family: Roboto;
+    font-size: 15px;
+    margin-right: 5px;
+    
+}
+
+.produtos .lista-produtos .card-produto .localiz{
+    margin-top: 5px;
+}
+
+.produtos .lista-produtos .card-produto .localiz img{
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+}
+
+.produtos .lista-produtos .card-produto .preco{
+    font-family: Roboto;
+    font-size: 20px;
+    color: #FF5722;
+}
 
 /*footer*/
 footer {
