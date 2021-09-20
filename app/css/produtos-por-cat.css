@@ -102,7 +102,7 @@ header .container .botoes button img {
     width: 20px;
 }
 
-/*filtros*/
+/*container com filtro e produtos*/
 .produtos .container{
     display: flex;
     align-items: flex-start;
@@ -110,31 +110,25 @@ header .container .botoes button img {
     flex-wrap: wrap;
     margin-top: 130px;
 }
+/*filtros*/
 
-.produtos .titulo{
-    font-family: Abeezee;
-    font-size: 30px;
-    color: #FF5722;
-    position: absolute;
-    top: -120px;
-}
-
+/*titulo do filtro e divisor*/
 .produtos .filtros .titulo-filtro{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
-
+/*nome do filtro*/
 .produtos .filtros h3{
     font-family: Roboto;
     color: #419488;
 }
-
+/*divisor*/
 .produtos .filtros img{
     width: 75%;
 }
-
+/*lista com os filtros*/
 .produtos .filtros ul{
     list-style: none;
     padding: 0;
@@ -143,61 +137,69 @@ header .container .botoes button img {
     line-height: 27px;
 }
 
+/*lista com os anúncios*/
 .produtos .lista-produtos{
     margin-left: 20px;
     position: relative;
     margin-top: 53px;
-}
-.produtos .lista-produtos{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 70%;
 }
-
+/*título da categoria*/
+.produtos .titulo{
+    font-family: Abeezee;
+    font-size: 30px;
+    color: #FF5722;
+    position: absolute;
+    top: -120px;
+}
+/*card do anúncios*/
 .produtos .lista-produtos .card-produto{
     width: 30%;
     margin-right: 60px;
 }
-
+/*imagem do produto*/
 .produtos .lista-produtos .card-produto .thumb{
     width: 240px;
     height: 150px;
 }
-
+/*nome do produto*/
 .produtos .lista-produtos .card-produto h3{
     font-family: Roboto;
-    color: 484848;
+    color: #484848;
     margin-bottom: 5px;
 }
+/*info do produto*/
+.produtos .lista-produtos .card-produto .info > div {
+    display: flex;
+    align-items: center;
+}
+/*estrela de avaliação*/
 .produtos .lista-produtos .card-produto img{
     width: 25px;
     height: 21px;
     margin-right: 2px;
 }
-
-.produtos .lista-produtos .card-produto .info > div {
-    display: flex;
-    align-items: center;
-}
-
+/* avaliação e número de avaliações */
 .produtos .lista-produtos .card-produto .info small{
     font-family: Roboto;
     font-size: 15px;
     margin-right: 5px;
     
 }
-
+/*localização do produto*/
 .produtos .lista-produtos .card-produto .localiz{
     margin-top: 5px;
 }
-
+/*imagem de localiz.*/
 .produtos .lista-produtos .card-produto .localiz img{
     width: 17px;
     height: 17px;
     margin-right: 2px;
 }
-
+/*preço do produto*/
 .produtos .lista-produtos .card-produto .preco{
     font-family: Roboto;
     font-size: 20px;
