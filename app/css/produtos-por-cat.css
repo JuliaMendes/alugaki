@@ -101,6 +101,109 @@ header .container .botoes button:last-child {
 header .container .botoes button img {
     width: 20px;
 }
+
+/*filtros*/
+.produtos .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 130px;
+}
+
+.produtos .titulo{
+    font-family: Abeezee;
+    font-size: 30px;
+    color: #FF5722;
+    position: absolute;
+    top: -120px;
+}
+
+.produtos .filtros .titulo-filtro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.produtos .filtros h3{
+    font-family: Roboto;
+    color: #419488;
+}
+
+.produtos .filtros img{
+    width: 75%;
+}
+
+.produtos .filtros ul{
+    list-style: none;
+    padding: 0;
+    font-family: Roboto;
+    color: #419488;
+    line-height: 27px;
+}
+
+.produtos .lista-produtos{
+    margin-left: 20px;
+    position: relative;
+    margin-top: 53px;
+}
+.produtos .lista-produtos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.produtos .lista-produtos .card-produto{
+    width: 30%;
+    margin-right: 60px;
+}
+
+.produtos .lista-produtos .card-produto .thumb{
+    width: 240px;
+    height: 150px;
+}
+
+.produtos .lista-produtos .card-produto h3{
+    font-family: Roboto;
+    color: 484848;
+    margin-bottom: 5px;
+}
+.produtos .lista-produtos .card-produto img{
+    width: 25px;
+    height: 21px;
+    margin-right: 2px;
+}
+
+.produtos .lista-produtos .card-produto .info > div {
+    display: flex;
+    align-items: center;
+}
+
+.produtos .lista-produtos .card-produto .info small{
+    font-family: Roboto;
+    font-size: 15px;
+    margin-right: 5px;
+    
+}
+
+.produtos .lista-produtos .card-produto .localiz{
+    margin-top: 5px;
+}
+
+.produtos .lista-produtos .card-produto .localiz img{
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+}
+
+.produtos .lista-produtos .card-produto .preco{
+    font-family: Roboto;
+    font-size: 20px;
+    color: #FF5722;
+}
+
 /*footer*/
 footer {
     background-color: #484848;
