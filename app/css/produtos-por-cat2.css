@@ -2,42 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+​
 /*config. gerais da página*/
 * {
     box-sizing: border-box;
 }
-
+​
 body {
     margin: 0;
     padding: 0;
 }
-
+​
 .container {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
+​
 /*config. header*/
 header {
     background-color: #F2F1F1;
 }
-
+​
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+​
 header .container .logo-e-barra {
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: space-between;
 }
+​
 /*config. logo*/
 header .container .logo img {
     width: 120px;
     margin-right: 45px;
 }
+​
 /*config. barra de pesquisa*/
 header .container .barra {
     position: relative;
@@ -46,14 +50,14 @@ header .container .barra {
     justify-content: flex-start;
     align-items: flex-start;
 }
-
+​
 header .container .barra input {
     width: 450px;
     height: 40px;
     border-radius: 20px;
     border: solid 2px #419488;
 }
-
+​
 header .container .barra .lupa {
     position: absolute;
     top: 0;
@@ -65,25 +69,26 @@ header .container .barra .lupa {
     justify-content: flex-end;
     padding-right: 20px;
 }
-
+​
 header .container .barra .lupa img {
     border: transparent;
     width: 20px;
-
 }
+​
 /*config. botoes de anunciar e menu*/
 header .container .botoes {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+​
 header .container .botoes button {
     background-color: transparent;
     border: solid 2px #FF5722;
 }
+​
 /*first-child: botao anunciar*/
-header .container .botoes button:first-child { 
+header .container .botoes button:first-child {
     margin-right: 20px;
     border-radius: 40px;
     color: #FF5722;
@@ -93,15 +98,17 @@ header .container .botoes button:first-child {
     width: 130px;
     height: 40px;
 }
+​
 /*first-child: botao menu*/
 header .container .botoes button:last-child {
     border-radius: 50%;
     padding: 8px 12px;
 }
+​
 header .container .botoes button img {
     width: 20px;
 }
-
+​
 /*container com filtro e produtos*/
 .produtos .container {
     display: flex;
@@ -110,33 +117,37 @@ header .container .botoes button img {
     gap: 40px;
     margin-top: 130px;
 }
+​
 /*filtros*/
-
+​
 /*titulo do filtro e divisor*/
-.produtos .filtros .titulo-filtro{
+.produtos .filtros .titulo-filtro {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
+​
 /*nome do filtro*/
-.produtos .filtros h3{
+.produtos .filtros h3 {
     font-family: Roboto;
     color: #419488;
 }
+​
 /*divisor*/
-.produtos .filtros img{
+.produtos .filtros img {
     width: 75%;
 }
+​
 /*lista com os filtros*/
-.produtos .filtros ul{
+.produtos .filtros ul {
     list-style: none;
     padding: 0;
     font-family: Roboto;
     color: #419488;
     line-height: 27px;
 }
-
+​
 /*lista com os anúncios*/
 .produtos .lista-produtos {
     position: relative;
@@ -146,128 +157,141 @@ header .container .botoes button img {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 30px;
-    margin-left: 60px;
 }
+​
 /*título da categoria*/
-.produtos .titulo{
+.produtos .titulo {
     font-family: Abeezee;
     font-size: 30px;
     color: #FF5722;
     position: absolute;
     top: -120px;
 }
+​
 /*card do anúncios*/
-.produtos .lista-produtos .card-produto{
-    width: 240px;
+.produtos .lista-produtos .card-produto {
+    width: 210px;
     margin-bottom: 30px;
 }
+​
 /*imagem do produto*/
-.produtos .lista-produtos .card-produto .thumb{
+.produtos .lista-produtos .card-produto .thumb {
     width: 240px;
     max-width: 100%;
     height: 150px;
 }
+​
 /*nome do produto*/
-.produtos .lista-produtos .card-produto h3{
+.produtos .lista-produtos .card-produto h3 {
     font-family: Roboto;
     color: #484848;
     margin-bottom: 5px;
 }
+​
 /*info do produto*/
-.produtos .lista-produtos .card-produto .info > div {
+.produtos .lista-produtos .card-produto .info>div {
     display: flex;
     align-items: center;
 }
+​
 /*estrela de avaliação*/
-.produtos .lista-produtos .card-produto img{
+.produtos .lista-produtos .card-produto img {
     width: 25px;
     height: 21px;
     margin-right: 2px;
 }
+​
 /* avaliação e número de avaliações */
-.produtos .lista-produtos .card-produto .info small{
+.produtos .lista-produtos .card-produto .info small {
     font-family: Roboto;
     font-size: 15px;
     margin-right: 5px;
-    
 }
+​
 /*localização do produto*/
-.produtos .lista-produtos .card-produto .localiz{
+.produtos .lista-produtos .card-produto .localiz {
     margin-top: 5px;
 }
+​
 /*imagem de localiz.*/
-.produtos .lista-produtos .card-produto .localiz img{
+.produtos .lista-produtos .card-produto .localiz img {
     width: 17px;
     height: 17px;
     margin-right: 2px;
 }
+​
 /*preço do produto*/
-.produtos .lista-produtos .card-produto .preco{
+.produtos .lista-produtos .card-produto .preco {
     font-family: Roboto;
     font-size: 20px;
     color: #FF5722;
 }
-
+​
 /*footer*/
 footer {
     background-color: #484848;
 }
-
+​
 footer .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+​
 /*config. logo e menu*/
 footer .container .logo-e-menu {
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: space-between;
 }
+​
 /*logo*/
 footer .container .logo img {
     width: 120px;
-    margin-right: 30px ;
+    margin-right: 30px;
 }
+​
 /*menu*/
 footer .container .menu ul li {
     list-style: none;
-    font-family:'Roboto';
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
 }
-
+​
 footer .container .menu ul li a {
     color: #FFFF;
     text-decoration: none;
 }
-
+​
 /*redes sociais*/
 /*título*/
 footer .container .redes-sociais small {
     color: #FFFF;
-    font-family:'Roboto';
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
     display: flex;
     justify-content: center;
 }
-
+​
 /*lista de redes sociais*/
 footer .container .redes-sociais ul {
     list-style: none;
     display: flex;
     padding: 0;
 }
+​
 footer .container .redes-sociais ul li img {
     width: 30px;
     margin: 0 10px 10px 0;
 }
+​
 /*copyright*/
 footer .copyright {
     color: #FFFF;
-    font-family:'Roboto';
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
     text-align: center;
