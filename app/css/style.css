@@ -49,6 +49,7 @@ header .container .botoes button:hover {
 
 header .container .botoes button:active {
     transform: scale(0.99);
+    transition: all 0.1s ease-in-out;
 }
 
 header .container .botoes button:first-child {
@@ -59,7 +60,11 @@ header .container .botoes button:first-child {
     font-weight: 700;
     font-family: 'Roboto';
     padding: 10px 20px;
+}
 
+header .container .botoes button:first-child:active {
+    background-color:#FF5722;
+    color: #FFFFFF;
 }
 
 header .container .botoes button:last-child {
@@ -72,7 +77,10 @@ header .container .botoes button img {
 }
 
 .parte-principal {
-    background-image: url('../img/img_background.png');
+    background-image: url('../img/bg.jpeg');
+    overflow: hidden;
+    background-repeat: repeat;
+    padding: 100px 0 100px;
 }
 
 .parte-principal .container {
@@ -88,6 +96,18 @@ header .container .botoes button img {
     text-align: center;
     font-style: italic;
 }
+
+.parte-principal .container .barra-de-pesquisa {
+    display: flex;
+}
+
+.parte-principal .container input, select {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 20px;
+}
+
+
 
 .produtos-por-categoria {
     padding: 50px 0 70px;
@@ -105,7 +125,7 @@ header .container .botoes button img {
     border: none;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     color: #757575;
 }
 
@@ -116,6 +136,10 @@ header .container .botoes button img {
 .produtos-por-categoria .container .botoes-categoria span {
     font-size: 25px;
     color: #757575;
+}
+
+.produtos-por-categoria .container .card-produto {
+    cursor: pointer;
 }
 
 .produtos-por-categoria .container .card-produto .thumb {
@@ -182,6 +206,7 @@ header .container .botoes button img {
     align-items: center;
     justify-content: flex-end;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .produtos-por-categoria .container .botao-ver-mais span {
@@ -197,13 +222,53 @@ header .container .botoes button img {
     width: 10px;
 }
 
-
-
-.banner-anunciar .banner img {
-    width: 100%;
-    background-size: cover;
+.banner-anunciar {
+    height: 402px;
+    overflow: hidden;
+    background: url('../img/guitar.jpeg');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.banner-anunciar .gradient {
+    background-color: black;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8981967787114846) 0%, 
+    rgba(0,0,0,0.7133228291316527) 35%, rgba(0,0,0,0.01584383753501406) 51%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-anunciar .container .frase-banner {
+    width: 20px;
+}
+
+.banner-anunciar .container .frase-banner h2 {
+    font-family: 'Abeezee', sans-serif;
+    color: #FFFFFF;
+    font-size: 48px;
+    text-align:left;
+}
+.banner-anunciar .container .botao-saiba-mais button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 40px;
+    border:none;
+    cursor: pointer;
+}
+
+.banner-anunciar .container .botao-saiba-mais button:hover {
+    opacity: 80%;
+}
+
+.banner-anunciar .container .botao-saiba-mais button:active {
+    transform: scale(0.99);
+    transition: all 0.1s ease-in-out;
 }
 
 footer {

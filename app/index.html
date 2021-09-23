@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use, Alugue, Reuse">
     <link rel="stylesheet" href="css/style.css">
     <title>AlugaKi</title>
 </head>
@@ -29,7 +30,29 @@
             </div>
 
             <div class="barra-de-pesquisa">
-                <input type="text">
+                <div class="opt-localizacao">
+                    <select name="localizacao" id="localizacao" required>
+                        <option selected disabled value="">Localização</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="São Paulo">São Paulo</option>
+                    </select>
+                </div>
+
+                <div class="opt-categoria">
+                    <select name="categoria" id="categoria" required>
+                        <option selected disabled value="">Categoria</option>
+                        <option value="Moda">Esporte e Lazer</option>
+                        <option value="Moda">Moda</option>
+                        <option value="Eletrônicos">Eletrônicos</option>
+                        <option value="SFerramentas e Utilitários">Ferramentas e Utilitários</option>
+                    </select>
+                </div>
+
+                <div class="pesquisar-produto">
+                    <label for="produto">Produto</label>
+                    <input type="text" name="produto" id="produto" placeholder="O que você está procurando?">
+                </div>
+
             </div>
         </div>
     </section>
@@ -127,16 +150,16 @@
     </section>
 
     <section class="banner-anunciar">
-        <div class="banner">
-            <img src="img/mulher-e-cachorro.jpg" alt="Imagem do Banner">
-        </div>
-        <div class="container">
-            <div class="frase-banner">
-                <h2>Experimente anunciar</h2>
+        <div class="gradient">
+            <div class="container">
+                <div class="frase-banner">
+                    <h2>Experimente anunciar</h2>
+                </div>
+                <div class="botao-saiba-mais">
+                    <button>Saiba mais</button>
+                </div>
             </div>
-            <div class="botao-saiba-mais">
-                <button>Saiba mais</button>
-            </div>
+
         </div>
     </section>
 
