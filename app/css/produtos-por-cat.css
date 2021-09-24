@@ -318,8 +318,16 @@ footer .copyright {
     .container{
         flex-wrap: wrap;
     }
-    header{
-        display: none;
+    header .container{
+        justify-content: center;
+    }
+    header .container .logo-e-barra{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    header .container .botoes{
+        margin-bottom: 10px;
     }
     .produtos .container{
         justify-content: center;
