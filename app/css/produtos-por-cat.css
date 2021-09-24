@@ -94,12 +94,16 @@ header .container .botoes button:first-child {
     height: 40px;
 }
 /*first-child: botao menu*/
-header .container .botoes button:last-child {
+header .container .botoes button:nth-child(2) {
     border-radius: 50%;
     padding: 8px 12px;
 }
 header .container .botoes button img {
     width: 20px;
+}
+
+header .container .botoes button:last-child{
+    display: none;
 }
 
 /*container com filtro e produtos*/
@@ -147,7 +151,9 @@ header .container .botoes button img {
     color: #a9dbd4;
     transition: 0.5s;
 }
-
+.produtos .menu-dropdown{
+    display: none;
+}
 /*lista com os anúncios*/
 .produtos .lista-produtos {
     position: relative;
@@ -321,7 +327,7 @@ footer .copyright {
 /*769px e 545px*/
 @media (max-width: 769px){
     .filtros{
-        display: none;
+       display: none;
     }
     .container{
         flex-wrap: wrap;
@@ -352,6 +358,13 @@ footer .copyright {
     .produtos .container .card-produto .thumb{
         width: 300px;
         height: 210px;
+    }
+
+    header .container .botoes button:last-child{
+        display: flex;
+        margin-left: 20px;
+        border: none;
+        transform: rotate(90deg);
     }
 }
 
