@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 1000px;
+    width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -129,6 +129,17 @@ header .container .botoes button img {
 
 /* titulos h1 */
 h1{
+    text-align: center;
+    font-family: 'ABeeZee';
+    font-weight: 600;
+    font-size: 44px;
+    /* color: #419488; */
+    color: #FF5722;
+    margin: 50px auto 0px auto;
+}
+
+/* titulos h2 */
+h2{
     font-family: 'ABeeZee';
     font-weight: 400;
     font-size: 32px;
@@ -159,10 +170,10 @@ form input{
 .container-flex {
     display: flex;
     align-items: flex-start;
-    width: 1000px;
+    width: 1100px;
     max-width: 100%;
     margin: 50px auto;
-    gap: 150px;
+    gap: 225px;
 }
 
 /* barra lateral */
@@ -174,6 +185,7 @@ section.barra-lateral{
 
 section.barra-lateral .foto img{
     width: 150px;
+    margin-bottom: 10px;
 }
 
 section.barra-lateral .botao button{
@@ -212,18 +224,28 @@ section.barra-lateral .menu ul{
 section.conteudo{
     width: 700px;
 }
+
 section.conteudo,
-section.conteudo form{
+section.conteudo form #form_editar{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
 }
 
 section.conteudo form,
-section.conteudo form input,
 section.conteudo form label,
-section.conteudo h1{
+section.conteudo p{
     margin: 0;
+}
+
+section.conteudo h2{
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+section.conteudo .dados h2{
+    margin-top: 20px;
 }
 
 section.conteudo form .botao button{
@@ -239,6 +261,7 @@ section.conteudo form .botao button{
     height: 40px;
     cursor: pointer;
 }
+
 
 section.conteudo .dados *{
     display: block;
@@ -265,6 +288,26 @@ section.conteudo .excluir div{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+section.conteudo .excluir h2{
+    margin-top: 40px;
+}
+
+section.conteudo form input{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 400px;
+}
+
+#nome,
+#email{
+    margin-bottom: 25px;
+}
+
+form input:not([type="checkbox"], [type="file"]):focus-visible{
+    outline-color: transparent ;
+    outline-width: 0px;
 }
 
 
