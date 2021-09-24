@@ -32,7 +32,7 @@ header .container {
 
 header .container .logo-e-barra {
     display: flex;
-    align-items:center ;
+    align-items:center;
     justify-content: space-between;
 }
 /*config. logo*/
@@ -179,7 +179,13 @@ form input{
 /* barra lateral */
 section.barra-lateral{
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.barra-lateral .foto{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -314,6 +320,7 @@ form input:not([type="checkbox"], [type="file"]):focus-visible{
 /*footer*/
 footer {
     background-color: #484848;
+    width: 100vw;
 }
 
 footer .container {
@@ -376,4 +383,90 @@ footer .copyright {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 20px;
+}
+
+@media (max-width: 850px){
+
+    .container{
+        width: 90vw;
+        max-width: 100%;
+    }
+   
+    header{
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    header .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header .container .botoes {
+        padding: 10px;
+    }
+
+    .container-flex{
+        max-width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    section.conteudo{
+        max-width: 100vw;
+    }
+
+    section.conteudo #form_editar .dados .botao{
+        flex-wrap: wrap;
+    }
+
+    section.conteudo #form_senha div,
+    section.conteudo .excluir div{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 685px){
+
+    header .container .logo-e-barra {
+        max-width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .container .logo img {
+        width: 120px;
+        margin-right: 0;
+    }
+} 
+
+@media (max-width: 525px){
+
+    header .container .barra form input{
+        max-width: 80vw;
+    }
+
+    header .container .barra form button {
+        position: absolute;
+        left: 85%;
+        padding-right: 20px;
+    }
+
+    section.conteudo form input{
+        max-width: 100vw;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .container .logo-e-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
