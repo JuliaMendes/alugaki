@@ -29,6 +29,10 @@
         </div>
     </header>
 
+    <section class="titulo">
+        <h1>Minha Conta</h1>
+    </section>
+    
 <div class="container-flex">
 
     <section class="barra-lateral">
@@ -48,10 +52,10 @@
     </section>
 
     <section class="conteudo">
-        <form>
+        <form id="form_editar">
             <div class="dados">
                 <div class="botao">
-                    <h1>Dados Pessoais</h1>
+                    <h2>Dados Pessoais</h2>
                     <button>Editar</button>
                 </div>
 
@@ -63,7 +67,7 @@
             </div>
 
             <div class="login">
-                <h1>Login e Segurança</h1>
+                <h2>Login e Segurança</h2>
 
                 <label for="email">E-mail</label><br>
                 <input type="email" id="email" name="email" placeholder="meuemail@email.com" readonly>
@@ -72,7 +76,7 @@
         </form>
 
         <div class="login">
-            <form>
+            <form id="form_senha">
                 <label for="pass">Senha</label><br>
                 <div>
                     <input type="password" id="pass" name="password" placeholder="********" readonly>
@@ -82,8 +86,8 @@
         </div>
                     
         <div class="privacidade">
-            <h1>Privacidade</h1>
-            </form>
+            <h2>Privacidade</h2>
+            </form id="form_priv">
                 <input type="checkbox">
                 <span class="checkmark"></span>
                 <p>Aceito receber novidades da alugaKi</p>
@@ -91,7 +95,7 @@
         </div>
 
         <div class="excluir">
-            <h1>Excluir conta</h1>
+            <h2>Excluir conta</h2>
             <div>
                 <p>Todos os dados serão excluídos definitivamente.<br>
                 Não será possível recuperar sua conta.</p>
