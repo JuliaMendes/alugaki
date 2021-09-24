@@ -127,7 +127,178 @@ header .container .botoes button img {
     width: 20px;
 }
 
+.container-flex {
+    display: flex;
+    align-items: flex-start;
+    width: 1200px;
+    max-width: 100%;
+    margin: 50px auto;
+    gap: 150px;
+}
 
+/* section barra-lateral */
+section.barra-lateral{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 275px;
+}
+
+section.barra-lateral .infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #F2F1F1;
+    border-radius: 15px;
+    height: 400px;
+}
+
+section.barra-lateral .infos h3{
+    font-family: 'Roboto';
+    font-size: 34px;
+    font-weight: 400;
+    margin: 0;
+}
+
+section.barra-lateral .infos #foto_perfil{
+    width: 175px;
+}
+
+section.barra-lateral .infos .estrelas img{
+    width: 30px;
+    height: 25px;
+}
+
+section.barra-lateral .infos #linha_cinza{
+    width: 80%;
+    height: 1.5px;
+}
+
+section.barra-lateral .infos a{
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+/*titulo do filtro e divisor*/
+section.barra-lateral .filtros {
+    width: 80%;
+}
+
+section.barra-lateral .filtros .titulo-filtro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/*nome do filtro*/
+section.barra-lateral .filtros h3{
+    font-family: Roboto;
+    color: #419488;
+}
+
+/*divisor*/
+section.barra-lateral .filtros img{
+    width: 100%;
+}
+
+/*lista com os filtros*/
+section.barra-lateral .filtros ul{
+    list-style: none;
+    padding: 0;
+    font-family: Roboto;
+    color: #419488;
+    line-height: 27px;
+}
+section.barra-lateral .filtros ul li a{
+    text-decoration: none;
+    color: #419488;
+}
+section.barra-lateral .filtros ul li a:hover{
+    color: #a9dbd4;
+    transition: 0.5s;
+}
+
+/* section conteudo */
+section.conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+section.conteudo h2{
+    font-size: 38px;
+    font-weight: 36;
+    font-family: 'ABeeZee';
+    color: #FF5722;
+    margin-top: 0;
+}
+
+/* section anuncios */
+section.anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.anuncios .card-produto{
+    width: 240px;
+    margin-bottom: 30px;
+}
+/*imagem do produto*/
+section.anuncios .card-produto .thumb{
+    width: 240px;
+    max-width: 100%;
+    height: 150px;
+}
+/*nome do produto*/
+section.anuncios .card-produto h3{
+    font-family: Roboto;
+    color: #484848;
+    margin-bottom: 5px;
+}
+/*info do produto*/
+section.anuncios .card-produto .info > div {
+    display: flex;
+    align-items: center;
+}
+/*estrela de avaliação*/
+section.anuncios .card-produto img{
+    width: 25px;
+    height: 21px;
+    margin-right: 2px;
+}
+/* avaliação e número de avaliações */
+section.anuncios .card-produto .info small{
+    font-family: Roboto;
+    font-size: 15px;
+    margin-right: 5px;
+}
+/*localização do produto*/
+section.anuncios .card-produto .localiz{
+    margin-top: 5px;
+}
+/*imagem de localiz.*/
+section.anuncios .card-produto .localiz img{
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+}
+/*preço do produto*/
+section.anuncios .card-produto .preco{
+    font-family: Roboto;
+    font-size: 20px;
+    color: #FF5722;
+}
+
+
+
+
+/* section avaliacoes */
 
 
 
