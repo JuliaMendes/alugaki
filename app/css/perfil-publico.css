@@ -61,6 +61,7 @@ header .container .barra form input{
     border: solid 2px #419488;
     background-color: #FFFFFF;
     position: relative;
+    padding-left: 15px;
 }
 
 header .container .barra form input:focus-visible{
@@ -116,6 +117,7 @@ header .container .botoes button:first-child {
     height: 40px;
     /* padding: 10px 20px; */
 }
+
 /*first-child: botao menu*/
 header .container .botoes button:last-child {
     border-radius: 50%;
@@ -295,12 +297,101 @@ section.anuncios .card-produto .preco{
     color: #FF5722;
 }
 
+section.anuncios button{
+    background-color: transparent;
+    border: none;
 
+    position: relative;
+    bottom: 80px;
+}
 
+section.anuncios button:focus-visible{
+    outline-color: transparent;
+    outline-width: 0px;
+}
+
+section.anuncios button img{
+    width: 25px;
+}
 
 /* section avaliacoes */
+section.avaliacoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+section.avaliacoes button{
+    border: none;
+    background: transparent;
+}
 
+section.avaliacoes button:focus-visible{
+    outline-color: transparent;
+    outline-width: 0px;
+}
+
+section.avaliacoes button img{
+    cursor: pointer;
+}
+
+section.avaliacoes .seta_esquerda button img{
+    transform: scaleX(-1);
+}
+
+section.avaliacoes .seta_esquerda button img,
+section.avaliacoes .seta_direita button img{
+    width: 25px;
+}
+
+section.avaliacoes .card-avaliacao{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 550px;
+}
+
+section.avaliacoes .card-avaliacao .avaliador{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.avaliacoes .card-avaliacao .avaliador #perfil_avaliador{
+    width: 125px;
+    margin-right: 25px;
+}
+
+section.avaliacoes .card-avaliacao .avaliador .infos{
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+section.avaliacoes .card-avaliacao .avaliador .infos h3{
+    font-size: 26px;
+    font-family: 'Roboto';
+    font-weight: 800px;
+    margin: 0;
+}
+
+section.avaliacoes .card-avaliacao .avaliador .infos .estrelas img{
+    width: 30px;
+    height: 25px;
+}
+
+section.avaliacoes .card-avaliacao p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+section.avaliacoes .card-avaliacao .seletores img{
+    margin-top: 40px;
+    width: 13px;
+}
 
 /*footer*/
 footer {

@@ -70,11 +70,27 @@
             <h2>Anúncios</h2>
             <section class="anuncios">
 
-                    <!--cards dos produtos-->
                     <div class="card-produto">
-                        <!--imagem do produto-->
                         <div class="thumb" style="background-color: darkgray;"></div>
-                        <!--informações do produto: nome, avaliação, localiz., preço-->
+                        <div class="info">
+                            <h3>Nome do produto</h3>
+                            <div>
+                                <img src="img/Star 1.png" alt="">
+                                <div>
+                                    <small>4,8</small>
+                                    <small style="color: #757575;">• 750 avaliações</small>
+                                </div>
+                            </div>
+                            <div class="localiz">
+                                <img src="img/location.png" alt="">
+                                <small style="color: #757575;">São Paulo, SP</small>
+                            </div>
+                            <h3 class="preco">R$ preço/dia</h3>
+                        </div>
+                    </div>
+
+                    <div class="card-produto">
+                        <div class="thumb" style="background-color: darkgray;"></div>
                         <div class="info">
                             <h3>Nome do produto</h3>
                             <div>
@@ -118,35 +134,39 @@
                             <h3 class="preco">R$ preço/dia</h3>
                         </div>
                     </div>
-
-                    <div class="card-produto">
-                        <!--imagem do produto-->
-                        <div class="thumb" style="background-color: darkgray;"></div>
-                        <!--informações do produto: nome, avaliação, localiz., preço-->
-                        <div class="info">
-                            <h3>Nome do produto</h3>
-                            <div>
-                                <!--div com infos sobre avaliação-->
-                                <img src="img/Star 1.png" alt="">
-                                <div>
-                                    <small>4,8</small>
-                                    <small style="color: #757575;">• 750 avaliações</small>
-                                </div>
-                            </div>
-                            <!--div com infos sobre localiz.-->
-                            <div class="localiz">
-                                <img src="img/location.png" alt="">
-                                <small style="color: #757575;">São Paulo, SP</small>
-                            </div>
-                            <!--preço-->
-                            <h3 class="preco">R$ preço/dia</h3>
-                        </div>
-                    </div>
+                        <button><img src="img/drop_down 1.png" alt="Seta - Ir para próxima avaliação"></button>
             </section>
     
             <h2>Avaliações</h2>
             <section class="avaliacoes">
-                <div class=></div>
+                <div class="seta_esquerda">
+                    <button><img src="img/drop_down 1.png" alt="Seta - Ir para avaliação anterior"></button>
+                </div>
+                <div class="card-avaliacao">
+                    <div class="avaliador">
+                        <img src="img/bolinha_perfil.png" alt="Foto de perfil do avaliador" id="perfil_avaliador">
+                        <div class="infos">
+                            <h3>Perfil 1</h3>
+                            <div class="estrelas">
+                                <img src="img/Star 1.png" alt="Estrela de Avaliação">
+                                <img src="img/Star 1.png" alt="Estrela de Avaliação">
+                                <img src="img/Star 1.png" alt="Estrela de Avaliação">
+                                <img src="img/Star 1.png" alt="Estrela de Avaliação">
+                                <img src="img/Star 1.png" alt="Estrela de Avaliação">
+                            </div>
+                        </div>
+                    </div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nulla nec mollis venenatis. Donec  ornare. Nam sit amet arcu posuere, pulvinar dolor et, porta diam.“</p>
+                    <div class="seletores">
+                        <button><img src="img/seletor_vazio_avaliacao.png" alt="Seletor Avaliação"></button>
+                        <button><img src="img/seletor_cheio_avaliacao.png" alt="Seletor Avaliação"></button>
+                        <button><img src="img/seletor_vazio_avaliacao.png" alt="Seletor Avaliação"></button>
+                        <button><img src="img/seletor_vazio_avaliacao.png" alt="Seletor Avaliação"></button>
+                    </div>
+                </div>
+                <div class="seta_direita">
+                    <button><img src="img/drop_down 1.png" alt="Seta - Ir para próxima avaliação"></button>
+                </div>
             </section>
         </section>
 
