@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt_br"></html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro-produto.css">
+    <title> Anuncie | Alugaki </title>
+</head>
+
+<body>
+
+    <header>
+        
+    </header>
+        <section class="cadastro-produto">
+            <h1>Anuncie aki!</h1>
+
+            <form>
+                
+                <div id="infos-gerais">
+                    <label for="titulo">Título</label>
+                    <input type="" id="titulo" name="titulo">
+                    <br>
+                    <label for="descricao" required maxlength="300">Descrição</label>
+                    <textarea name="descricao"></textarea>
+                    <br>
+                </div>
+                
+                <div id="preco">
+                    <label for="preco">Preço</label>
+                    <input type="text" id="preco" placeholder="R$ ">
+                    <label for="periodo"></label>
+                    <select name="periodo" id="periodo" required>
+                        <option value="por-dia">/ Dia</option>
+                        <option value="por-mes">/ Mês</option>
+                        <option value="por-hora">/ Hora</option>
+                    </select>
+                </div>
+
+                <div id="categoria">
+                    <label for="categoria"></label>
+                    <select name="categoria" id="categoria" required>
+                        <option selected disabled value = "">Categoria</option>
+                        <option value="esporte-lazer">Esporte e Lazer</option>
+                        <option value="moda">Moda</option>
+                        <option value="eletronicos">Eletrônicos</option>
+                        <option value="ferramentas-utilitarios">Ferramentas e Utilitários</option>
+                    </select>
+                </div>
+
+                
+                <div id="disponibilidade">
+
+                    <label for="dispo">disponibilidade</label>
+
+                    <img src="img/calendario.png" alt="calendário">
+
+                    <p>
+                        <label for="dispo"></label>
+                        <br>
+                        <input type="radio" name="dispo" value="dias-uteis"/>
+                        Dias Úteis
+                        <br>
+                        <input type="radio" name="dispo" value="fins-de-semana"/>
+                        Fins de Semana
+                        <br>
+                        <input type="radio" name="dispo" value="todos-os-dias"/>
+                        Todos os dias
+                        <br>
+                    </p> 
+                </div>
+
+                <div id="fotos">
+                    <label for="fotos">Fotos</label>
+                    <input type="file" name="fotos" id="fotos" accept="image/*, .png .jpg" multiple required>
+                </div>
+                
+                <div id="localizacao">
+                    <label for="localizacao">Localização</label>
+                    <input type="text" id="localizacao" placeholder="CEP ">
+                </div>
+
+            </form>
+
+            <button>cancelar</button>
+            <button>publicar</button>
+
+        </section>
+        
+
+    <footer>
+
+    </footer>
+
+</body>
+
+
+</html>
