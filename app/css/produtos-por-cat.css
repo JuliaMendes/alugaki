@@ -129,7 +129,7 @@ header .container .botoes button img {
 }
 /*divisor*/
 .produtos .filtros img{
-    width: 75%;
+    width: 100%;
 }
 /*lista com os filtros*/
 .produtos .filtros ul{
