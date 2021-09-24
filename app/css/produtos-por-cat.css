@@ -143,7 +143,7 @@ header .container .botoes button img {
     text-decoration: none;
     color: #419488;
 }
-.produtos .filtros ul li a:hover{
+.produtos .filtros ul li a:hover, label:hover{
     color: #a9dbd4;
     transition: 0.5s;
 }
@@ -239,8 +239,16 @@ header .container .botoes button img {
 .produtos .container-fim li:first-child{
     transform: rotate(180deg);
 }
-.produtos .container-fim li:nth-child(2){
+.produtos .container-fim li:nth-child(2) a{
     color:#FF5722;
+}
+.produtos .container-fim li a{
+    text-decoration: none;
+    color: #484848;
+}
+.produtos .container-fim li a:hover{
+    color:#FF5722;
+    transition: 0.5s;
 }
 
 /*footer*/
