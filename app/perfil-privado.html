@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/perfil-privado.css">
-    <title>Document</title>
+    <title>Minha Conta</title>
 </head>
 <body>
 
@@ -13,13 +13,13 @@
         <div class="container">
             <div class="logo-e-barra">
                 <div class="logo">
-                    <img src="img/alugaKi-removebg-preview.png" alt="Logo da Página">
+                    <a href="index.html"><img src="img/alugaKi-removebg-preview.png" alt="Logo alugaki"></a>
                 </div>
                 <div class="barra">
-                    <input type="text" id="barra" name="barra">
-                    <div class="lupa">
-                        <img src="img/lupa.png" alt="Icone de lupa">
-                    </div>
+                    <form>
+                        <input type="text" id="barra" name="barra">
+                        <button class="lupa"><img src="img/lupa.png" alt="Icone de lupa"></button>
+                    </form>
                 </div>
             </div>
             <div class="botoes">
@@ -48,52 +48,58 @@
     </section>
 
     <section class="conteudo">
-        <section class="dados">
+        <form>
+            <div class="dados">
+                <div class="botao">
+                    <h1>Dados Pessoais</h1>
+                    <button>Editar</button>
+                </div>
 
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome Sobrenome" readonly>
+    
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) 9xxxx-xxxx" readonly>
+            </div>
 
-                <h1>Dados Pessoais</h1>
-
-                <form>
-                    <label for="nome">Nome Completo</label><br>
-                    <input type="text" id="nome" name="nome" placeholder="Nome Sobrenome">
-                </form>
-
-                <form>
-                    <label for="telefone">Telefone</label><br>
-                    <input type="text" id="telefone" name="telefone" placeholder="(xx) 9xxxx-xxxx">
-                </form>
-
-        </section>
-
-        <section class="login">
+            <div class="login">
                 <h1>Login e Segurança</h1>
 
-                <form>
-                    <label for="email">E-mail</label><br>
-                    <input type="text" id="email" name="email" placeholder="meuemail@email.com">
-                </form>
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email" placeholder="meuemail@email.com" readonly>
+            </div>
 
-                <form>
-                    <label for="pass">Senha</label><br>
-                    <input type="password" id="pass" name="password" placeholder="********">
+        </form>
+
+        <div class="login">
+            <form>
+                <label for="pass">Senha</label><br>
+                <div>
+                    <input type="password" id="pass" name="password" placeholder="********" readonly>
                     <button>Alterar senha</button>
-                </form>
-        </section>
-
-        <section class="privacidade">
-                <h1>Privacidade</h1>
+                </div>
+            </form>
+        </div>
+                    
+        <div class="privacidade">
+            <h1>Privacidade</h1>
+            </form>
                 <input type="checkbox">
                 <span class="checkmark"></span>
                 <p>Aceito receber novidades da alugaKi</p>
-        </section>
+            </form>
+        </div>
 
-        <section class="excluir">
-                <h1>Excluir conta</h1>
+        <div class="excluir">
+            <h1>Excluir conta</h1>
+            <div>
                 <p>Todos os dados serão excluídos definitivamente.<br>
                 Não será possível recuperar sua conta.</p>
                 <button>Excluir</button>
-        </section>
+            </div>
+        </div>
     </section> 
+
 </div>
 
 
