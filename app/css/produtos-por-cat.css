@@ -113,6 +113,9 @@ header .container .botoes button img {
 /*filtros*/
 
 /*titulo do filtro e divisor*/
+.filtros {
+    width: 60%;
+}
 .produtos .filtros .titulo-filtro{
     display: flex;
     flex-direction: column;
@@ -136,6 +139,14 @@ header .container .botoes button img {
     color: #419488;
     line-height: 27px;
 }
+.produtos .filtros ul li a{
+    text-decoration: none;
+    color: #419488;
+}
+.produtos .filtros ul li a:hover{
+    color: #a9dbd4;
+    transition: 0.5s;
+}
 
 /*lista com os anúncios*/
 .produtos .lista-produtos {
@@ -145,7 +156,7 @@ header .container .botoes button img {
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     margin-left: 60px;
 }
 /*título da categoria*/
