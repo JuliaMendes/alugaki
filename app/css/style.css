@@ -12,10 +12,12 @@ body {
 }
 
 .container {
-    width: 1000px;
+    width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
+
+/* header */
 
 header .container {
     display: flex;
@@ -55,16 +57,12 @@ header .container .botoes button:active {
 header .container .botoes button:first-child {
     margin-right: 20px;
     border-radius: 40px;
-    color: #FF5722;
+    background-color: #FF5722;
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: 700;
     font-family: 'Roboto';
     padding: 10px 20px;
-}
-
-header .container .botoes button:first-child:active {
-    background-color:#FF5722;
-    color: #FFFFFF;
 }
 
 header .container .botoes button:last-child {
@@ -76,11 +74,13 @@ header .container .botoes button img {
     width: 20px;
 }
 
+/*  seção parte principal */
+
 .parte-principal {
     background-image: url('../img/bg.jpeg');
     overflow: hidden;
     background-repeat: repeat;
-    padding: 100px 0 100px;
+    padding: 110px 0 110px;
 }
 
 .parte-principal .container {
@@ -88,6 +88,8 @@ header .container .botoes button img {
     align-items: center;
     flex-direction: column;
 }
+
+/* barra de pesquisa */
 
 .parte-principal .container .frase-principal h1 {
     font-family: 'Roboto', sans-serif;
@@ -97,17 +99,82 @@ header .container .botoes button img {
     font-style: italic;
 }
 
-.parte-principal .container .barra-de-pesquisa {
+.parte-principal .container .barra-de-pesquisa input,
+select {
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+}
+
+select-selected.select-arrow-active {
+    
+}
+
+.parte-principal .container .barra-de-pesquisa input {
+    width: 70%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+
+.parte-principal .container .barra-de-pesquisa .barra {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 60vw;
+    height: 60px;
+    padding: 0px 20px;
+    border-radius: 30px;
 }
 
-.parte-principal .container input, select {
-    width: 100%;
-    padding: 5px;
-    margin: 5px 0 20px;
+.parte-principal .container .barra-de-pesquisa .barra .opt-localizacao {
+    flex: 1;
+}
+
+.parte-principal .container .barra-de-pesquisa .barra .opt-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.parte-principal .container .barra-de-pesquisa .barra .pesquisar-produto {
+    display: flex;
+   justify-content: space-around;
+    flex: 2;
+}
+
+input::placeholder {
+    color: #757575;
+    opacity: 60%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
 
 
+.parte-principal .container .barra-de-pesquisa .barra .pesquisar-produto .lupa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parte-principal .container .barra-de-pesquisa .barra .pesquisar-produto .lupa button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.parte-principal .container .barra-de-pesquisa .barra .pesquisar-produto .lupa button img {
+    border: transparent;
+    width: 30px;
+}
+
+/* seção produtos por categoria */
 
 .produtos-por-categoria {
     padding: 50px 0 70px;
@@ -129,6 +196,10 @@ header .container .botoes button img {
     color: #757575;
 }
 
+.produtos-por-categoria .container .botoes-categoria button.ativo {
+    color: #FF5722;
+}
+
 .produtos-por-categoria .container .botoes-categoria button:hover {
     color: #FF5722;
 }
@@ -142,16 +213,17 @@ header .container .botoes button img {
     cursor: pointer;
 }
 
-.produtos-por-categoria .container .card-produto .thumb {
+.produtos-por-categoria .container .card-produto .thumb img {
     width: 240px;
     height: 150px;
-    background-color: #c4c4c4;
+    background-size: cover;
+   
 }
 
 .produtos-por-categoria .container .lista-produtos {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .produtos-por-categoria .container .lista-produtos .card-produto .info>div {
@@ -222,10 +294,12 @@ header .container .botoes button img {
     width: 10px;
 }
 
+/* seção banner */
+
 .banner-anunciar {
     height: 402px;
     overflow: hidden;
-    background: url('../img/guitar.jpeg');
+    background: url('../img/banner-violao.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -234,8 +308,8 @@ header .container .botoes button img {
 
 .banner-anunciar .gradient {
     background-color: black;
-    background: linear-gradient(90deg, rgba(0,0,0,0.8981967787114846) 0%, 
-    rgba(0,0,0,0.7133228291316527) 35%, rgba(0,0,0,0.01584383753501406) 51%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8981967787114846) 0%,
+            rgba(0, 0, 0, 0.7133228291316527) 35%, rgba(0, 0, 0, 0.01584383753501406) 51%, rgba(0, 0, 0, 0) 100%);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -251,14 +325,16 @@ header .container .botoes button img {
     font-family: 'Abeezee', sans-serif;
     color: #FFFFFF;
     font-size: 48px;
-    text-align:left;
+    text-align: left;
+    margin-top: 70px;
 }
+
 .banner-anunciar .container .botao-saiba-mais button {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     padding: 15px;
     border-radius: 40px;
-    border:none;
+    border: none;
     cursor: pointer;
 }
 
@@ -270,6 +346,8 @@ header .container .botoes button img {
     transform: scale(0.99);
     transition: all 0.1s ease-in-out;
 }
+
+/* footer */
 
 footer {
     background-color: #484848;
@@ -298,6 +376,7 @@ footer .container .menu ul li {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
+    cursor: pointer;
 }
 
 footer .container .menu ul li a {

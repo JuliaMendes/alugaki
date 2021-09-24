@@ -26,31 +26,35 @@
     <section class="parte-principal">
         <div class="container">
             <div class="frase-principal">
-                <h1>Use. Alugue. Reuse</h1>
+                <h1>Use. Alugue. Reuse.</h1>
             </div>
 
             <div class="barra-de-pesquisa">
-                <div class="opt-localizacao">
-                    <select name="localizacao" id="localizacao" required>
-                        <option selected disabled value="">Localização</option>
-                        <option value="Rio de Janeiro">Rio de Janeiro</option>
-                        <option value="São Paulo">São Paulo</option>
-                    </select>
-                </div>
+                <div class="barra">
+                    <div class="opt-localizacao">
+                        <select name="localizacao" id="localizacao">
+                            <option selected disabled value="">Localização</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="São Paulo">São Paulo</option>
+                        </select>
+                    </div>
 
-                <div class="opt-categoria">
-                    <select name="categoria" id="categoria" required>
-                        <option selected disabled value="">Categoria</option>
-                        <option value="Moda">Esporte e Lazer</option>
-                        <option value="Moda">Moda</option>
-                        <option value="Eletrônicos">Eletrônicos</option>
-                        <option value="SFerramentas e Utilitários">Ferramentas e Utilitários</option>
-                    </select>
-                </div>
+                    <div class="opt-categoria">
+                        <select name="categoria" id="categoria">
+                            <option selected disabled value="">Categoria</option>
+                            <option value="Moda">Esporte e Lazer</option>
+                            <option value="Moda">Moda</option>
+                            <option value="Eletrônicos">Eletrônicos</option>
+                            <option value="Ferramentas e Utilitários">Ferramentas e Utilitários</option>
+                        </select>
+                    </div>
 
-                <div class="pesquisar-produto">
-                    <label for="produto">Produto</label>
-                    <input type="text" name="produto" id="produto" placeholder="O que você está procurando?">
+                    <div class="pesquisar-produto">
+                        <input type="text" name="produto" id="produto" placeholder="O que você está procurando?">
+                        <div class="lupa">
+                            <button><img src="img/search.png" alt="Botao de lupa"></button>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -60,85 +64,93 @@
     <section class="produtos-por-categoria">
         <div class="container">
             <div class="botoes-categoria">
-                <button>Esporte e Lazer</button><span>|</span>
+                <button class="ativo">Esporte e Lazer</button><span>|</span>
                 <button>Moda</button><span>|</span>
                 <button>Eletrônicos</button><span>|</span>
                 <button>Ferramentas e Utilitários</button>
             </div>
             <div class="lista-produtos">
                 <div class="card-produto">
-                    <div class="thumb"></div>
+                    <div class="thumb">
+                        <img src="img/patins.jpg" alt="Patins preto">
+                    </div>
                     <div class="info">
-                        <h3>Nome do produto</h3>
+                        <h3>Patins 4 Rodas Ajustável</h3>
                         <div>
                             <img src="img/Star 1.png" alt="Ícone estrela">
                             <div>
-                                <small class="pontuacao">4,8</small>
-                                <small>• 750 avaliações</small>
+                                <small class="pontuacao">5,0</small>
+                                <small>• 27 avaliações</small>
                             </div>
                         </div>
                         <div class="localiz">
                             <img src="img/location.png" alt="ícone localização">
                             <small>São Paulo, SP</small>
                         </div>
-                        <h3 class="preco">R$preço/dia</h3>
+                        <h3 class="preco">R$ 30/dia</h3>
                     </div>
                 </div>
 
                 <div class="card-produto">
-                    <div class="thumb"></div>
+                    <div class="thumb">
+                        <img src="img/bicicleta.jpg" alt="Bicicleta preta">
+                    </div>
                     <div class="info">
-                        <h3>Nome do produto</h3>
+                        <h3>Bicicleta Aro 29</h3>
                         <div>
                             <img src="img/Star 1.png" alt="Ícone estrela">
                             <div>
-                                <small class="pontuacao">4,8</small>
-                                <small>• 750 avaliações</small>
+                                <small class="pontuacao">5,0</small>
+                                <small>• 31 avaliações</small>
                             </div>
                         </div>
                         <div class="localiz">
                             <img src="img/location.png" alt="ícone localização">
                             <small>São Paulo, SP</small>
                         </div>
-                        <h3 class="preco">R$preço/dia</h3>
+                        <h3 class="preco">R$ 50/dia</h3>
                     </div>
                 </div>
 
                 <div class="card-produto">
-                    <div class="thumb"></div>
+                    <div class="thumb">
+                        <img src="img/prancha.jpg" alt="Pranchas de surf">
+                    </div>
                     <div class="info">
-                        <h3>Nome do produto</h3>
+                        <h3>Prancha de Surf</h3>
                         <div>
                             <img src="img/Star 1.png" alt="Ícone estrela">
                             <div>
-                                <small class="pontuacao">4,8</small>
-                                <small>• 750 avaliações</small>
+                                <small class="pontuacao">5,0</small>
+                                <small>• 42 avaliações</small>
                             </div>
                         </div>
                         <div class="localiz">
                             <img src="img/location.png" alt="ícone localização">
                             <small>São Paulo, SP</small>
                         </div>
-                        <h3 class="preco">R$preço/dia</h3>
+                        <h3 class="preco">R$ 60/dia</h3>
                     </div>
                 </div>
 
                 <div class="card-produto">
-                    <div class="thumb"></div>
+                    <div class="thumb">
+                        <img src="img/barraca.jpg" alt="Barraca de camping">
+                    </div>
                     <div class="info">
-                        <h3>Nome do produto</h3>
+                        <h3>Barraca de Camping</h3>
                         <div>
                             <img src="img/Star 1.png" alt="Ícone estrela">
                             <div>
-                                <small class="pontuacao">4,8</small>
-                                <small>• 750 avaliações</small>
+                                <small class="pontuacao">5,0</small>
+                                <small>• 60 avaliações</small>
                             </div>
                         </div>
                         <div class="localiz">
                             <img src="img/location.png" alt="ícone localização">
                             <small>São Paulo, SP</small>
                         </div>
-                        <h3 class="preco">R$preço/dia</h3>
+                        <h3 class="preco">R$ 80/dia</h3>
                     </div>
                 </div>
             </div>
