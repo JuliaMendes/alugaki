@@ -156,7 +156,7 @@ header .container .botoes button img {
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 60px;
     margin-left: 60px;
 }
 /*título da categoria*/
@@ -216,6 +216,32 @@ header .container .botoes button img {
     font-family: Roboto;
     font-size: 20px;
     color: #FF5722;
+}
+/*paginação*/
+.produtos .container-fim{
+    margin-top: 40px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produtos .container-fim ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: Abeezee;
+    font-size: 20px;
+}
+.produtos .container-fim ul li img{
+    width: 13px;
+}
+
+.produtos .container-fim li:first-child{
+    transform: rotate(180deg);
+}
+.produtos .container-fim li:nth-child(2){
+    color:#FF5722;
 }
 
 /*footer*/
