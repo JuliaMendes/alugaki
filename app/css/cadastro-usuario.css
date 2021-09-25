@@ -13,11 +13,17 @@ body {
     background-image: url('../img/bg.jpeg');
 }
 
+h1 {
+    font-family: 'ABeeZee', sans-serif;
+}
+
 .container {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
+
+/* header */
 
 header {
     background-color:#F2F1F1;
@@ -63,6 +69,8 @@ header .container .btn-header .btn-voltar img {
     width: 15px;
 }
 
+/* seção princiapal */
+
 main {
     display: flex;
     align-items: center;
@@ -80,7 +88,6 @@ main {
 }
 
 .container .card-cadastre-se h1 {
-    font-family: 'ABeeZee', sans-serif;
     color: #212121;
     font-size: 22px;
     text-align: center;
@@ -133,11 +140,10 @@ main {
 
 .container .card-cadastre-se form .olho {
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    width: 42px;
-    margin-right: 12px;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    width: 22px;
 }
 
 input::placeholder {
@@ -171,7 +177,7 @@ input::placeholder {
       background-color: #FF5722;
       border-radius: 30px;
       color: #FFFFFF;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
       font-family: 'Montserrat', sans-serif;
       border: none;

@@ -46,6 +46,7 @@ header .container .logo img {
 
 header .container .botoes {
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 

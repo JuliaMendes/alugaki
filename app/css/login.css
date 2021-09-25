@@ -19,6 +19,8 @@ body {
     margin: 0 auto;
 }
 
+/* header */
+
 header {
     background-color:#F2F1F1;
 }
@@ -69,6 +71,8 @@ main {
     justify-content: center;
     flex-direction: column;
 }
+
+/* seção principal */
 
 .container .card-cadastre-se {
     background-color: #F2F1F1;
