@@ -82,7 +82,7 @@ main {
 
 .container .card-cadastre-se {
     background-color: #F2F1F1;
-    width: 420px;
+    width: 34%;
     border-radius: 5px;
     margin: 40px 0;
     padding: 20px 48px 18px;
@@ -256,6 +256,8 @@ input::placeholder {
 
 /* responsividade */
 
-/* @media (max-width: ) {
-
-} */
+@media (max-width: 768px) {
+    .container .card-cadastre-se {
+        width: 320px;
+    }
+}
