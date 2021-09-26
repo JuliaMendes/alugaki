@@ -26,48 +26,50 @@ h1 {
 /* header */
 
 header {
-    background-color:#F2F1F1;
-}
-
-header .container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    width: 100vw;
+    height: 120px;
+    background-color: #F2F1F1;
 }
 
-header .container .logo img {
-    width: 120px;
-    cursor: pointer;
-}
-
-header .container .btn-header {
+header .btn-header {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
+    padding-left: 50px;
 }
 
-header .container .btn-header .btn-voltar {
-    top: 30px;
-    left: 30px;
-    background: transparent;
-    border: none;
+header .btn-header button {
     display: flex;
     align-items: center;
+    border: none;
     gap: 12px;
     cursor: pointer;
+    background: transparent;
 }
 
-header .container .btn-header .btn-voltar span {
+header .btn-header button span {
     font-size: 15px;
     font-weight: bold;
     color: #757575;
 }
 
-header .container .btn-header .btn-voltar img {
+header .btn-header button img {
     width: 15px;
 }
+
+header .logo {
+    height: 100%;
+}
+
+header .logo img {
+    height: 100%;
+}
+
 
 /* seção princiapal */
 
@@ -97,7 +99,7 @@ main {
     color: #FF5722;
 }
 
-.container .card-cadastre-se #ki{
+.container .card-cadastre-se #ki {
     color: #009688
 }
 
@@ -117,24 +119,26 @@ main {
 
 .container .card-cadastre-se form input[type=text],
 .container .card-cadastre-se form input[type=password] {
-  width: 310px;
-  height: 40px;
-  background-color: #FFFAFA;
-  border-radius: 4px;
-  border: solid 1px #757575;
-  padding-left: 20px;
-  margin: 0;
-  color: #212121;
-  font-family: inherit;
-  font-size: 15px;
-  outline: none;
+    width: 100%;
+    height: 40px;
+    background-color: #FFFAFA;
+    border-radius: 4px;
+    border: solid 1px #757575;
+    padding-left: 20px;
+    margin: 0;
+    color: #212121;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
 }
 
 .container .card-cadastre-se form .input-icone {
+    width: 100%;
     position: relative;
 }
 
 .container .card-cadastre-se form input[type=password] {
+    width: 100%;
     padding-right: 50px;
 }
 
@@ -149,7 +153,7 @@ main {
 input::placeholder {
     color: #757575;
     opacity: 60%;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container .card-cadastre-se form hr {
@@ -161,63 +165,69 @@ input::placeholder {
 }
 
 .container .card-cadastre-se form .checkboxes {
-   display: flex;
-   gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
- .container .card-cadastre-se form .checkboxes label {
+.container .card-cadastre-se form .checkboxes label {
     font-family: 'Montsserat', sans-serif;
     font-size: 14px;
     color: #212121;
- }
+}
 
-  .container .card-cadastre-se form .btn-criar-conta button {
-      width: 310px;
-      height: 45px;
-      background-color: #FF5722;
-      border-radius: 30px;
-      color: #FFFFFF;
-      font-size: 18px;
-      font-weight: bold;
-      font-family: 'Montserrat', sans-serif;
-      border: none;
-      cursor: pointer;
-      margin-top: 22px;
-  }
+.container .card-cadastre-se form .btn-criar-conta,
+.container .card-cadastre-se form .btn-facebook {
+    width: 100%;
+}
 
-  .container .card-cadastre-se form .btn-criar-conta button:hover,
-  .container .card-cadastre-se .btn-facebook button:hover {
-      opacity: 80%;
-  }
-  .container .card-cadastre-se form .btn-criar-conta button:active,
-  .container .card-cadastre-se .btn-facebook button:active {
+.container .card-cadastre-se form .btn-criar-conta button {
+    width: 100%;
+    height: 45px;
+    background-color: #FF5722;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+.container .card-cadastre-se form .btn-criar-conta button:hover,
+.container .card-cadastre-se .btn-facebook button:hover {
+    opacity: 80%;
+}
+
+.container .card-cadastre-se form .btn-criar-conta button:active,
+.container .card-cadastre-se .btn-facebook button:active {
     transform: scale(0.99);
- }
+}
 
- .container .card-cadastre-se form .btn-criar-conta button:focus,
- .container .card-cadastre-se .btn-facebook button:focus {
-     outline: 0;
- }
+.container .card-cadastre-se form .btn-criar-conta button:focus,
+.container .card-cadastre-se .btn-facebook button:focus {
+    outline: 0;
+}
 
-  .container .card-cadastre-se .line {
-      display: flex;
-      align-items: center;
-      margin: 20px 0;
-      gap: 10px;
-  }
+.container .card-cadastre-se .line {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
 
-  .container .card-cadastre-se .line hr {
+.container .card-cadastre-se .line hr {
     width: 145px;
     opacity: 60%;
-  }
+}
 
-  .container .card-cadastre-se .line span {
+.container .card-cadastre-se .line span {
     font-size: 14px;
-      color: #212121;
-  }
+    color: #212121;
+}
 
-  .container .card-cadastre-se .btn-facebook button {
-    width: 310px;
+.container .card-cadastre-se .btn-facebook button {
+    width: 100%;
     height: 45px;
     background-color: #2C54AE;
     border-radius: 30px;
@@ -225,7 +235,7 @@ input::placeholder {
     font-weight: bold;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    border:none;
+    border: none;
     cursor: pointer;
 }
 
@@ -246,12 +256,3 @@ input::placeholder {
     color: #757575;
     font-size: 18px;
 }
-
-
-
-
-
-
-
-
-
