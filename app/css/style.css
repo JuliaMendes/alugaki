@@ -65,7 +65,7 @@ header .container .botoes button:active {
     transition: all 0.1s ease-in-out;
 }
 
-header .container .botoes>button:first-child {
+header .container .botoes a >button:first-child {
     width: 130px;
     height: 40px;
     margin-right: 20px;
@@ -488,7 +488,7 @@ footer .copyright {
         padding: 0 12px 0 12px;
     }
 
-    header .container .botoes>button:first-child  {
+    header .container .botoes a>button:first-child  {
         margin: 4px;
     }
 
@@ -508,6 +508,10 @@ footer .copyright {
         padding: 5px;
     }
 
+    .parte-principal .container .barra-de-pesquisa .pesquisar-produto-mobile ::placeholder {
+        font-size: 12px;
+    }
+
     .parte-principal .container .barra-de-pesquisa .pesquisar-produto-mobile input {
         width: 100%;
         border-radius: 20px;
@@ -522,6 +526,10 @@ footer .copyright {
         gap: 32px;
     }
 
+    .produtos-por-categoria .container .botao-ver-mais img {
+        margin-right: 12px;
+    }
+
     .banner-anunciar .container {
         padding-left: 15px;
     }
@@ -530,7 +538,5 @@ footer .copyright {
         flex-wrap: wrap;
         flex-direction: column;
     }
-
-   
 }
 
