@@ -168,6 +168,48 @@ header .container .botoes button:last-child{
     width: 20px;
     margin-top: 4px;
 }
+.segunda{
+    margin-top: 50px;
+}
+.segunda .descricao h2{
+    font-family: Roboto;
+}
+.segunda .descricao p{
+    font-family: Montserrat;
+    line-height: 23px;
+}
+.segunda .vendedor{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.segunda .vendedor .avatar{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.segunda .vendedor .info{
+    display: flex;
+    flex-direction: column;
+}
+.segunda .vendedor .info h3{
+    color:#009688;
+    font-family: Roboto;
+    font-weight: bold;
+    margin: 0;
+    font-size: 23px;
+}
+.segunda .vendedor .info img{
+    width: 25px;
+    height: 21px;
+}
+.segunda .vendedor .info small{
+    font-family: Roboto;
+    font-size: 15px;
+    margin-right: 5px;
+}
 /*footer*/
 footer {
     background-color: #484848;
