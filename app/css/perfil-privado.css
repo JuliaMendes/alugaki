@@ -469,4 +469,8 @@ footer .copyright {
         justify-content: center;
     }
 
+    footer .container .redes-sociais{
+        padding-left: 30px;
+    }
+
 }
