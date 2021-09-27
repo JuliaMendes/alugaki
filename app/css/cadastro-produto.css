@@ -1,0 +1,194 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*config. gerais da página*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.cadastro-produto{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+/*config. header*/
+header {
+    background-color: #F2F1F1;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .logo-e-barra {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+/*config. logo*/
+header .container .logo img {
+    width: 120px;
+    margin-right: 45px;
+}
+/*config. barra de pesquisa*/
+header .container .barra {
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .container .barra form{
+    margin: 0;
+}
+
+
+header .container .barra form input{
+    width: 450px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 2px #419488;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+header .container .barra form input:focus-visible{
+    outline-color: transparent;
+    outline-width: 0px;
+}
+
+header .container .barra form button {
+    position: absolute;
+    top: 3px;
+    bottom: 0px;
+    left: 404px;
+    border: transparent;
+    background-color: transparent;
+    padding-right: 20px;
+}
+
+header .container .barra form button img{
+    width: 20px;
+    cursor: pointer;
+}
+
+/*config. botoes de anunciar e menu*/
+header .container .botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container .botoes button {
+    background-color: transparent;
+    border: solid 2px #FF5722;
+    cursor: pointer;
+}
+
+header .container .botoes button:hover {
+    opacity: 80%;
+}
+
+header .container .botoes button:active {
+    transform: scale(0.99);
+}
+
+/*first-child: botao anunciar*/
+header .container .botoes button:first-child { 
+    margin-right: 20px;
+    border-radius: 40px;
+    color: #FF5722;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    width: 130px;
+    height: 40px;
+    /* padding: 10px 20px; */
+}
+/*first-child: botao menu*/
+header .container .botoes button:last-child {
+    border-radius: 50%;
+    padding: 8px 12px;
+    /* padding: 10px 15px; */
+}
+
+header .container .botoes button img {
+    width: 20px;
+}
+
+/* titulos h1 */
+h1{
+    text-align: left;
+    font-family: 'ABeeZee';
+    font-weight: 600;
+    font-size: 44px;
+    /* color: #419488; */
+    color: #FF5722;
+    margin: 50px auto 0px auto;
+}
+
+/* titulos h2 */
+h2{
+    font-family: 'ABeeZee';
+    font-weight: 400;
+    font-size: 32px;
+    color: #FF5722;
+}
+
+/* formularios */
+form{
+    margin-bottom: 25px;
+}
+
+form label{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    color: #757575;
+}
+
+form input{
+    width: 310px;
+    height: 40px;
+    background-color: #FFFAFA;
+    border-radius: 4px;
+    border: solid 1px #757575;
+    padding-left: 20px;
+}
+
+
+
+
+/*meu código aqui */
+
+form textarea input{
+    width: 310px;
+    height: 40px;
+    background-color: #FFFAFA;
+    border-radius: 4px;
+    border: solid 1px #757575;
+    padding-left: 20px;
+}
+
+.cadastro-produto form .container{
+    display: flex;
+    /*justify-content: space-between;*/
+    columns: 2;
+    row-gap: 60px 30px;
+}
