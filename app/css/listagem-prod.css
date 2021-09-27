@@ -481,6 +481,34 @@ footer .copyright {
     padding-bottom: 20px;
 }
 
+@media (max-width: 1220px){
+    .container{
+        width: 90vw;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    header{
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    header .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header .container .botoes {
+        padding: 10px;
+    }
+    .primeira .container{
+        justify-content: center;
+        gap: 50px;
+    }
+}
 
 @media (max-width: 850px){
 
