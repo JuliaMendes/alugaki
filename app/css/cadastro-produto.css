@@ -174,6 +174,7 @@ form input:not([type="radio"]){
 
 body .cadastro-produto h1{
     margin-bottom: 40px;
+    margin-left: 85px;
 }
 
 .cadastro-produto form .container{
@@ -247,20 +248,26 @@ form textarea{
 
 
 /*botoes da pagina */
-body .botoes{
+ .cadastro-produto.botoes{
     display: inline-block;
     position: absolute;
     margin-top: 40px;
     margin-bottom: 40px;
     align-items: center;
 }
-body .botoes button{
+.cadastro-produto .botoes button{
     background-color: transparent;
     border: solid 2px #FF5722;
     cursor: pointer;
 }
 
-.botoes #btn-publicar {
+.cadastro-produto .botoes button:first-child{
+    margin-left: 600px;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.cadastro-produto .botoes #btn-publicar {
     width: 130px;
     height: 40px;
     margin-right: 20px;
@@ -272,7 +279,7 @@ body .botoes button{
     
 }
 
-body .botoes #btn-cancelar{
+.cadastro-produto .botoes #btn-cancelar{
     width: 130px;
     height: 40px;
     margin-right: 20px;
@@ -282,11 +289,11 @@ body .botoes #btn-cancelar{
     font-weight: 700;
 }
 
-body .botoes button:hover {
+.cadastro-produto .botoes button:hover {
     opacity: 80%;
 }
 
-body .container .botoes button:active {
+.cadastro-produto .container .botoes button:active {
     transform: scale(0.99);
     transition: all 0.1s ease-in-out;
 }

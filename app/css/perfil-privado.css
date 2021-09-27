@@ -411,11 +411,18 @@ footer .copyright {
         max-width: 100vw;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        gap: 75px;
     }
 
     section.conteudo{
         max-width: 100vw;
+    }
+
+    section.barra-lateral{
+        width: 50vw;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 25px;
     }
 
     section.conteudo #form_editar .dados .botao{
@@ -471,6 +478,15 @@ footer .copyright {
 
     footer .container .redes-sociais{
         padding-left: 30px;
+    }
+
+}
+
+@media (max-width: 440px){
+
+    section.barra-lateral{
+        flex-direction: column;
+        justify-content: space-between;
     }
 
 }
