@@ -36,58 +36,72 @@
             <h1>Anuncie aki!</h1>
             <form>
                 <div class="container">
-                    <div id = "esquerda">
+                    <div class = "esquerda">
                         <div id="infos-gerais">
                             <label for="titulo">Título</label>
+                            <br>
                             <input type="" id="titulo" name="titulo" required>
                             <br>
                             <label for="descricao" required maxlength="300">Descrição</label>
+                            <br>
                             <textarea name="descricao" required></textarea>
                             <br>
                         </div>
                         
-                        <div id="preco">
-                            <label for="preco">Preço</label>
-                            <input type="text" id="preco" placeholder="R$ ">
-                            <label for="periodo"></label>
-                            <select name="periodo" id="periodo" required>
-                                <option value="por-dia">/ Dia</option>
-                                <option value="por-mes">/ Mês</option>
-                                <option value="por-hora">/ Hora</option>
-                            </select>
+                        <div class="preco-categ">
+                            <div class="preco">
+                                <label for="preco">Preço</label>
+                                <br>
+                                <div class="info-preco">
+                                    <input type="text" id="preco" placeholder="R$ ">
+                                    <label for="periodo"></label>
+                                    <select name="periodo" id="periodo" required>
+                                        <option value="por-dia">/ Dia</option>
+                                        <option value="por-mes">/ Mês</option>
+                                        <option value="por-hora">/ Hora</option>
+                                    </select>
+                                </div>
+                            </div>
+            
+                            <div class="categoria">
+                                <label for="categoria"></label>
+                                <select name="categoria" id="categoria" required>
+                                    <option selected disabled value = "">Categoria</option>
+                                    <option value="esporte-lazer">Esporte e Lazer</option>
+                                    <option value="moda">Moda</option>
+                                    <option value="eletronicos">Eletrônicos</option>
+                                    <option value="ferramentas-utilitarios">Ferramentas e Utilitários</option>
+                                </select>
+                            </div>
                         </div>
+                        
         
-                        <div id="categoria">
-                            <label for="categoria"></label>
-                            <select name="categoria" id="categoria" required>
-                                <option selected disabled value = "">Categoria</option>
-                                <option value="esporte-lazer">Esporte e Lazer</option>
-                                <option value="moda">Moda</option>
-                                <option value="eletronicos">Eletrônicos</option>
-                                <option value="ferramentas-utilitarios">Ferramentas e Utilitários</option>
-                            </select>
-                        </div>
-        
-                        <div id="fotos">
-                            <label for="fotos">Fotos</label>
+                        <div class="upload-fotos">
+                            <p>Fotos (até 5) </p>
+                            <label for="fotos">
+                                <img src="img/photo_camera.png" alt="imagem de camera"> 
+                                <br>
+                                <span>Adicionar Fotos</span>
+                            </label>
                             <input type="file" name="fotos" id="fotos" accept="image/*, .png .jpg" multiple required>
                         </div>
                         
-                        <div id="localizacao">
+                        <div class="localizacao">
                             <label for="localizacao">Localização</label>
+                            <br>
                             <input type="text" id="localizacao" placeholder="CEP ">
                         </div>
                     </div>
                     
-                    <div id="disponibilidade">
+                    <div class="disponibilidade">
     
-                        <label for="dispo">disponibilidade</label>
+                        <label for="disponibilidade">Disponibilidade</label>
                         <br>
     
                         <img src="img/calendario.png" alt="calendário">
     
-                        <p>
-                            <label for="dispo"></label>
+                        <div class="dispo">
+                            <label for="disponibilidade"></label>
                             <br>
                             <input type="radio" name="dispo" value="dias-uteis"/>
                             Dias Úteis
@@ -98,14 +112,14 @@
                             <input type="radio" name="dispo" value="todos-os-dias"/>
                             Todos os dias
                             <br>
-                        </p> 
+                        </div> 
                     </div>
                 </div>
                 
 
                 <div class="botoes">
-                    <button type="button">Cancelar</button>
-                    <button type="submit">Publicar</button>
+                    <button id= "btn-cancelar" type="button">Cancelar</button>
+                    <button id= "btn-publicar" type="submit">Publicar</button>
                 </div>
                 
 

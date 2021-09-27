@@ -12,23 +12,22 @@
 
 <body>
     <header>
-        <div class="container">
-            <div class="btn-header">
-                <button class="btn-voltar" onclick="window.history.back()">
-                    <img src="./img/seta.svg" alt="Seta voltar página"><span>voltar</span>
-                </button>
-            </div>
-
-            <div class="logo">
-                <a href="index.html"><img src="img/alugaKi-removebg-preview.png" alt="Logo alugaki"></a>
-            </div>
+        <div class="btn-header">
+            <button onclick="window.history.back()">
+                <img src="./img/seta.svg" alt="Seta voltar página"><span>voltar</span>
+            </button>
         </div>
+
+        <a href="index.html" class="logo">
+            <img src="img/alugaKi-removebg-preview.png" alt="Logo alugaki">
+        </a>
     </header>
 
     <main class="container">
 
         <section class="card-cadastre-se">
             <h1>Faça login na&nbsp;<span>aluga</span><span id="ki">Ki</span></h1>
+
             <form>
                 <label for="email">E-mail</label><br>
                 <input type="text" id="email" name="email" placeholder="meuemail@email.com" required><br>
@@ -45,7 +44,6 @@
                 <div class="btn-continuar">
                     <button type="submit">Continuar</button>
                 </div>
-
             </form>
 
             <div class="line">
@@ -61,6 +59,7 @@
             <div class="tem-cadastro">
                 <h2>Não tem cadastro? <a href="cadastro-usuario.html">Cadastre-se</a></h2>
             </div>
+
         </section>
 
     </main>
