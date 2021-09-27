@@ -161,6 +161,10 @@ header .container .dropdown .dropdown-menu ul li {
     font-style: italic;
 }
 
+.parte-principal .container .barra-de-pesquisa {
+    width: 80%;
+}
+
 .parte-principal .container .barra-de-pesquisa input,
 select {
     color: #757575;
@@ -172,6 +176,7 @@ select {
 
 .parte-principal .container .barra-de-pesquisa select {
     width: 150px;
+    background: transparent;
 }
 
 .parte-principal .container .barra-de-pesquisa input {
@@ -208,29 +213,33 @@ input::placeholder {
     flex: 1;
 }
 
+.parte-principal .container .barra-de-pesquisa .pesquisar-produto-mobile {
+    display: none;
+}
+
 .parte-principal .container .barra-de-pesquisa .barra .pesquisar-produto {
     display: flex;
     justify-content: space-around;
     flex: 2;
 }
 
-.parte-principal .container .barra-de-pesquisa .barra .pesquisar-produto .lupa {
+.parte-principal .container .barra-de-pesquisa .lupa {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.parte-principal .container .barra-de-pesquisa .barra .pesquisar-produto .lupa button {
+.parte-principal .container .barra-de-pesquisa .lupa button {
     background: transparent;
     border: none;
     cursor: pointer;
 }
 
-.parte-principal .container .barra-de-pesquisa .barra .pesquisar-produto .lupa button img {
+.parte-principal .container .barra-de-pesquisa .lupa button img {
     width: 30px;
 }
 
-.parte-principal .container .barra-de-pesquisa .barra .pesquisar-produto .lupa button:hover {
+.parte-principal .container .barra-de-pesquisa .lupa button:hover {
     opacity: 80%;
 }
 
@@ -466,3 +475,39 @@ footer .copyright {
     padding-top: 40px;
     padding-bottom: 20px;
 }
+
+/* responsividade */
+
+@media (max-width: 768px) {
+
+   
+    .parte-principal .container .barra-de-pesquisa .barra {
+        display: none;
+    }
+
+    .parte-principal .container .barra-de-pesquisa .pesquisar-produto-mobile {
+        display: flex;
+        background-color:#ffffff;
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+    .parte-principal .container .barra-de-pesquisa .pesquisar-produto-mobile input {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .produtos-por-categoria .container .botoes-categoria {
+        flex-wrap: wrap;
+    }
+
+    .produtos-por-categoria .container .lista-produtos {
+        flex-wrap: wrap;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+

@@ -157,7 +157,7 @@ input::placeholder {
 }
 
 .container .card-cadastre-se form hr {
-    width: 310px;
+    width: 100%;
     border-bottom: -1px solid #757575;
     opacity: 60%;
     margin: 0;
