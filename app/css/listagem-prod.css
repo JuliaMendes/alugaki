@@ -186,6 +186,10 @@ header .container .botoes button img {
     width: 40px;
     height: 40px;
 }
+.primeira .produto .info2 button:hover{
+    background-color: #C4C4C4;
+    transition: 0.5s;
+}
 .primeira .produto .info2 .dir img{
     width: 20px;
     margin-top: 4px;
@@ -209,7 +213,6 @@ header .container .botoes button img {
     color:#009688;
     font-size: 20px;
 }
-
 .primeira .calendario .botao{
     display: flex;
     justify-content: flex-end;
@@ -223,7 +226,9 @@ header .container .botoes button img {
     font-family: 'Roboto';
     width: 130px;
     height: 40px;
-
+}
+.primeira .calendario button:hover{
+    opacity: 80%;
 }
 .primeira .calendario button img{
     width: 20px;
