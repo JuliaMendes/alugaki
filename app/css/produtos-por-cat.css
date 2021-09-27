@@ -348,6 +348,11 @@ footer .copyright {
     padding-top: 40px;
     padding-bottom: 20px;
 }
+@media (max-width: 1227px){
+    .produtos .container .filtros{
+        margin-left: 30px;
+    }
+}
 
 /*769px e 545px*/
 @media (max-width: 769px){
