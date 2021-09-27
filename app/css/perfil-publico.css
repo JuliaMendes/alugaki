@@ -644,8 +644,14 @@ footer .copyright {
         padding-right: 20px;
     }
 
+    /* alterar no javascript para só apaercer um anuncio por vez
+    com a setinha pro prox. quando a tela for desse tamanho */
     section.anuncios .card-produto .preco{
         font-size: 16px;
+    }
+
+    section.anuncios .card-produto .info small{
+        font-size: 12px;
     }
 
     section.avaliacoes .card-avaliacao .avaliador{
