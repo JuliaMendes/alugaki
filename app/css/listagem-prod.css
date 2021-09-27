@@ -119,6 +119,7 @@ header .container .botoes button:last-child{
 .primeira .produto .info .subtitulo {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 .primeira .produto .info .subtitulo img{
     width: 25px;
@@ -130,7 +131,43 @@ header .container .botoes button:last-child{
     font-size: 15px;
     margin-right: 5px;
 }
-
+.primeira .produto .thumb{
+    width: 550px;
+    max-width: 100%;
+    height: 300px;
+}
+.primeira .produto .info2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.primeira .produto .info2 .esq small{
+    font-family: Roboto;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.primeira .produto .info2 .esq img{   
+    width: 25px;
+    height: 21px;
+    margin-right: 2px;
+}
+.primeira .produto .info2 .esq .price{
+    font-family: Roboto;
+    font-size: 20px;
+    color: #FF5722;
+    font-weight: bold;
+}
+.primeira .produto .info2 button{
+    background-color: #F2F1F1;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+.primeira .produto .info2 .dir img{
+    width: 20px;
+    margin-top: 4px;
+}
 /*footer*/
 footer {
     background-color: #484848;
