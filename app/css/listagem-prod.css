@@ -132,6 +132,7 @@ header .container .botoes button img {
     align-items: center;
     justify-content: flex-start;
     gap: 150px;
+    margin-top: 50px;
 }
 
 .primeira .produto .info h1{
