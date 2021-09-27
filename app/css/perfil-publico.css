@@ -103,26 +103,26 @@ header .container .botoes button:hover {
 
 header .container .botoes button:active {
     transform: scale(0.99);
+    transition: all 0.1s ease-in-out;
 }
 
 /*first-child: botao anunciar*/
 header .container .botoes button:first-child { 
+    width: 130px;
+    height: 40px;
     margin-right: 20px;
     border-radius: 40px;
-    color: #FF5722;
+    background-color: #FF5722;
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: 700;
     font-family: 'Roboto';
-    width: 130px;
-    height: 40px;
-    /* padding: 10px 20px; */
 }
 
 /*first-child: botao menu*/
 header .container .botoes button:last-child {
     border-radius: 50%;
     padding: 8px 12px;
-    /* padding: 10px 15px; */
 }
 
 header .container .botoes button img {
@@ -249,7 +249,6 @@ section.anuncios{
 
 section.anuncios .card-produto{
     width: 240px;
-    margin-bottom: 30px;
 }
 /*imagem do produto*/
 section.anuncios .card-produto .thumb{
@@ -314,11 +313,38 @@ section.anuncios button img{
     width: 25px;
 }
 
+div.botao-ver-mais {
+    cursor: pointer;
+}
+
+div.botao-ver-mais span {
+    font-family: 'Roboto', sans-serif;
+    color: #FF5722;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+div.botao-ver-mais img {
+    margin-left: 5px;
+    width: 10px;
+}
+
+div.botao-ver-mais a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 /* section avaliacoes */
 section.avaliacoes{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#titulo_avaliacao{
+    margin-top: 35px;
 }
 
 section.avaliacoes button{
@@ -396,6 +422,8 @@ section.avaliacoes .card-avaliacao .seletores img{
 /*footer*/
 footer {
     background-color: #484848;
+    width: 100vw;
+    padding-top: 30px;
 }
 
 footer .container {
@@ -459,3 +487,90 @@ footer .copyright {
     padding-top: 40px;
     padding-bottom: 20px;
 }
+
+@media (max-width: 1100px){
+/* correçoes na seçao anuncios */
+
+    .container{
+        width: 90vw;
+        max-width: 100%;
+    }
+
+    section.conteudo{
+        max-width: 80vw;
+        flex-wrap: wrap;
+    }
+
+    section.anuncios .card-produto{
+        max-width: 20vw;
+    }
+
+    section.anuncios .card-produto .thumb{
+        width: 240px;
+        max-width: 20vw;
+        aspect-ratio: 8 / 5;
+    }
+
+}
+
+/* @media (max-width: 850px){
+
+    header{
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    header .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header .container .botoes {
+        padding: 10px;
+    }
+
+
+
+
+}
+
+@media (max-width: 685px){
+
+    header .container .logo-e-barra {
+        max-width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .container .logo img {
+        width: 120px;
+        margin-right: 0;
+    }
+} 
+
+@media (max-width: 525px){
+
+    header .container .barra form input{
+        max-width: 80vw;
+    }
+
+    header .container .barra form button {
+        position: absolute;
+        left: 85%;
+        padding-right: 20px;
+    }
+
+
+
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .container .logo-e-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+} */
