@@ -477,55 +477,81 @@ footer .copyright {
 }
 
 
+@media (max-width: 850px){
 
-/*
-section.avaliacoes .card-avaliacao{
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    width: 550px;
+    .container{
+        width: 90vw;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    header{
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    header .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header .container .botoes {
+        padding: 10px;
+    }
+
+    .primeira .container{
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .terceira .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
 }
 
-section.avaliacoes .card-avaliacao .avaliador{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+@media (max-width: 685px){
 
-section.avaliacoes .card-avaliacao .avaliador .perfil_avaliador{
-    width: 80px;
-    height: 80px;
-    margin-right: 25px;
-}
+    header .container .logo-e-barra {
+        max-width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-section.avaliacoes .card-avaliacao .avaliador .infos{
-    height: 125px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-evenly;
-}
+    header .container .logo img {
+        width: 120px;
+        margin-right: 0;
+    }
+} 
 
-section.avaliacoes .card-avaliacao .avaliador .infos h3{
-    font-size: 20px;
-    font-family: 'Roboto';
-    font-weight: 800px;
-    margin: 0;
-}
+@media (max-width: 525px){
 
-section.avaliacoes .card-avaliacao .avaliador .infos .estrelas img{
-    width: 25px;
-    height: 20px;
-}
+    header .container .barra form input{
+        max-width: 80vw;
+    }
 
-section.avaliacoes .card-avaliacao p{
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 16px;
-    margin-left: 100px;
-}
+    header .container .barra form button {
+        position: absolute;
+        left: 85%;
+        padding-right: 20px;
+    }
 
-section.avaliacoes .card-avaliacao .seletores img{
-    margin-top: 40px;
-    width: 13px;
-}*/
+    .primeira .produto .thumb{
+        width: 310px;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .container .logo-e-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
