@@ -251,7 +251,9 @@ input::placeholder {
 
 .container .card-cadastre-se .tem-cadastro a {
     color: #757575;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    margin-left: 5px;
 }
 
 /* responsividade */
@@ -260,4 +262,14 @@ input::placeholder {
     .container .card-cadastre-se {
         width: 320px;
     }
+
+    .container .card-cadastre-se .tem-cadastro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
 }

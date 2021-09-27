@@ -150,6 +150,7 @@ header .container .dropdown .dropdown-menu ul li {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 /* barra de pesquisa */
@@ -163,6 +164,9 @@ header .container .dropdown .dropdown-menu ul li {
 
 .parte-principal .container .barra-de-pesquisa {
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .parte-principal .container .barra-de-pesquisa input,
@@ -480,7 +484,19 @@ footer .copyright {
 
 @media (max-width: 768px) {
 
-   
+    header {
+        padding: 0 12px 0 12px;
+    }
+
+    header .container .botoes>button:first-child  {
+        margin: 4px;
+    }
+
+    .parte-principal .container .frase-principal h1 {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
     .parte-principal .container .barra-de-pesquisa .barra {
         display: none;
     }
@@ -503,11 +519,18 @@ footer .copyright {
 
     .produtos-por-categoria .container .lista-produtos {
         flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .banner-anunciar .container {
+        padding-left: 15px;
     }
 
     footer .container {
         flex-wrap: wrap;
         flex-direction: column;
     }
+
+   
 }
 
