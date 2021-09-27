@@ -310,6 +310,7 @@ section.anuncios button{
 
     position: relative;
     bottom: 80px;
+    cursor: pointer;
 }
 
 section.anuncios button:focus-visible{
