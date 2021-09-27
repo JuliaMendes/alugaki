@@ -30,7 +30,7 @@ header .container {
 
 header .container .logo-e-barra {
     display: flex;
-    align-items:center ;
+    align-items:center;
     justify-content: space-between;
 }
 /*config. logo*/
@@ -44,33 +44,42 @@ header .container .barra {
     margin: 0;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 
-header .container .barra input {
+header .container .barra form{
+    margin: 0;
+}
+
+header .container .barra form input{
     width: 450px;
     height: 40px;
     border-radius: 20px;
     border: solid 2px #419488;
+    background-color: #FFFFFF;
+    position: relative;
 }
 
-header .container .barra .lupa {
+header .container .barra form input:focus-visible{
+    outline-color: transparent;
+    outline-width: 0px;
+}
+
+header .container .barra form button {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    top: 3px;
+    bottom: 0px;
+    left: 404px;
+    border: transparent;
+    background-color: transparent;
     padding-right: 20px;
 }
 
-header .container .barra .lupa img {
-    border: transparent;
+header .container .barra form button img{
     width: 20px;
-
+    cursor: pointer;
 }
+
 /*config. botoes de anunciar e menu*/
 header .container .botoes {
     display: flex;
@@ -81,29 +90,43 @@ header .container .botoes {
 header .container .botoes button {
     background-color: transparent;
     border: solid 2px #FF5722;
+    cursor: pointer;
 }
+
+header .container .botoes button:hover {
+    opacity: 80%;
+    transition: 0.5s;
+}
+
+header .container .botoes button:active {
+    transform: scale(0.99);
+    transition: all 0.1s ease-in-out;
+}
+
 /*first-child: botao anunciar*/
 header .container .botoes button:first-child { 
+    width: 130px;
+    height: 40px;
     margin-right: 20px;
     border-radius: 40px;
-    color: #FF5722;
+    background-color: #FF5722;
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: 700;
     font-family: 'Roboto';
-    width: 130px;
-    height: 40px;
 }
 /*first-child: botao menu*/
 header .container .botoes button:nth-child(2) {
     border-radius: 50%;
     padding: 8px 12px;
 }
-header .container .botoes button img {
-    width: 20px;
-}
 
 header .container .botoes button:last-child{
     display: none;
+}
+
+header .container .botoes button img {
+    width: 20px;
 }
 
 /*container com filtro e produtos*/
@@ -260,6 +283,8 @@ header .container .botoes button:last-child{
 /*footer*/
 footer {
     background-color: #484848;
+    width: 100vw;
+    padding-top: 30px;
 }
 
 footer .container {
@@ -367,7 +392,29 @@ footer .copyright {
         transform: rotate(90deg);
     }
 }
+@media (max-width: 525px){
 
+    header .container .barra form input{
+        max-width: 80vw;
+    }
+
+    header .container .barra form button {
+        position: absolute;
+        left: 85%;
+        padding-right: 20px;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .container .logo-e-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
 /*@media (max-width: 769px){
     .filtros{
         display: none;

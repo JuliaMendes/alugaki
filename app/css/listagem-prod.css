@@ -30,7 +30,7 @@ header .container {
 
 header .container .logo-e-barra {
     display: flex;
-    align-items:center ;
+    align-items:center;
     justify-content: space-between;
 }
 /*config. logo*/
@@ -44,33 +44,42 @@ header .container .barra {
     margin: 0;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 
-header .container .barra input {
+header .container .barra form{
+    margin: 0;
+}
+
+header .container .barra form input{
     width: 450px;
     height: 40px;
     border-radius: 20px;
     border: solid 2px #419488;
+    background-color: #FFFFFF;
+    position: relative;
 }
 
-header .container .barra .lupa {
+header .container .barra form input:focus-visible{
+    outline-color: transparent;
+    outline-width: 0px;
+}
+
+header .container .barra form button {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    top: 3px;
+    bottom: 0px;
+    left: 404px;
+    border: transparent;
+    background-color: transparent;
     padding-right: 20px;
 }
 
-header .container .barra .lupa img {
-    border: transparent;
+header .container .barra form button img{
     width: 20px;
-
+    cursor: pointer;
 }
+
 /*config. botoes de anunciar e menu*/
 header .container .botoes {
     display: flex;
@@ -81,36 +90,48 @@ header .container .botoes {
 header .container .botoes button {
     background-color: transparent;
     border: solid 2px #FF5722;
+    cursor: pointer;
 }
+
+header .container .botoes button:hover {
+    opacity: 80%;
+    transition: 0.5s;
+}
+
+header .container .botoes button:active {
+    transform: scale(0.99);
+    transition: all 0.1s ease-in-out;
+}
+
 /*first-child: botao anunciar*/
 header .container .botoes button:first-child { 
+    width: 130px;
+    height: 40px;
     margin-right: 20px;
     border-radius: 40px;
-    color: #FF5722;
+    background-color: #FF5722;
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: 700;
     font-family: 'Roboto';
-    width: 130px;
-    height: 40px;
 }
 /*first-child: botao menu*/
-header .container .botoes button:nth-child(2) {
+header .container .botoes button:last-child {
     border-radius: 50%;
     padding: 8px 12px;
 }
+
 header .container .botoes button img {
     width: 20px;
 }
 
-header .container .botoes button:last-child{
-    display: none;
-}
 
 /*primeiro container*/
 .primeira .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 150px;
 }
 
 .primeira .produto .info h1{
@@ -119,6 +140,7 @@ header .container .botoes button:last-child{
 .primeira .produto .info .subtitulo {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 .primeira .produto .info .subtitulo img{
     width: 25px;
@@ -130,10 +152,271 @@ header .container .botoes button:last-child{
     font-size: 15px;
     margin-right: 5px;
 }
+.primeira .produto .thumb{
+    width: 550px;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 25px;
+}
+.primeira .produto .info2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.primeira .produto .info2 .esq small{
+    font-family: Roboto;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.primeira .produto .info2 .esq img{   
+    width: 25px;
+    height: 21px;
+    margin-right: 2px;
+}
+.primeira .produto .info2 .esq .price{
+    font-family: Roboto;
+    font-size: 20px;
+    color: #FF5722;
+    font-weight: bold;
+}
+.primeira .produto .info2 button{
+    background-color: #F2F1F1;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+.primeira .produto .info2 button:hover{
+    background-color: #C4C4C4;
+    transition: 0.5s;
+}
+.primeira .produto .info2 .dir img{
+    width: 20px;
+    margin-top: 4px;
+}
+.primeira .calendario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.primeira .calendario img{
+    width: 400px;
+    max-width: 100%;
+    height: 260px;
+}
+.primeira .calendario h2{
+    margin-top: 30px;
+    font-family: Roboto;
+}
+.primeira .calendario small{
+    font-family: Roboto;
+    color:#009688;
+    font-size: 20px;
+}
+.primeira .calendario .botao{
+    display: flex;
+    justify-content: flex-end;
+}
+.primeira .calendario button{
+    background-color: transparent;
+    border: solid 2px #FF5722;
+    border-radius: 40px;
+    color: #FF5722;
+    font-size: 20px;
+    font-family: 'Roboto';
+    width: 130px;
+    height: 40px;
+}
+.primeira .calendario button:hover{
+    opacity: 80%;
+}
+.primeira .calendario button img{
+    width: 20px;
+    height: 20px;
+}
 
+.segunda{
+    margin-top: 50px;
+}
+.segunda .descricao h2{
+    font-family: Roboto;
+}
+.segunda .descricao p{
+    font-family: Montserrat;
+    line-height: 23px;
+}
+.segunda .vendedor{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.segunda .vendedor .avatar{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.segunda .vendedor .info{
+    display: flex;
+    flex-direction: column;
+}
+.segunda .vendedor .info h3{
+    color:#009688;
+    font-family: Roboto;
+    font-weight: bold;
+    margin: 0;
+    font-size: 23px;
+}
+.segunda .vendedor .info img{
+    width: 25px;
+    height: 21px;
+}
+.segunda .vendedor .info small{
+    font-family: Roboto;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+
+
+.terceira {
+    margin-top: 100px;
+}
+.terceira .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.terceira h2{
+    font-family: Roboto;
+    margin-left: 60px;
+}
+.terceira .lista-produtos .card-produto{
+    width: 240px;
+    margin-bottom: 30px;
+}
+.terceira .lista-produtos .card-produto .thumb{
+    width: 240px;
+    max-width: 100%;
+    height: 150px;
+}
+.terceira .lista-produtos .card-produto h3{
+    font-family: Roboto;
+    color: #484848;
+    margin-bottom: 5px;
+}
+.terceira .lista-produtos .card-produto .info > div {
+    display: flex;
+    align-items: center;
+}
+.terceira .lista-produtos .card-produto img{
+    width: 25px;
+    height: 21px;
+    margin-right: 2px;
+}
+.terceira .lista-produtos .card-produto .info small{
+    font-family: Roboto;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.terceira .lista-produtos .card-produto .localiz{
+    margin-top: 5px;
+}
+.terceira .lista-produtos .card-produto .localiz img{
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+}
+.terceira .lista-produtos .card-produto .preco{
+    font-family: Roboto;
+    font-size: 20px;
+    color: #FF5722;
+}
+
+
+.quarta{
+    margin-bottom: 120px;
+}
+.quarta h2{
+    font-family: Roboto;
+}
+.quarta .classificacao{
+    display: flex;
+    align-items: center;
+}
+.quarta .classificacao img{
+    width: 25px;
+    height: 21px;
+    margin-right: 5px;
+}
+.quarta .classificacao small{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.quarta .classificacao a{
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: bold;
+    color:#757575;
+    font-size: 15px;
+}
+.quarta .classificacao a img{
+    width: 10px;
+    height: 10px;
+}
+.quarta .classificacao a:hover{
+    text-decoration: underline;
+}
+
+.quarta .lista-aval .card-avaliacao{
+    display: flex;
+    flex-direction: column;
+}
+.quarta .lista-aval .card-avaliacao .perfil_avaliador{
+    width: 80px;
+    height: 80px;
+}
+.quarta .lista-aval .card-avaliacao .avaliador{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.quarta .lista-aval .card-avaliacao .avaliador h3{
+    font-family: Roboto;
+}
+.quarta .card-avaliacao .avaliador .infos{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.quarta .card-avaliacao .avaliador .infos .estrelas img{
+    width: 25px;
+    height: 20px;
+}
+.quarta .card-avaliacao .avaliador .infos p{
+    font-family: Montserrat;
+}
+.quarta a{
+    text-decoration: none;
+    font-family: Roboto;
+    color:#757575;
+    font-weight: bold;
+}
+.quarta a:hover{
+    text-decoration: underline;
+}
+.quarta a img{
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+}
 /*footer*/
 footer {
     background-color: #484848;
+    width: 100vw;
+    padding-top: 30px;
 }
 
 footer .container {
@@ -196,4 +479,84 @@ footer .copyright {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 20px;
+}
+
+
+@media (max-width: 850px){
+
+    .container{
+        width: 90vw;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    header{
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    header .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header .container .botoes {
+        padding: 10px;
+    }
+
+    .primeira .container{
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .terceira .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 685px){
+
+    header .container .logo-e-barra {
+        max-width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .container .logo img {
+        width: 120px;
+        margin-right: 0;
+    }
+} 
+
+@media (max-width: 525px){
+
+    header .container .barra form input{
+        max-width: 80vw;
+    }
+
+    header .container .barra form button {
+        position: absolute;
+        left: 85%;
+        padding-right: 20px;
+    }
+
+    .primeira .produto .thumb{
+        width: 310px;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .container .logo-e-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
