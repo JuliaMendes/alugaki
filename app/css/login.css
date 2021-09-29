@@ -171,6 +171,14 @@ input::placeholder {
     font-weight: 700;
 }
 
+/* ul da verficacação do formulário */
+
+.erros {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #757575;
+}
+
 .container .card-cadastre-se form .btn-continuar,
 .container .card-cadastre-se form .btn-facebook {
     width: 100%;

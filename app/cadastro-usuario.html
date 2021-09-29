@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/app/img/favicon128.ico">
     <meta name="description" content="Crie sua conta na Alugaki">
     <link rel="stylesheet" href="./css/cadastro-usuario.css">
     <title>Crie sua conta | Alugaki </title>
@@ -27,29 +28,32 @@
 
         <section class="card-cadastre-se">
             <h1>Crie sua conta na&nbsp;<span>aluga</span><span id="ki">Ki</span></h1>
-            <form>
+            <form action="">
                 <label for="fullname">Nome completo</label><br>
-                <input type="text" id="fullname" name="fullname" placeholder="Nome Sobrenome" required><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Nome Sobrenome" minlength="6"
+                    required><br>
 
                 <label for="email">E-mail</label><br>
-                <input type="text" id="email" name="email" placeholder="meuemail@email.com" required><br>
+                <input type="email" id="email" name="email" placeholder="meuemail@email.com" required><br>
 
                 <label for="pass">Senha</label><br>
                 <div class="input-icone">
                     <input type="password" id="pass" name="password" placeholder="Use no mínimo 8 caracteres"
-                        minlength="8" required>
+                        minlength="8" maxlength="64" required>
                     <img class="olho" src="img/icone_olho.png" alt="Ícone olho">
                 </div><br>
+
+                <ul class="erros"></ul>
 
                 <hr>
 
                 <div class="checkboxes">
-                    <input type="checkbox" id="novidades" name="novidades" value="novidades">
+                    <input type="checkbox" id="novidades" name="novidades" value="novidades" checked>
                     <label for="novidades"> aceito receber novidades da alugaKi</label>
                 </div>
 
                 <div class="checkboxes">
-                    <input type="checkbox" id="termos" name="termos" value="termo">
+                    <input type="checkbox" id="termos" name="termos" value="termo" checked required>
                     <label for="termos"> estou de acordo com os <span>termos de serviços</span> e as <span>politicas de
                             privacidade</span> da
                         alugaKi</label>
@@ -68,7 +72,7 @@
             </div>
 
             <div class="btn-facebook">
-                <button>Cadastre-se com o facebook</button>
+                <a href="https://www.facebook.com/"><button>Cadastre-se com o facebook</button></a>
             </div>
 
             <div class="tem-cadastro">
@@ -78,6 +82,7 @@
 
     </main>
 
+    <script src="js/cadastro-usuario.js"></script>
 </body>
 
 </html>

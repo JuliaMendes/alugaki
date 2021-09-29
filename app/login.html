@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/app/img/favicon128.ico">
     <meta name="description" content="Faça login na Alugaki">
     <link rel="stylesheet" href="./css/login.css">
     <title>Faça login | Alugaki </title>
@@ -34,13 +35,15 @@
 
                 <label for="pass">Senha</label><br>
                 <div class="input-icone">
-                    <input type="password" id="pass" name="password" minlength="8" required>
+                    <input type="password" id="pass" name="password" minlength="8" maxlength="64" required>
                     <img class="olho" src="img/icone_olho.png" alt="Ícone olho">
 
                     <div class="esqueci-senha">
                         <a href="#">Esqueci a senha</a>
                     </div>
-                </div><br>
+
+                    <ul class="erros"></ul>
+                </div>
                 <div class="btn-continuar">
                     <button type="submit">Continuar</button>
                 </div>
@@ -53,7 +56,7 @@
             </div>
 
             <div class="btn-facebook">
-                <button>Continuar com o facebook</button>
+                <a href="https://www.facebook.com/"><button>Continuar com o facebook</button></a>
             </div>
 
             <div class="tem-cadastro">
@@ -64,6 +67,7 @@
 
     </main>
 
+    <script src="js/login.js"></script>
 </body>
 
 </html>
