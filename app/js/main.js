@@ -19,7 +19,6 @@ if(window.screen.width < 768){
     if('geolocation' in navigator) {
         navigator.geolocation.getCurrentPosition(function(position){
             console.log(position)
-            document.write('Caralho')
         }, function(error){
             console.log(error)
         })

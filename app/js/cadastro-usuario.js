@@ -1,3 +1,24 @@
+function validaFullName() {
+    let inputFullName = document.querySelector('#fullname');
+
+    let htmlErros = document.querySelector('ul.erros');
+    htmlErros.innerHTML = "";
+    let listaErros = [];
+
+    if (inputFullName.value.length < 6) {
+        listaErros.push('O campo Nome completo deve conter no mínimo 6 caracteres.');
+        inputFullName.style = 'border-color: #E64A19;'
+    } else {
+        inputFullName.style = ''
+    }
+
+    if (listaErros.length > 0) {
+        listaErros.forEach((mensagemErro) => {
+            htmlErros.innerHTML += '<li>' + mensagemErro + '</li>'
+        })
+    }
+}
+
 window.addEventListener('load', () => {
 
     let btnCriarConta = document.querySelector('form button');
@@ -20,7 +41,7 @@ window.addEventListener('load', () => {
         if (inputFullName.value.length < 6) {
             listaErros.push('O campo Nome completo deve conter no mínimo 6 caracteres.');
             inputFullName.style = 'border-color: #E64A19;'
-        } 
+        }
 
         if (!inputEmail.value.includes('@') || !inputEmail.value.includes('.')) {
             listaErros.push('Preencha o campo Email corretamente.');
@@ -29,7 +50,7 @@ window.addEventListener('load', () => {
 
         if (inputPassword.value.length < 8 || inputPassword.value.length > 100) {
             listaErros.push('O campo Senha deve conter de 8 a 64 caracteres.');
-            inputPassword.style = 'border-color: #E64A19;'
+            document.querySelector('.input-icone').style = 'border-color: #E64A19;'
         }
 
         if (listaErros.length > 0) {
