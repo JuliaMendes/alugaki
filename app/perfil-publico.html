@@ -58,10 +58,10 @@
                 </div>
     
                 <ul>
-                    <li><a href="#">Esporte e Lazer</a></li>
-                    <li><a href="#">Moda</a></li>
-                    <li><a href="#">Eletrônicos</a></li>
-                    <li><a href="#">Ferramentas e Utilitários</a></li>
+                    <li><a href="produtos-por-cat.html">Esporte e Lazer</a></li>
+                    <li><a href="produtos-por-cat.html">Moda</a></li>
+                    <li><a href="produtos-por-cat.html">Eletrônicos</a></li>
+                    <li><a href="produtos-por-cat.html">Ferramentas e Utilitários</a></li>
                 </ul>       
             </div> 
         </section>
@@ -145,7 +145,7 @@
             <h2 id="titulo_avaliacao">Avaliações</h2>
             <section class="avaliacoes">
                 <div class="seta_esquerda">
-                    <button><img src="img/drop_down 1.png" alt="Seta - Ir para avaliação anterior"></button>
+                    <button><img src="img/drop_down 1.png" alt="Seta - Ir para avaliação anterior" onclick="setaAvaliacaoEsquerda()"></button>
                 </div>
                 <div class="card-avaliacao">
                     <div class="avaliador">
@@ -163,14 +163,14 @@
                     </div>
                     <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nulla nec mollis venenatis. Donec  ornare. Nam sit amet arcu posuere, pulvinar dolor et, porta diam.“</p>
                     <div class="seletores">
-                        <button><img src="img/seletor_vazio_avaliacao.png" alt="Seletor Avaliação"></button>
-                        <button><img src="img/seletor_cheio_avaliacao.png" alt="Seletor Avaliação"></button>
-                        <button><img src="img/seletor_vazio_avaliacao.png" alt="Seletor Avaliação"></button>
-                        <button><img src="img/seletor_vazio_avaliacao.png" alt="Seletor Avaliação"></button>
+                        <button><img src="img/seletor_cheio_avaliacao.png" alt="Seletor Avaliação" onclick="botaoAvaliacao(this)"></button>
+                        <button><img src="img/seletor_vazio_avaliacao.png" alt="Seletor Avaliação" onclick="botaoAvaliacao(this)"></button>
+                        <button><img src="img/seletor_vazio_avaliacao.png" alt="Seletor Avaliação" onclick="botaoAvaliacao(this)"></button>
+                        <button><img src="img/seletor_vazio_avaliacao.png" alt="Seletor Avaliação" onclick="botaoAvaliacao(this)"></button>
                     </div>
                 </div>
                 <div class="seta_direita">
-                    <button><img src="img/drop_down 1.png" alt="Seta - Ir para próxima avaliação"></button>
+                    <button><img src="img/drop_down 1.png" alt="Seta - Ir para próxima avaliação" onclick="setaAvaliacaoDireita()"></button>
                 </div>
             </section>
         </section>
@@ -208,5 +208,6 @@
         </div>
     </footer>
 
+    <script src="js/perfil-publico.js"></script>
 </body>
 </html>
