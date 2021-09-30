@@ -116,13 +116,9 @@ header .container .botoes button:first-child {
     font-family: 'Roboto';
 }
 /*first-child: botao menu*/
-header .container .botoes button:nth-child(2) {
+header .container .botoes button:last-child {
     border-radius: 50%;
     padding: 8px 12px;
-}
-
-header .container .botoes button:last-child{
-    display: none;
 }
 
 header .container .botoes button img {
@@ -174,7 +170,7 @@ header .container .botoes button img {
     color: #a9dbd4;
     transition: 0.5s;
 }
-.produtos .menu-dropdown{
+.produtos .menu-filtros{
     display: none;
 }
 /*lista com os anúncios*/
@@ -389,12 +385,20 @@ footer .copyright {
         width: 300px;
         height: 210px;
     }
-
-    header .container .botoes button:last-child{
+    .produtos .menu-filtros{
         display: flex;
-        margin-left: 20px;
-        border: none;
-        transform: rotate(90deg);
+        background-color: transparent;
+        border-style: none;
+        font-family: Roboto;
+        color: #419488;
+        font-size: 20px;
+        text-decoration: underline;
+        margin: 10px;
+    }
+    .produtos .menu-filtros:hover{
+        cursor: pointer;
+        opacity: 80%;
+        transition: 0.5s;
     }
 }
 @media (max-width: 525px){
