@@ -65,7 +65,7 @@ header .container .botoes button:active {
     transition: all 0.1s ease-in-out;
 }
 
-header .container .botoes a >button:first-child {
+header .container .botoes a button {  /* tirei o first child*/
     width: 130px;
     height: 40px;
     margin-right: 20px;
