@@ -19,6 +19,49 @@ function validaFullName() {
     }
 }
 
+function validaEmail() {
+    let inputEmail = document.querySelector('#email');
+
+    let htmlErros = document.querySelector('ul.erros');
+    htmlErros.innerHTML = "";
+    let listaErros = [];
+
+    if (!inputEmail.value.includes('@') || !inputEmail.value.includes('.')) {
+        listaErros.push('Preencha o campo Email corretamente.');
+        inputEmail.style = 'border-color: #E64A19;'
+    } else {
+        inputEmail.style = ''
+    }
+
+    if (listaErros.length > 0) {
+        listaErros.forEach((mensagemErro) => {
+            htmlErros.innerHTML += '<li>' + mensagemErro + '</li>'
+        })
+    }
+}
+
+function validaPassword() {
+    let inputPassword = document.querySelector('#pass');
+
+    let htmlErros = document.querySelector('ul.erros');
+    htmlErros.innerHTML = "";
+    let listaErros = [];
+
+    if (inputPassword.value.length < 8 || inputPassword.value.length > 100) {
+        listaErros.push('O campo Senha deve conter de 8 a 64 caracteres.');
+        document.querySelector('.input-icone').style = 'border-color: #E64A19;'
+    }
+     else {
+        document.querySelector('.input-icone').style = ''
+    }
+
+    if (listaErros.length > 0) {
+        listaErros.forEach((mensagemErro) => {
+            htmlErros.innerHTML += '<li>' + mensagemErro + '</li>'
+        })
+    }
+}
+
 window.addEventListener('load', () => {
 
     let btnCriarConta = document.querySelector('form button');
