@@ -198,7 +198,7 @@ header .container .botoes button img {
     margin-bottom: 30px;
 }
 /*imagem do produto*/
-.produtos .lista-produtos .card-produto .thumb{
+.produtos .lista-produtos .card-produto .thumb img{
     width: 240px;
     max-width: 100%;
     height: 150px;
