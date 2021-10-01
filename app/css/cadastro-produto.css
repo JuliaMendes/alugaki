@@ -2,35 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-​
-​
+
+
 /*config. gerais da página*/
 * {
     box-sizing: border-box;
 }
-​
+
 body {
     margin: 0;
     padding: 0;
 }
-​
+
 .container {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
-​
+
 /*config. header*/
 header {
     background-color: #F2F1F1;
 }
-​
+
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-​
+
 header .container .logo-e-barra {
     display: flex;
     align-items:center;
@@ -49,11 +49,11 @@ header .container .barra {
     justify-content: flex-start;
     align-items: center;
 }
-​
+
 header .container .barra form{
     margin: 0;
 }
-​
+
 header .container .barra form input{
     width: 450px;
     height: 40px;
@@ -62,12 +62,12 @@ header .container .barra form input{
     background-color: #FFFFFF;
     position: relative;
 }
-​
+
 header .container .barra form input:focus-visible{
     outline-color: transparent;
     outline-width: 0px;
 }
-​
+
 header .container .barra form button {
     position: absolute;
     top: 3px;
@@ -77,34 +77,34 @@ header .container .barra form button {
     background-color: transparent;
     padding-right: 20px;
 }
-​
+
 header .container .barra form button img{
     width: 20px;
     cursor: pointer;
 }
-​
+
 /*config. botoes de anunciar e menu*/
 header .container .botoes {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-​
+
 header .container .botoes button {
     background-color: transparent;
     border: solid 2px #FF5722;
     cursor: pointer;
 }
-​
+
 header .container .botoes button:hover {
     opacity: 80%;
 }
-​
+
 header .container .botoes button:active {
     transform: scale(0.99);
     transition: all 0.1s ease-in-out;
 }
-​
+
 /*first-child: botao anunciar*/
 header .container .botoes button:first-child { 
     width: 130px;
@@ -122,11 +122,11 @@ header .container .botoes button:last-child {
     border-radius: 50%;
     padding: 8px 12px;
 }
-​
+
 header .container .botoes button img {
     width: 20px;
 }
-​
+
 /*section com o formulário*/
 /* título da página */
 .formulario h1{
@@ -201,7 +201,7 @@ header .container .botoes button img {
 .formulario .container .dir .dispo{
     align-items: flex-start;
 }
-​
+
 .formulario .container .botoes{
     width: 100%;
     text-align: center;
@@ -238,9 +238,9 @@ header .container .botoes button img {
     transform: scale(0.99);
     transition: all 0.1s ease-in-out;
 }
-​
-​
-​
+
+
+
 /* titulos h2 */
 h2{
     font-family: 'ABeeZee';
@@ -248,7 +248,7 @@ h2{
     font-size: 32px;
     color: #FF5722;
 }
-​
+
 /* formularios */
 form{
     margin-bottom: 25px;
@@ -278,14 +278,14 @@ form textarea{
     padding-top: 10px;
     margin-bottom: 20px;
 } 
-​
+
 /*footer*/
 footer {
     background-color: #484848;
     width: 100vw;
     padding-top: 30px;
 }
-​
+
 footer .container {
     display: flex;
     align-items: center;
@@ -310,12 +310,12 @@ footer .container .menu ul li {
     font-size: 18px;
     line-height: 30px;
 }
-​
+
 footer .container .menu ul li a {
     color: #FFFF;
     text-decoration: none;
 }
-​
+
 /*redes sociais*/
 /*título*/
 footer .container .redes-sociais small {
@@ -326,7 +326,7 @@ footer .container .redes-sociais small {
     display: flex;
     justify-content: center;
 }
-​
+
 /*lista de redes sociais*/
 footer .container .redes-sociais ul {
     list-style: none;
@@ -346,4 +346,32 @@ footer .copyright {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 20px;
+}
+
+@media (max-width: 1255px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .formulario .container{
+        margin-left: 30px;
+        margin-right: 30px;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 995px){
+    .formulario .container form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .formulario h1{
+        text-align: center;
+    }
+    header .container{
+        flex-direction: column;
+    }
+    footer .container{
+        flex-direction: column;
+    }
 }
