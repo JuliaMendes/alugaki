@@ -79,6 +79,26 @@
       "localizacao": "São Paulo, SP",
       "preco": "60 /dia",
       "category": "Moda"
+    },
+    {
+      "id": 9,
+      "img": "./img/doc.png",
+      "titulo": "Coturno Doc Martens",
+      "avaliacao": 4,
+      "navaliacao": 20,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "60 /dia",
+      "category": "Moda"
+    },
+    {
+      "id": 10,
+      "img": "./img/jordan.png",
+      "titulo": "Jordan University tam 42",
+      "avaliacao": 4,
+      "navaliacao": 13,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "90 /dia",
+      "category": "Moda"
     }
   ]
 }
