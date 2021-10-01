@@ -6,7 +6,7 @@ function validaEmail() {
     let listaErros = [];
 
     if (!inputEmail.value.includes('@') || !inputEmail.value.includes('.')) {
-        listaErros.push('Preencha o campo Email corretamente.');
+        listaErros.push('Insira um Email válido. Deve conter os caracteres "@" e "."');
         inputEmail.style = 'border-color: #E64A19;'
     } else {
         inputEmail.style = ''
@@ -59,7 +59,7 @@ window.addEventListener('load', () => {
         let listaErros = [];
 
         if (!inputEmail.value.includes('@') || !inputEmail.value.includes('.')) {
-            listaErros.push('Preencha o campo Email corretamente.');
+            listaErros.push('Insira um Email válido. Deve conter os caracteres "@" e "."');
             inputEmail.style = 'border-color: #E64A19;'
         }
 
