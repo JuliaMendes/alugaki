@@ -601,6 +601,10 @@ footer .copyright {
         align-items: center;
     }
 
+    section.barra-lateral .filtros{
+        display: none;
+    }
+
     section.barra-lateral .infos{
         width: 205px;
         max-width: 205px;
@@ -616,6 +620,11 @@ footer .copyright {
 
     section.anuncios .card-produto{
         max-width: 25vw;
+        
+    }
+
+    section.anuncios .card-produto:last-child{
+        background-color: #FF5722;
     }
 
     section.anuncios .card-produto .thumb{

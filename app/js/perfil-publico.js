@@ -46,32 +46,3 @@ const botaoAvaliacao = (elemento) => {
         }
         botao.src = 'img/seletor_cheio_avaliacao.png';
     }
-}
-
-// // Responsividade
-// function Responsividade(mediaWidth){
-//     let barraLateralChild = document.querySelector("section.barra-lateral").lastElementChild;
-//     if(mediaWidth){
-//         if(barraLateralChild = document.querySelector("section.barra-lateral div.filtros")){
-//             menuCategorias = document.querySelector("section.barra-lateral div.filtros");
-//             menuCategorias.remove();
-//         }
-
-
-//         let mediaWidth2 = window.matchMedia("(max-width: 685px");
-//         // if(mediaWidth2){
-//         //     cardProduto = document.querySelector("section.anuncios .card-produto");
-//         //     cardProduto.remove();
-//         // }
-
-//     }
-//     else{
-//         if(barraLateralChild != document.querySelector("section.barra-lateral div.filtros")){
-//             (document.querySelector("section.barra-lateral")).appendChild(menuCategorias);
-//         }
-//     }
-// }
-
-// let mediaWidth = window.matchMedia("(max-width: 850px");
-// Responsividade(mediaWidth);
-// mediaWidth.addListener(Responsividade);
