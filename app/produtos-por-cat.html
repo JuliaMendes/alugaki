@@ -24,14 +24,105 @@
                 </div>
             </div>
             <div class="botoes">
-                <button>Anunciar</button>
-                <button><img src="img/btn_login.png" alt="Botao de Menu"></button>
+                <a href="cadastro-produto.html"><button>Anunciar</button></a>
+                <div class="dropdown" data-dropdown>
+                    <button class="login" data-dropdown-button><img src="img/btn_login.png" alt="Botao de Menu"></button>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>
+                                <a href="cadastro-usuario.html">
+                                    Cadastre-se
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html">
+                                    Login
+                                </a>
+                            </li>
+                            <li>
+                                <a href="perfil-privado.html">
+                                    Meu perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cadastro-produto.html">
+                                    Anunciar
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
             </div>
         </div>
     </header>
 
     <section class="produtos">
-        <button class="menu-filtros">filtros v</button>
+        <div class="dropdown" data-dropdown>
+            <button class="menu-filtros" data-dropdown-button >filtros</button>
+            <div class="dropdown-menu">
+                <ul>
+                    <li>
+                        <h3>Categoria</h3>
+                        <ul>
+                            <li><a href="#">Esporte e Lazer</a></li>
+                            <li><a href="#">Moda</a></li>
+                            <li><a href="#">Eletrônicos</a></li>
+                            <li><a href="#">Ferramentas e Utilitários</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Preço</h3>
+                        <ul>
+                            <li>
+                                <input type="radio" name="preco" id="menor">
+                                <label for="menor">até R$99</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="preco" id="medio">
+                                <label for="medio">entre R$99 e R$199</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="preco" id="maior">
+                                <label for="maior">de R$199 para cima</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Avaliações</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="avaliacao" id="uma-duas">
+                                <label for="uma-duas">entre 1 e 2 estrelas</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="avaliacao" id="duas-tres">
+                                <label for="duas-tres">entre 2 e 3 estrelas</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="avaliacao" id="tres-quatro">
+                                <label for="tres-quatro">entre 3 e 4 estrelas</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="avaliacao" id="quatro-cinco">
+                                <label for="quatro-cincos">entre 4 e 5 estrelas</label>
+                            </li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        <h3>Localização</h3>
+                        <li>
+                            <input type="checkbox" name="localizacao" id="SP">
+                            <label for="SP">São Paulo, SP</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="localizacao" id="RJ">
+                            <label for="RJ">Rio de Janeiro, RJ</label>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="container">
             <div class="filtros">
                 <!--barra de filtros-->
@@ -114,7 +205,9 @@
                 <!--cards dos produtos-->
                 <div class="card-produto">
                     <!--imagem do produto-->
-                    <div class="thumb" style="background-color: darkgray;"></div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
                     <!--informações do produto: nome, avaliação, localiz., preço-->
                     <div class="info">
                         <h3>Nome do produto</h3>
@@ -137,7 +230,9 @@
                 </div>
 
                 <div class="card-produto">
-                    <div class="thumb" style="background-color: darkgray;"></div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
                     <div class="info">
                         <h3>Nome do produto</h3>
                         <div>
@@ -156,7 +251,9 @@
                 </div>
 
                 <div class="card-produto">
-                    <div class="thumb" style="background-color: darkgray;"></div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
                     <div class="info">
                         <h3>Nome do produto</h3>
                         <div>
@@ -175,7 +272,9 @@
                 </div>
 
                 <div class="card-produto">
-                    <div class="thumb" style="background-color: darkgray;"></div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
                        <div class="info">
                            <h3>Nome do produto</h3>
                            <div>
@@ -191,10 +290,12 @@
                            </div>
                            <h3 class="preco">R$preço /dia</h3>
                        </div>
-                    </div>
+                </div>
 
                 <div class="card-produto">
-                <div class="thumb" style="background-color: darkgray;"></div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
                    <div class="info">
                        <h3>Nome do produto</h3>
                        <div>
@@ -213,7 +314,9 @@
                 </div>  
                 
                 <div class="card-produto">
-                    <div class="thumb" style="background-color: darkgray;"></div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
                        <div class="info">
                            <h3>Nome do produto</h3>
                            <div>
@@ -229,120 +332,132 @@
                            </div>
                            <h3 class="preco">R$preço /dia</h3>
                        </div>
+                </div>
+
+                <div class="card-produto">
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
                     </div>
-
-                <div class="card-produto">
-                        <div class="thumb" style="background-color: darkgray;"></div>
-                           <div class="info">
-                               <h3>Nome do produto</h3>
-                               <div>
-                                   <img src="img/Star 1.png" alt="">
-                                   <div>
-                                       <small>4,8</small>
-                                       <small style="color: #757575;">• 750 avaliações</small>
-                                   </div>
-                               </div>
-                               <div class="localiz">
-                                   <img src="img/location.png" alt="">
-                                   <small style="color: #757575;">São Paulo, SP</small>
-                               </div>
-                               <h3 class="preco">R$preço /dia</h3>
-                           </div>
+                    <div class="info">
+                        <h3>Nome do produto</h3>
+                            <div>
+                                <img src="img/Star 1.png" alt="">
+                                <div>
+                                    <small>4,8</small>
+                                    <small style="color: #757575;">• 750 avaliações</small>
+                                </div>
+                            </div>
+                            <div class="localiz">
+                                <img src="img/location.png" alt="">
+                                <small style="color: #757575;">São Paulo, SP</small>
+                            </div>
+                            <h3 class="preco">R$preço /dia</h3>
+                    </div>
                 </div>
 
                 <div class="card-produto">
-                            <div class="thumb" style="background-color: darkgray;"></div>
-                               <div class="info">
-                                   <h3>Nome do produto</h3>
-                                   <div>
-                                       <img src="img/Star 1.png" alt="">
-                                       <div>
-                                           <small>4,8</small>
-                                           <small style="color: #757575;">• 750 avaliações</small>
-                                       </div>
-                                   </div>
-                                   <div class="localiz">
-                                       <img src="img/location.png" alt="">
-                                       <small style="color: #757575;">São Paulo, SP</small>
-                                   </div>
-                                   <h3 class="preco">R$preço /dia</h3>
-                               </div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
+                    <div class="info">
+                            <h3>Nome do produto</h3>
+                        <div>
+                            <img src="img/Star 1.png" alt="">
+                            <div>
+                                <small>4,8</small>
+                                <small style="color: #757575;">• 750 avaliações</small>
+                            </div>
+                        </div>
+                        <div class="localiz">
+                            <img src="img/location.png" alt="">
+                                <small style="color: #757575;">São Paulo, SP</small>
+                        </div>
+                        <h3 class="preco">R$preço /dia</h3>
+                    </div>
                 </div>
 
                 <div class="card-produto">
-                                <div class="thumb" style="background-color: darkgray;"></div>
-                                   <div class="info">
-                                       <h3>Nome do produto</h3>
-                                       <div>
-                                           <img src="img/Star 1.png" alt="">
-                                           <div>
-                                               <small>4,8</small>
-                                               <small style="color: #757575;">• 750 avaliações</small>
-                                           </div>
-                                       </div>
-                                       <div class="localiz">
-                                           <img src="img/location.png" alt="">
-                                           <small style="color: #757575;">São Paulo, SP</small>
-                                       </div>
-                                       <h3 class="preco">R$preço /dia</h3>
-                                   </div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
+                    <div class="info">
+                            <h3>Nome do produto</h3>
+                        <div>
+                            <img src="img/Star 1.png" alt="">
+                            <div>
+                                <small>4,8</small>
+                                <small style="color: #757575;">• 750 avaliações</small>
+                            </div>
+                        </div>
+                        <div class="localiz">
+                            <img src="img/location.png" alt="">
+                                <small style="color: #757575;">São Paulo, SP</small>
+                        </div>
+                        <h3 class="preco">R$preço /dia</h3>
+                    </div>
                 </div>
 
                 <div class="card-produto">
-                                    <div class="thumb" style="background-color: darkgray;"></div>
-                                       <div class="info">
-                                           <h3>Nome do produto</h3>
-                                           <div>
-                                               <img src="img/Star 1.png" alt="">
-                                               <div>
-                                                   <small>4,8</small>
-                                                   <small style="color: #757575;">• 750 avaliações</small>
-                                               </div>
-                                           </div>
-                                           <div class="localiz">
-                                               <img src="img/location.png" alt="">
-                                               <small style="color: #757575;">São Paulo, SP</small>
-                                           </div>
-                                           <h3 class="preco">R$preço /dia</h3>
-                                       </div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
+                    <div class="info">
+                            <h3>Nome do produto</h3>
+                        <div>
+                            <img src="img/Star 1.png" alt="">
+                            <div>
+                                <small>4,8</small>
+                                <small style="color: #757575;">• 750 avaliações</small>
+                            </div>
+                        </div>
+                        <div class="localiz">
+                            <img src="img/location.png" alt="">
+                                <small style="color: #757575;">São Paulo, SP</small>
+                        </div>
+                        <h3 class="preco">R$preço /dia</h3>
+                    </div>
                 </div>
 
                 <div class="card-produto">
-                                        <div class="thumb" style="background-color: darkgray;"></div>
-                                           <div class="info">
-                                               <h3>Nome do produto</h3>
-                                               <div>
-                                                   <img src="img/Star 1.png" alt="">
-                                                   <div>
-                                                       <small>4,8</small>
-                                                       <small style="color: #757575;">• 750 avaliações</small>
-                                                   </div>
-                                               </div>
-                                               <div class="localiz">
-                                                   <img src="img/location.png" alt="">
-                                                   <small style="color: #757575;">São Paulo, SP</small>
-                                               </div>
-                                               <h3 class="preco">R$preço /dia</h3>
-                                           </div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
+                    <div class="info">
+                        <h3>Nome do produto</h3>
+                        <div>
+                            <img src="img/Star 1.png" alt="">
+                            <div>
+                                <small>4,8</small>
+                                <small style="color: #757575;">• 750 avaliações</small>
+                            </div>
+                        </div>
+                        <div class="localiz">
+                            <img src="img/location.png" alt="">
+                             <small style="color: #757575;">São Paulo, SP</small>
+                        </div>
+                     <h3 class="preco">R$preço /dia</h3>
+                    </div>
                 </div>
 
                 <div class="card-produto">
-                                            <div class="thumb" style="background-color: darkgray;"></div>
-                                               <div class="info">
-                                                   <h3>Nome do produto</h3>
-                                                   <div>
-                                                       <img src="img/Star 1.png" alt="">
-                                                       <div>
-                                                           <small>4,8</small>
-                                                           <small style="color: #757575;">• 750 avaliações</small>
-                                                       </div>
-                                                   </div>
-                                                   <div class="localiz">
-                                                       <img src="img/location.png" alt="">
-                                                       <small style="color: #757575;">São Paulo, SP</small>
-                                                   </div>
-                                                   <h3 class="preco">R$preço /dia</h3>
-                                               </div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
+                    <div class="info">
+                            <h3>Nome do produto</h3>
+                        <div>
+                                <img src="img/Star 1.png" alt="">
+                            <div>
+                                <small>4,8</small>
+                                <small style="color: #757575;">• 750 avaliações</small>
+                            </div>
+                        </div>
+                        <div class="localiz">
+                            <img src="img/location.png" alt="">
+                            <small style="color: #757575;">São Paulo, SP</small>
+                        </div>
+                        <h3 class="preco">R$preço /dia</h3>
+                    </div>
                 </div>
             </div>
         </div> 
@@ -392,7 +507,7 @@
             <small>copyright © alugaKi-2021</small>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/produtos-por-cat.js"></script>
 </body>
 
 </html>

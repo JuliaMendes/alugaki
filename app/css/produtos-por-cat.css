@@ -104,7 +104,7 @@ header .container .botoes button:active {
 }
 
 /*first-child: botao anunciar*/
-header .container .botoes button:first-child { 
+header .container .botoes a button { 
     width: 130px;
     height: 40px;
     margin-right: 20px;
@@ -115,14 +115,63 @@ header .container .botoes button:first-child {
     font-weight: 700;
     font-family: 'Roboto';
 }
-/*first-child: botao menu*/
-header .container .botoes button:last-child {
+header .container .botoes .dropdown>button {
     border-radius: 50%;
     padding: 8px 12px;
 }
 
-header .container .botoes button img {
+header .container .botoes .dropdown>button img {
     width: 20px;
+}
+/*menu dropdown*/
+header .container .dropdown {
+    position: relative;
+}
+
+header .container .dropdown img {
+    pointer-events: none;
+}
+
+header .container .dropdown .dropdown-menu {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    top: calc(100% + .99rem);
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 150ms ease-in-out;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown.active>.login+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+header .container .dropdown .dropdown-menu ul {
+    padding: 0px 10px;
+}
+
+header .container .dropdown .dropdown-menu ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.dropdown-menu ul a {
+    text-decoration: none;
+    color: #757575;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.dropdown-menu ul a:hover {
+    color: #FF5722;
 }
 
 /*container com filtro e produtos*/
@@ -134,7 +183,13 @@ header .container .botoes button img {
     margin-top: 130px;
 }
 /*filtros*/
-
+/*menu responsivo*/
+.produtos .menu-filtros{
+    display: none;
+}
+.produtos .dropdown {
+    display: none;
+}
 /*titulo do filtro e divisor*/
 .filtros {
     width: 60%;
@@ -170,9 +225,7 @@ header .container .botoes button img {
     color: #a9dbd4;
     transition: 0.5s;
 }
-.produtos .menu-filtros{
-    display: none;
-}
+
 /*lista com os anúncios*/
 .produtos .lista-produtos {
     position: relative;
@@ -198,7 +251,7 @@ header .container .botoes button img {
     margin-bottom: 30px;
 }
 /*imagem do produto*/
-.produtos .lista-produtos .card-produto .thumb{
+.produtos .lista-produtos .card-produto .thumb img{
     width: 240px;
     max-width: 100%;
     height: 150px;
@@ -279,8 +332,8 @@ header .container .botoes button img {
 /*footer*/
 footer {
     background-color: #484848;
-    width: 100vw;
     padding-top: 30px;
+    color: #FFFF;
 }
 
 footer .container {
@@ -381,7 +434,7 @@ footer .copyright {
     .produtos .container .card-produto{
         width: 300px;
     }
-    .produtos .container .card-produto .thumb{
+    .produtos .container .card-produto .thumb img{
         width: 300px;
         height: 210px;
     }
@@ -398,6 +451,56 @@ footer .copyright {
     .produtos .menu-filtros:hover{
         cursor: pointer;
         opacity: 80%;
+        transition: 0.5s;
+    }
+    .produtos .dropdown {
+        position: relative;
+        display: flex;
+    }
+    .produtos .dropdown .dropdown-menu {
+        position: absolute;
+        left: 0;
+        width: 70%;
+        height: 700px;
+        top: calc(100% + .99rem);
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: all 150ms ease-in-out;
+        box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
+        z-index: 1;
+    }
+    .produtos .dropdown.active>.menu-filtros+.dropdown-menu {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+    .produtos .dropdown h3{
+        color: #419488;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Roboto';
+    }
+    .produtos .dropdown .dropdown-menu ul {
+        padding: 0px 10px;
+        font-family: Roboto;
+        color: #757575;
+    }
+    .produtos .dropdown .dropdown-menu ul li {
+        list-style: none;
+        margin: 10px;
+    }
+    .produtos .dropdown-menu ul a {
+        text-decoration: none;
+        color: #757575;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: 'Roboto';
+    }
+    .produtos .dropdown-menu ul a:hover, label:hover {
+        color: #419488;
         transition: 0.5s;
     }
 }
@@ -424,21 +527,3 @@ footer .copyright {
     }
 
 }
-/*@media (max-width: 769px){
-    .filtros{
-        display: none;
-    }
-    .container{
-        width: 90%;
-    }
-    header{
-        display: none;
-    }
-    .produtos .container .lista-produtos{
-        justify-content: space-between;
-        margin-right: 60px;
-    }
-    .produtos .container .lista-produtos .titulo{
-        margin-left: 33%;
-    }
-}*/

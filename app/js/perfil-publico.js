@@ -1,13 +1,8 @@
 console.log('JS conectado!');
 
-// window.addEventListener('load', () => {
+let toggleCategoria = true;
 
-// })
-
-const SetaAnuncio = () => {
-    
-}
-
+//Conteudo - Avaliacao
 const setaAvaliacaoEsquerda = () => {
     let seletores = document.querySelectorAll('.seletores img');
     for(let i=0;i<seletores.length;i++){

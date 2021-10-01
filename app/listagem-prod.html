@@ -22,9 +22,36 @@
                 </div>
             </div>
             <div class="botoes">
-                <button>Anunciar</button>
-                <button><img src="img/btn_login.png" alt="Botao de Menu"></button>
+                <a href="cadastro-produto.html"><button>Anunciar</button></a>
+                <div class="dropdown" data-dropdown>
+                    <button class="login" data-dropdown-button><img src="img/btn_login.png" alt="Botao de Menu"></button>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>
+                                <a href="cadastro-usuario.html">
+                                    Cadastre-se
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html">
+                                    Login
+                                </a>
+                            </li>
+                            <li>
+                                <a href="perfil-privado.html">
+                                    Meu perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cadastro-produto.html">
+                                    Anunciar
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
             </div>
+        </div>
         </div>
     </header>
 
@@ -49,7 +76,7 @@
                         <small class="price">R$15,00 /dia</small>
                     </div>
                     <div class="dir">
-                        <button><img src="img/favorite_border.png" alt=""></button>
+                        <button><img class="fav" src="img/favorite_border.png" alt=""></button>
                         <button><img src="img/share.png" alt=""></button>
                     </div>
                 </div>
@@ -99,7 +126,9 @@
             <div class="lista-produtos">
                 <div class="card-produto">
                     <!--imagem do produto-->
-                    <div class="thumb" style="background-color: darkgray;"></div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
                     <!--informações do produto: nome, avaliação, localiz., preço-->
                     <div class="info">
                         <h3>Nome do produto</h3>
@@ -125,7 +154,9 @@
             <div class="lista-produtos">
                 <div class="card-produto">
                     <!--imagem do produto-->
-                    <div class="thumb" style="background-color: darkgray;"></div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
                     <!--informações do produto: nome, avaliação, localiz., preço-->
                     <div class="info">
                         <h3>Nome do produto</h3>
@@ -151,7 +182,9 @@
             <div class="lista-produtos">
                 <div class="card-produto">
                     <!--imagem do produto-->
-                    <div class="thumb" style="background-color: darkgray;"></div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
                     <!--informações do produto: nome, avaliação, localiz., preço-->
                     <div class="info">
                         <h3>Nome do produto</h3>
@@ -177,7 +210,9 @@
             <div class="lista-produtos">
                 <div class="card-produto">
                     <!--imagem do produto-->
-                    <div class="thumb" style="background-color: darkgray;"></div>
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="img/barraca.jpg" alt="Barraca de camping"></a>
+                    </div>
                     <!--informações do produto: nome, avaliação, localiz., preço-->
                     <div class="info">
                         <h3>Nome do produto</h3>
@@ -301,5 +336,7 @@
             <small>copyright © alugaKi-2021</small>
         </div>
     </footer>
+
+    <script src="js/listagem-prod.js"></script>
 </body>
 </html>

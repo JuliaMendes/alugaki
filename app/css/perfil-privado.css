@@ -104,8 +104,7 @@ header .container .botoes button:active {
     transition: all 0.1s ease-in-out;
 }
 
-/*first-child: botao anunciar*/
-header .container .botoes button:first-child { 
+header .container .botoes a button { 
     width: 130px;
     height: 40px;
     margin-right: 20px;
@@ -116,14 +115,67 @@ header .container .botoes button:first-child {
     font-weight: 700;
     font-family: 'Roboto';
 }
-/*first-child: botao menu*/
-header .container .botoes button:last-child {
+
+header .container .botoes .dropdown>button {
     border-radius: 50%;
     padding: 8px 12px;
 }
 
-header .container .botoes button img {
+header .container .botoes .dropdown>button img {
     width: 20px;
+}
+
+/* menu */
+
+
+header .container .dropdown {
+    position: relative;
+}
+
+header .container .dropdown img {
+    pointer-events: none;
+}
+
+header .container .dropdown .dropdown-menu {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    top: calc(100% + .99rem);
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 150ms ease-in-out;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown.active>.login+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+header .container .dropdown .dropdown-menu ul {
+    padding: 0px 10px;
+}
+
+header .container .dropdown .dropdown-menu ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.dropdown-menu ul a {
+    text-decoration: none;
+    color: #757575;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.dropdown-menu ul a:hover {
+    color: #FF5722;
 }
 
 /* titulos h1 */
@@ -180,6 +232,8 @@ section.barra-lateral{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 150px;
+    gap: 15px;
 }
 
 section.barra-lateral .foto{
@@ -207,22 +261,31 @@ section.barra-lateral .botao button{
     cursor: pointer;
 }
 
-section.barra-lateral .menu h3{
-    border-bottom: 1px solid #419488;
-    width: 150px;
-    color: #419488;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Roboto';
+section.barra-lateral .menu .titulo-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
+/*nome do filtro*/
+section.barra-lateral .menu h3{
+    font-family: Roboto;
+    color: #419488;
+}
+
+/*divisor*/
+section.barra-lateral .menu img{
+    width: 100%;
+}
+
+/*lista com os filtros*/
 section.barra-lateral .menu ul{
     list-style: none;
     padding: 0;
+    font-family: Roboto;
     color: #419488;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'Roboto';
+    line-height: 27px;
 }
 
 /* section conteudo */
@@ -414,15 +477,12 @@ footer .copyright {
         gap: 75px;
     }
 
-    section.conteudo{
-        max-width: 100vw;
+    section.barra-lateral .menu{
+        display: none;
     }
 
-    section.barra-lateral{
-        width: 50vw;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 25px;
+    section.conteudo{
+        max-width: 100vw;
     }
 
     section.conteudo #form_editar .dados .botao{
