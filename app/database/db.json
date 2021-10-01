@@ -49,6 +49,56 @@
       "localizacao": "São Paulo",
       "preco": "20/dia",
       "category": "Esporte e Lazer"
+    },
+    {
+      "id": 6,
+      "img": "./img/jaqueta_jeans.png",
+      "titulo": "Jaqueta Jeans",
+      "avaliacao": 4.5,
+      "navaliacao": 12,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "10 /dia",
+      "category": "Moda"
+    },
+    {
+      "id": 7,
+      "img": "./img/sapato_louboutin.png",
+      "titulo": "Sapato de Salto Louboutin",
+      "avaliacao": 5,
+      "navaliacao": 24,
+      "localizacao": "São Paulo, SP",
+      "preco": "100 /dia",
+      "category": "Moda"
+    },
+    {
+      "id": 8,
+      "img": "./img/mochila_fall.png",
+      "titulo": "Mochila Fjallraven Kanken",
+      "avaliacao": 4.7,
+      "navaliacao": 5,
+      "localizacao": "São Paulo, SP",
+      "preco": "60 /dia",
+      "category": "Moda"
+    },
+    {
+      "id": 9,
+      "img": "./img/doc.png",
+      "titulo": "Coturno Doc Martens",
+      "avaliacao": 4,
+      "navaliacao": 20,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "60 /dia",
+      "category": "Moda"
+    },
+    {
+      "id": 10,
+      "img": "./img/jordan.png",
+      "titulo": "Jordan University tam 42",
+      "avaliacao": 4,
+      "navaliacao": 13,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "90 /dia",
+      "category": "Moda"
     }
   ]
 }
