@@ -282,8 +282,8 @@ form textarea{
 /*footer*/
 footer {
     background-color: #484848;
-    width: 100vw;
     padding-top: 30px;
+    color: #FFFF;
 }
 
 footer .container {
