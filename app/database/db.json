@@ -1,0 +1,13 @@
+{
+    "products": [
+      { "id": 1,
+        "img": "nkada", 
+        "titulo": "json-server",
+        "avaliacao": 1, 
+        "navaliacao": 1, 
+        "localizacao": "typicode", 
+        "preco": "1/dia",
+        "category": "moda"
+    }
+    ]
+}
