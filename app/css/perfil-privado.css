@@ -209,7 +209,7 @@ form label{
     color: #212121;
 }
 
-form input{
+form input:not([type="checkbox"]){
     width: 310px;
     height: 40px;
     background-color: #FFFAFA;
@@ -345,6 +345,12 @@ section.conteudo .excluir button{
     cursor: pointer;
 }
 
+section.conteudo .privacidade input{
+    width: 13px;
+    height: 13px;
+    margin: 3px;
+}
+
 section.conteudo .privacidade p,
 section.conteudo .excluir p{
     display: inline-block;
@@ -370,12 +376,21 @@ section.conteudo form input{
 
 #nome,
 #email{
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 form input:not([type="checkbox"], [type="file"]):focus-visible{
     outline-color: transparent ;
     outline-width: 0px;
+}
+
+section.conteudo form ul{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #757575;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 
@@ -489,7 +504,6 @@ footer .copyright {
         flex-wrap: wrap;
     }
 
-    section.conteudo #form_senha div,
     section.conteudo .excluir div{
         flex-wrap: wrap;
     }
