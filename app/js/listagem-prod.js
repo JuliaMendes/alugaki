@@ -15,9 +15,7 @@ window.onload = () => {
         })
     })
 
-
-
-    let count = 0
+    let verificacao = 0
     console.log("deu bom")
 
     let coracao = document.querySelector('.fav')
@@ -30,11 +28,12 @@ window.onload = () => {
 
         console.log("clicou no <3")
 
-        if(count % 2 == 0){
+        if(verificacao == 0){
             coracao.src = "img/red-heart.png"
+            verificacao = 1
         } else {
             coracao.src = "img/favorite_border.png"
+            verificacao = 0
         }
-        count++
     }
 }
