@@ -46,3 +46,4 @@ const botaoAvaliacao = (elemento) => {
         }
         botao.src = 'img/seletor_cheio_avaliacao.png';
     }
+}
