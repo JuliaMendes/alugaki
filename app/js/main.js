@@ -14,18 +14,31 @@ document.addEventListener("click", e => {
     })
 })
 
+let menuBotoesCategoria = document.querySelectorAll('.botoes-categoria button')
 
-if(window.screen.width < 768){
-    if('geolocation' in navigator) {
-        navigator.geolocation.getCurrentPosition(function(position){
+menuBotoesCategoria.forEach((botaoQueEuAcabeiDeClicar) => {
+    botaoQueEuAcabeiDeClicar.addEventListener("click", () => {
+        if (!botaoQueEuAcabeiDeClicar.classList.contains("ativo")) {
+            botaoQueEuAcabeiDeClicar.classList.add("ativo")
+        }
+        menuBotoesCategoria.forEach((botao) => {
+            if (botao !== botaoQueEuAcabeiDeClicar) {
+                botao.classList.remove("ativo")
+            }
+        })
+    })
+})
+
+
+if (window.screen.width < 768) {
+    if ('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition(function (position) {
             console.log(position)
-        }, function(error){
+        }, function (error) {
             console.log(error)
         })
     } else {
         alert('ops, não foi possível pegar a sua localização')
 
     }
-} else {
-    console.log('tela grande')
 }
