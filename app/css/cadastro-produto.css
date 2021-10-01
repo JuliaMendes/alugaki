@@ -2,35 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-
+​
+​
 /*config. gerais da página*/
 * {
     box-sizing: border-box;
 }
-
+​
 body {
     margin: 0;
     padding: 0;
 }
-
+​
 .container {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
-
+​
 /*config. header*/
 header {
     background-color: #F2F1F1;
 }
-
+​
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+​
 header .container .logo-e-barra {
     display: flex;
     align-items:center;
@@ -49,11 +49,11 @@ header .container .barra {
     justify-content: flex-start;
     align-items: center;
 }
-
+​
 header .container .barra form{
     margin: 0;
 }
-
+​
 header .container .barra form input{
     width: 450px;
     height: 40px;
@@ -62,12 +62,12 @@ header .container .barra form input{
     background-color: #FFFFFF;
     position: relative;
 }
-
+​
 header .container .barra form input:focus-visible{
     outline-color: transparent;
     outline-width: 0px;
 }
-
+​
 header .container .barra form button {
     position: absolute;
     top: 3px;
@@ -77,34 +77,34 @@ header .container .barra form button {
     background-color: transparent;
     padding-right: 20px;
 }
-
+​
 header .container .barra form button img{
     width: 20px;
     cursor: pointer;
 }
-
+​
 /*config. botoes de anunciar e menu*/
 header .container .botoes {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+​
 header .container .botoes button {
     background-color: transparent;
     border: solid 2px #FF5722;
     cursor: pointer;
 }
-
+​
 header .container .botoes button:hover {
     opacity: 80%;
 }
-
+​
 header .container .botoes button:active {
     transform: scale(0.99);
     transition: all 0.1s ease-in-out;
 }
-
+​
 /*first-child: botao anunciar*/
 header .container .botoes button:first-child { 
     width: 130px;
@@ -122,22 +122,125 @@ header .container .botoes button:last-child {
     border-radius: 50%;
     padding: 8px 12px;
 }
-
+​
 header .container .botoes button img {
     width: 20px;
 }
-
-/* titulos h1 */
-h1{
-    text-align: left;
+​
+/*section com o formulário*/
+/* título da página */
+.formulario h1{
+    margin-left: 85px;
+    margin-bottom: 40px;
+    margin-top: 50px;
     font-family: 'ABeeZee';
     font-weight: 600;
     font-size: 44px;
-    /* color: #419488; */
     color: #FF5722;
-    margin: 50px auto 0px auto;
 }
-
+/* formulário */
+.formulario .container form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* div com o preço e categoria */
+.formulario .container .esq .preco-cat{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* div com o preço */
+.formulario .container .esq .preco-cat .preco div{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    width: 100px;
+}
+/* menuzinho com o período do preço */
+.formulario .container .esq .preco-cat .preco #periodo{
+    border-style: none;
+    color: #757575;
+    font-weight: 400;
+    font-size: 20px;
+}
+/* menuzinho com as opções de categoria */
+.formulario .container .esq .preco-cat .cat #categoria{
+    border-style: none;
+    color: #757575;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+/* input para receber as fotos */
+.formulario .container .esq .upload-fotos input {
+    display: none;
+}
+.formulario .container .esq .upload-fotos label{
+    border-style: dotted;
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    margin: 15px 0;
+    cursor:pointer;
+}
+.formulario .container .esq .upload-fotos p{
+    font-size: 20px;
+    color: #757575;
+    margin-bottom: 2px;
+    font-family: Roboto;
+}
+.formulario .container .dir img{
+    margin-top: 50px;
+}
+.formulario .container .dir .disponibilidade{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.formulario .container .dir .dispo{
+    align-items: flex-start;
+}
+​
+.formulario .container .botoes{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+} 
+.formulario .container .botoes button{
+    background-color: transparent;
+    border: solid 2px #FF5722;
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.formulario .container .botoes #btn-publicar {
+    background-color: #FF5722;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.formulario .container .botoes #btn-cancelar{
+    width: 130px;
+    height: 40px;
+    color: #FF5722;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+.formulario .container .botoes button:hover {
+    opacity: 80%;
+}
+.formulario .container .botoes button:active {
+    transform: scale(0.99);
+    transition: all 0.1s ease-in-out;
+}
+​
+​
+​
 /* titulos h2 */
 h2{
     font-family: 'ABeeZee';
@@ -145,12 +248,11 @@ h2{
     font-size: 32px;
     color: #FF5722;
 }
-
+​
 /* formularios */
 form{
     margin-bottom: 25px;
 }
-
 form label{
     font-family: 'Roboto';
     font-weight: 400;
@@ -158,7 +260,6 @@ form label{
     color: #757575;
     margin-bottom: 60px
 }
-
 form input:not([type="radio"]){
     width: 500px;
     height: 40px;
@@ -167,32 +268,6 @@ form input:not([type="radio"]){
     border: solid 1px #757575;
     padding-left: 20px;
 }
-
-
-
-/* Formulário */
-
-body .cadastro-produto h1{
-    margin-bottom: 40px;
-    margin-left: 85px;
-}
-
-.cadastro-produto form .container{
-    display: flex;
-    justify-content: space-between;
-    columns: 2;
-}
-
-.cadastro-produto form .container .disponibilidade{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.cadastro-produto form .disponibilidade .dispo{
-    align-items: flex-start;
-}
-
 form textarea{
     width: 100%;
     height: 250px;
@@ -203,108 +278,14 @@ form textarea{
     padding-top: 10px;
     margin-bottom: 20px;
 } 
-.cadastro-produto form .preco-categ{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.cadastro-produto form .info-preco{
-    display: flex;
-    align-items:center;
-    width: 100px;
-}
-
-.cadastro-produto form .info-preco #periodo{
-    border-style: none;
-    color: #757575;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.cadastro-produto form #categoria{
-    border-style: none;
-    color: #757575;
-    font-weight: 400;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.cadastro-produto form p{
-    font-size: 20px;
-    color: #757575;
-    margin-bottom: 2px;
-}
-.cadastro-produto form .upload-fotos input {
-    display: none;
-}
-.cadastro-produto form .upload-fotos label{
-    border-style: dotted;
-    display: inline-block;
-    text-align: center;
-    padding: 15px;
-    margin: 15px 0;
-    cursor:pointer;
-}
-
-
-/*botoes da pagina */
- .cadastro-produto.botoes{
-    display: inline-block;
-    position: absolute;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    align-items: center;
-}
-.cadastro-produto .botoes button{
-    background-color: transparent;
-    border: solid 2px #FF5722;
-    cursor: pointer;
-}
-
-.cadastro-produto .botoes button:first-child{
-    margin-left: 600px;
-    margin-bottom: 80px;
-    margin-top: 60px;
-}
-
-.cadastro-produto .botoes #btn-publicar {
-    width: 130px;
-    height: 40px;
-    margin-right: 20px;
-    border-radius: 40px;
-    background-color: #FF5722;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 700;
-    
-}
-
-.cadastro-produto .botoes #btn-cancelar{
-    width: 130px;
-    height: 40px;
-    margin-right: 20px;
-    border-radius: 40px;
-    color: #FF5722;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.cadastro-produto .botoes button:hover {
-    opacity: 80%;
-}
-
-.cadastro-produto .container .botoes button:active {
-    transform: scale(0.99);
-    transition: all 0.1s ease-in-out;
-}
-
+​
 /*footer*/
 footer {
     background-color: #484848;
     width: 100vw;
     padding-top: 30px;
 }
-
+​
 footer .container {
     display: flex;
     align-items: center;
@@ -329,12 +310,12 @@ footer .container .menu ul li {
     font-size: 18px;
     line-height: 30px;
 }
-
+​
 footer .container .menu ul li a {
     color: #FFFF;
     text-decoration: none;
 }
-
+​
 /*redes sociais*/
 /*título*/
 footer .container .redes-sociais small {
@@ -345,7 +326,7 @@ footer .container .redes-sociais small {
     display: flex;
     justify-content: center;
 }
-
+​
 /*lista de redes sociais*/
 footer .container .redes-sociais ul {
     list-style: none;
