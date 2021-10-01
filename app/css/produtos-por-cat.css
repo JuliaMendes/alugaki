@@ -183,7 +183,13 @@ header .container .dropdown .dropdown-menu ul li {
     margin-top: 130px;
 }
 /*filtros*/
-
+/*menu responsivo*/
+.produtos .menu-filtros{
+    display: none;
+}
+.produtos .dropdown {
+    display: none;
+}
 /*titulo do filtro e divisor*/
 .filtros {
     width: 60%;
@@ -219,9 +225,7 @@ header .container .dropdown .dropdown-menu ul li {
     color: #a9dbd4;
     transition: 0.5s;
 }
-.produtos .menu-filtros{
-    display: none;
-}
+
 /*lista com os anúncios*/
 .produtos .lista-produtos {
     position: relative;
@@ -447,6 +451,56 @@ footer .copyright {
     .produtos .menu-filtros:hover{
         cursor: pointer;
         opacity: 80%;
+        transition: 0.5s;
+    }
+    .produtos .dropdown {
+        position: relative;
+        display: flex;
+    }
+    .produtos .dropdown .dropdown-menu {
+        position: absolute;
+        left: 0;
+        width: 70%;
+        height: 700px;
+        top: calc(100% + .99rem);
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: all 150ms ease-in-out;
+        box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
+        z-index: 1;
+    }
+    .produtos .dropdown.active>.menu-filtros+.dropdown-menu {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+    .produtos .dropdown h3{
+        color: #419488;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Roboto';
+    }
+    .produtos .dropdown .dropdown-menu ul {
+        padding: 0px 10px;
+        font-family: Roboto;
+        color: #757575;
+    }
+    .produtos .dropdown .dropdown-menu ul li {
+        list-style: none;
+        margin: 10px;
+    }
+    .produtos .dropdown-menu ul a {
+        text-decoration: none;
+        color: #757575;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: 'Roboto';
+    }
+    .produtos .dropdown-menu ul a:hover, label:hover {
+        color: #419488;
         transition: 0.5s;
     }
 }
