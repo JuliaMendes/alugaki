@@ -303,51 +303,56 @@ section.anuncios{
     justify-content: space-between;
 }
 
-section.anuncios .card-produto{
-    width: 240px;
+section.anuncios .card-produto {
+    cursor: pointer;
 }
-/*imagem do produto*/
-section.anuncios .card-produto .thumb{
+
+section.anuncios .card-produto .thumb img {
     width: 240px;
-    max-width: 100%;
     height: 150px;
+    background-size: cover;
 }
-/*nome do produto*/
-section.anuncios .card-produto h3{
-    font-family: Roboto;
-    color: #484848;
-    margin-bottom: 5px;
-}
-/*info do produto*/
-section.anuncios .card-produto .info > div {
+
+section.anuncios .card-produto .info>div {
     display: flex;
     align-items: center;
 }
-/*estrela de avaliação*/
-section.anuncios .card-produto img{
+
+section.anuncios .card-produto .info h3 {
+    color: #484848;
+    margin-bottom: 5px;
+}
+
+section.anuncios .card-produto .info {
+    color: #757575;
+}
+
+section.anuncios .card-produto .info img {
     width: 25px;
     height: 21px;
     margin-right: 2px;
 }
-/* avaliação e número de avaliações */
-section.anuncios .card-produto .info small{
-    font-family: Roboto;
+
+section.anuncios .card-produto .info small {
     font-size: 15px;
     margin-right: 5px;
 }
-/*localização do produto*/
-section.anuncios .card-produto .localiz{
+
+section.anuncios .card-produto .info .pontuacao {
+    color: #484848;
+}
+
+section.anuncios .card-produto .localiz {
     margin-top: 5px;
 }
-/*imagem de localiz.*/
-section.anuncios .card-produto .localiz img{
+
+section.anuncios .card-produto .localiz img {
     width: 17px;
     height: 17px;
     margin-right: 2px;
 }
-/*preço do produto*/
-section.anuncios .card-produto .preco{
-    font-family: Roboto;
+
+section.anuncios .card-produto .info .preco {
     font-size: 20px;
     color: #FF5722;
 }
@@ -371,11 +376,15 @@ section.anuncios button img{
     width: 25px;
 }
 
-div.botao-ver-mais {
-    cursor: pointer;
+div.botao-ver-mais{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
 }
 
 div.botao-ver-mais span {
+    cursor: pointer;
     font-family: 'Roboto', sans-serif;
     color: #FF5722;
     font-size: 18px;
@@ -389,9 +398,6 @@ div.botao-ver-mais img {
 
 div.botao-ver-mais a {
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
 }
 
 /* section avaliacoes */
