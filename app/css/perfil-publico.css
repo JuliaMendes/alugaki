@@ -518,7 +518,7 @@ footer .copyright {
     }
 
     section.barra-lateral .infos h3{
-        font-size: 34px;
+        /* font-size: 34px; */
     }
 
     /* no javascript, substituir por uma estrela com o valor numerico ao lado */
@@ -529,7 +529,7 @@ footer .copyright {
     /* no javascript, substituir por uma imagem de whatsapp com o link e tirar o numero */
     section.barra-lateral .infos a{
         text-align: center;
-        font-size: 18px;
+        /* font-size: 18px; */
     }
 
     section.conteudo{
@@ -598,27 +598,30 @@ footer .copyright {
     }
 
     section.barra-lateral{
-        flex-direction: row;
-        justify-content: space-around;
         align-items: center;
-        gap: 25px;
-        width: 75vw;
-        max-width: 100%;
     }
 
     section.barra-lateral .infos{
-        width: 195px;
-        max-width: 195px;
-    }
-
-    section.barra-lateral .filtros{
-        width: 195px;
-        max-width: 195px;
+        width: 205px;
+        max-width: 205px;
     }
 
 }
 
 @media (max-width: 685px){
+
+    section.anuncios{
+        justify-content: space-around;
+    }
+
+    section.anuncios .card-produto{
+        max-width: 25vw;
+    }
+
+    section.anuncios .card-produto .thumb{
+        max-width: 25vw;
+        max-height: 20vw;
+    }
 
     header .container .logo-e-barra {
         max-width: 100vw;
@@ -643,16 +646,6 @@ footer .copyright {
         position: absolute;
         left: 85%;
         padding-right: 20px;
-    }
-
-    /* alterar no javascript para só apaercer um anuncio por vez
-    com a setinha pro prox. quando a tela for desse tamanho */
-    section.anuncios .card-produto .preco{
-        font-size: 16px;
-    }
-
-    section.anuncios .card-produto .info small{
-        font-size: 12px;
     }
 
     section.avaliacoes .card-avaliacao .avaliador{
