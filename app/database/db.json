@@ -8,6 +8,33 @@
         "localizacao": "typicode", 
         "preco": "1/dia",
         "category": "moda"
-    }
+      },
+      { "id": 6,
+        "img": "nkada", 
+        "titulo": "Jaqueta jeans",
+        "avaliacao": 4, 
+        "navaliacao": 8, 
+        "localizacao": "São Paulo, SP", 
+        "preco": "R$10 /dia",
+        "category": "moda"
+      },
+      { "id": 7,
+        "img": "nkada", 
+        "titulo": "Sandália de Salto Louboutin",
+        "avaliacao": 5, 
+        "navaliacao": 20, 
+        "localizacao": "São Paulo, SP", 
+        "preco": "R$100 /dia",
+        "category": "moda"
+      },
+      { "id": 8,
+        "img": "nkada", 
+        "titulo": "Mochila Fjallraven Kanken",
+        "avaliacao": 4.7, 
+        "navaliacao": 20, 
+        "localizacao": "São Paulo, SP", 
+        "preco": "R$100 /dia",
+        "category": "moda"
+      }
     ]
 }
