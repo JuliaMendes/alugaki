@@ -554,6 +554,8 @@ footer .copyright {
     padding-bottom: 20px;
 }
 
+
+
 @media (max-width: 1100px){
 
     /* header e footer */
@@ -572,10 +574,6 @@ footer .copyright {
         max-width: 20vw;
     }
 
-    section.barra-lateral .infos h3{
-        /* font-size: 34px; */
-    }
-
     /* no javascript, substituir por uma estrela com o valor numerico ao lado */
     section.barra-lateral .infos .estrelas img{
         aspect-ratio: 6 / 5;
@@ -584,7 +582,6 @@ footer .copyright {
     /* no javascript, substituir por uma imagem de whatsapp com o link e tirar o numero */
     section.barra-lateral .infos a{
         text-align: center;
-        /* font-size: 18px; */
     }
 
     section.conteudo{
@@ -601,7 +598,7 @@ footer .copyright {
         max-width: 20vw;
     }
 
-    section.anuncios .card-produto .thumb{
+    section.anuncios .card-produto .thumb img {
         width: 240px;
         max-width: 20vw;
         max-height: 16vw;
@@ -673,18 +670,9 @@ footer .copyright {
         justify-content: space-around;
     }
 
-    section.anuncios .card-produto{
-        max-width: 25vw;
-        
-    }
-
-    section.anuncios .card-produto:last-child{
-        background-color: #FF5722;
-    }
-
+    section.anuncios .card-produto,
     section.anuncios .card-produto .thumb{
         max-width: 25vw;
-        max-height: 20vw;
     }
 
     header .container .logo-e-barra {
@@ -699,7 +687,6 @@ footer .copyright {
     }
 } 
 
-
 @media (max-width: 585px){
 
     header .container .barra form input{
@@ -710,6 +697,28 @@ footer .copyright {
         position: absolute;
         left: 85%;
         padding-right: 20px;
+    }
+
+    div.card-produto + div.card-produto{
+        display: none;
+    }
+
+    section.anuncios{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    section.anuncios .card-produto{
+        max-height: 100%;
+        max-width: 100%;
+        cursor: pointer;
+    }
+
+    section.anuncios .card-produto .thumb img{
+        width: 240px;
+        height: 150px;
+        max-width: 60vw;
+        max-height: 48vw;
     }
 
     section.avaliacoes .card-avaliacao .avaliador{
@@ -740,4 +749,5 @@ footer .copyright {
     }
 
 } 
+
 
