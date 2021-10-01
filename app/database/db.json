@@ -1,13 +1,54 @@
 {
-    "products": [
-      { "id": 1,
-        "img": "nkada", 
-        "titulo": "json-server",
-        "avaliacao": 1, 
-        "navaliacao": 1, 
-        "localizacao": "typicode", 
-        "preco": "1/dia",
-        "category": "moda"
+  "products": [{
+      "id": 1,
+      "img": "./img/",
+      "titulo": "Patins 4 Rodas Ajustável",
+      "avaliacao": 5,
+      "navaliacao": 27,
+      "localizacao": "São Paulo",
+      "preco": "30/dia",
+      "category": "Esporte e Lazer"
+    },
+
+    {
+      "id": 2,
+      "img": "nkada",
+      "titulo": "Bicicleta Aro 29",
+      "avaliacao": 5,
+      "navaliacao": 31,
+      "localizacao": "São Paulo",
+      "preco": "40/dia",
+      "category": "Esporte e Lazer"
+    },
+    {
+      "id": 3,
+      "img": "nkada",
+      "titulo": "Prancha de Surf",
+      "avaliacao": 5,
+      "navaliacao": 42,
+      "localizacao": "São Paulo",
+      "preco": "60/dia",
+      "category": "Esporte e Lazer"
+    },
+    {
+      "id": 4,
+      "img": "nkada",
+      "titulo": "Barraca de Camping",
+      "avaliacao": 5,
+      "navaliacao": 60,
+      "localizacao": "São Paulo",
+      "preco": "80/dia",
+      "category": "Esporte e Lazer"
+    },
+    {
+      "id": 5,
+      "img": "nkada",
+      "titulo": "json-server",
+      "avaliacao": 5,
+      "navaliacao": 32,
+      "localizacao": "São Paulo",
+      "preco": "35/dia",
+      "category": "Esporte e Lazer"
     }
-    ]
+  ]
 }
