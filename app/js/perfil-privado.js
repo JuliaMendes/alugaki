@@ -38,13 +38,6 @@ function validaTelefone() {
 function validaEmail() {
     let errosEmail = document.querySelector("#erros-email");
 
-    if(!inputEmail.value.includes("@") || !inputEmail.value.includes(".")){
-        inputEmail.style = 'border-color: #E64A19;';
-        errosEmail.innerHTML += "<li> O campo Email deve incluir os caracteres '@' e '.' </li>";
-    }
-    else{
-        errosEmail.innerHTML = "";
-    }
     if(inputEmail.value.length < 10){
         inputEmail.style = 'border-color: #E64A19;';
         errosEmail.innerHTML  += "<li> O campo Email deve ter no mínimo 10 caracteres. </li>";
@@ -55,6 +48,10 @@ function validaEmail() {
     }
     else{
         errosEmail.innerHTML = "";
+    }
+    if(!inputEmail.value.includes("@") || !inputEmail.value.includes(".")){
+        inputEmail.style = 'border-color: #E64A19;';
+        errosEmail.innerHTML += "<li> O campo Email deve incluir os caracteres '@' e '.' </li>";
     }
 
     return erros
@@ -88,11 +85,9 @@ window.addEventListener('load', () => {
     inputTelefone = document.querySelector("section.conteudo #form_editar #telefone");
     inputEmail = document.querySelector("section.conteudo #form_editar #email");
 
-    // btnSenha = document.querySelector("section.conteudo #form_senha button");
     inputSenha = document.querySelector("section.conteudo #form_editar #pass");
 
-    inputPrivacidade = document.querySelector("section.conteudo #form_priv input");
-    formPriv = document.querySelector("#form_priv");
+    inputPrivacidade = document.querySelector("section.conteudo #form_editar #priv");
 
     inputExcluir = document.querySelector("section.conteudo div.excluir button");
 
@@ -128,7 +123,8 @@ window.addEventListener('load', () => {
                 else{
                     let errosNomeB = false;
                     let errosTelefoneB = false;
-                    let errosEmailB = false;
+                    let errosEmailB1 = false;
+                    let errosEmailB2 = false;
                     let errosSenhaB = false;
 
                     //validacao nome

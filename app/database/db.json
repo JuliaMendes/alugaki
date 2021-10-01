@@ -1,5 +1,6 @@
 {
-  "products": [{
+  "products": [
+    {
       "id": 1,
       "img": "./img/patins.jpg",
       "titulo": "Patins 4 Rodas Ajustável",
@@ -20,6 +21,7 @@
       "preco": "40/dia",
       "category": "Esporte e Lazer"
     },
+
     {
       "id": 3,
       "img": "./img/prancha.jpg",
@@ -30,6 +32,7 @@
       "preco": "60/dia",
       "category": "Esporte e Lazer"
     },
+
     {
       "id": 4,
       "img": "./img/barraca.jpg",
@@ -40,6 +43,7 @@
       "preco": "80/dia",
       "category": "Esporte e Lazer"
     },
+
     {
       "id": 5,
       "img": "./img/skate.jpg",
@@ -50,6 +54,7 @@
       "preco": "20/dia",
       "category": "Esporte e Lazer"
     },
+
     {
       "id": 6,
       "img": "./img/jaqueta_jeans.png",
@@ -60,6 +65,7 @@
       "preco": "10 /dia",
       "category": "Moda"
     },
+
     {
       "id": 7,
       "img": "./img/sapato_louboutin.png",
@@ -70,6 +76,7 @@
       "preco": "100 /dia",
       "category": "Moda"
     },
+
     {
       "id": 8,
       "img": "./img/mochila_fall.png",
@@ -80,6 +87,7 @@
       "preco": "60 /dia",
       "category": "Moda"
     },
+
     {
       "id": 9,
       "img": "./img/doc.png",
@@ -90,6 +98,7 @@
       "preco": "60 /dia",
       "category": "Moda"
     },
+
     {
       "id": 10,
       "img": "./img/jordan.png",
@@ -98,7 +107,61 @@
       "navaliacao": 13,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "90 /dia",
-      "category": "Moda"
+      "category": "Eletronicos"
+    },
+
+    {
+      "id": 11,
+      "img": "./img/sombluetooth.jpeg",
+      "titulo": "Caixa de Som Bluetooth",
+      "avaliacao": 4.5,
+      "navaliacao": 6,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "10 /dia",
+      "category": "Eletronicos"
+    },
+
+    {
+      "id": 12,
+      "img": "./img/xboxone.jpeg",
+      "titulo": "Console Xbox One",
+      "avaliacao": 3.9,
+      "navaliacao": 16,
+      "localizacao": "São Paulo, SP",
+      "preco": "100 /dia",
+      "category": "Eletronicos"
+    },
+
+    {
+      "id": 13,
+      "img": "./img/arduino.jpeg",
+      "titulo": "Arduino Uno",
+      "avaliacao": 4.9,
+      "navaliacao": 27,
+      "localizacao": "São Paulo, SP",
+      "preco": "60 /dia",
+      "category": "Eletronicos"
+    },
+
+    {
+      "id": 14,
+      "img": "./img/roboaspirador.jpeg",
+      "titulo": "Robo Aspirador",
+      "avaliacao": 4,
+      "navaliacao": 21,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "60 /dia",
+      "category": "Eletronicos"
+    },
+    {
+      "id": 15,
+      "img": "./img/cameraprofissional.jpeg",
+      "titulo": "Camera Profissional",
+      "avaliacao": 3.2,
+      "navaliacao": 11,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "90 /dia",
+      "category": "Eletronicos"
     }
   ]
 }
