@@ -1,7 +1,7 @@
 {
   "products": [{
       "id": 1,
-      "img": "./img/",
+      "img": "./img/patins.jpg",
       "titulo": "Patins 4 Rodas Ajustável",
       "avaliacao": 5,
       "navaliacao": 27,
@@ -12,7 +12,7 @@
 
     {
       "id": 2,
-      "img": "nkada",
+      "img": "./img/bicileta.jpg",
       "titulo": "Bicicleta Aro 29",
       "avaliacao": 5,
       "navaliacao": 31,
@@ -22,7 +22,7 @@
     },
     {
       "id": 3,
-      "img": "nkada",
+      "img": "./img/prancha.jpg",
       "titulo": "Prancha de Surf",
       "avaliacao": 5,
       "navaliacao": 42,
@@ -32,7 +32,7 @@
     },
     {
       "id": 4,
-      "img": "nkada",
+      "img": "./img/barraca.jpg",
       "titulo": "Barraca de Camping",
       "avaliacao": 5,
       "navaliacao": 60,
@@ -42,12 +42,12 @@
     },
     {
       "id": 5,
-      "img": "nkada",
+      "img": "./img/skate.jpg",
       "titulo": "json-server",
       "avaliacao": 5,
-      "navaliacao": 32,
+      "navaliacao": 21,
       "localizacao": "São Paulo",
-      "preco": "35/dia",
+      "preco": "20/dia",
       "category": "Esporte e Lazer"
     }
   ]
