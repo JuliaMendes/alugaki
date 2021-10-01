@@ -75,8 +75,20 @@ function validaSenha() {
     return erros
 }
 
+inputPrivacidade = document.querySelector("section.conteudo #form_editar #priv");
+
+function validaPrivacidade(inputPrivacidade) {
+    if (inputPrivacidade.hasAttribute("checked")){
+        localStorage.setItem("checked", "false");
+        inputPrivacidade.removeAttribute("checked");
+    }
+    else{
+        localStorage.setItem("checked", "true");
+        inputPrivacidade.setAttribute("checked","");
+    }
+}
+
 window.addEventListener('load', () => {
-    console.log("JS rodando");
 
     formEditar = document.querySelector("section.conteudo #form_editar");
     btnEditar = document.querySelector("section.conteudo #form_editar button");
@@ -91,6 +103,15 @@ window.addEventListener('load', () => {
 
     inputExcluir = document.querySelector("section.conteudo div.excluir button");
 
+    checked = localStorage.getItem("checked");
+
+    if(checked=="true"){
+        inputPrivacidade.setAttribute("checked","");
+    }
+    else{
+        inputPrivacidade.removeAttribute("checked");
+    }
+
     btnEditar.onclick = (evento) => {
        
         evento.preventDefault();
@@ -102,6 +123,7 @@ window.addEventListener('load', () => {
             inputTelefone.removeAttribute("readonly");
             inputEmail.removeAttribute("readonly");
             inputSenha.removeAttribute("readonly");
+            inputPrivacidade.removeAttribute("disabled");
         }
 
         btnEditar.onclick = (evento) => {
@@ -117,8 +139,9 @@ window.addEventListener('load', () => {
                     inputTelefone.setAttribute("readonly","");
                     inputEmail.setAttribute("readonly","");
                     inputSenha.setAttribute("readonly","");
+                    inputPrivacidade.setAttribute("disabled","");
                     
-                    location.reload();
+                    formEditar.submit();
                 }
                 else{
                     let errosNomeB = false;
@@ -154,6 +177,7 @@ window.addEventListener('load', () => {
                     inputTelefone.setAttribute("readonly","");
                     inputEmail.setAttribute("readonly","");
                     inputSenha.setAttribute("readonly","");
+                    inputPrivacidade.setAttribute("disabled","");
 
                     formEditar.submit();
                     }
