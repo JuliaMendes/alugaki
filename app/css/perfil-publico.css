@@ -670,9 +670,26 @@ footer .copyright {
         justify-content: space-around;
     }
 
-    section.anuncios .card-produto,
-    section.anuncios .card-produto .thumb{
-        max-width: 25vw;
+    section.anuncios{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.anuncios .card-produto{
+        max-height: 80%;
+        max-width: 80%;
+        cursor: pointer;
+    }
+
+    section.anuncios .card-produto .thumb img{
+        width: 200px;
+        height: 125px;
+        max-width: 30vw;
+        max-height: 24vw;
+    }
+
+    section.anuncios div.card-produto:nth-child(3){
+        display: none;
     }
 
     header .container .logo-e-barra {
