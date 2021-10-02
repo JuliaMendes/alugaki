@@ -2,7 +2,51 @@ console.log('JS conectado!');
 
 let toggleCategoria = true;
 
+//Conteudo - Anuncios
+
+const setaAnuncio = (botao) => {
+    let card = document.querySelector("section.anuncios div.card-produto:first-child");
+    let anuncios = document.querySelector("section.anuncios");
+    let newCard = card.cloneNode(true);
+    let botaoAnuncio = botao;
+    card.remove();
+    anuncios.insertBefore(newCard, botaoAnuncio);
+}
+
 //Conteudo - Avaliacao
+function getPerfil (operacao){
+    let perfil = document.querySelector("section.avaliacoes .card-avaliacao .infos h3");
+    let nPerfil = '';
+    let sinal = operacao;
+
+    for(let i=7; i<(perfil.innerHTML).length;i++){
+        nPerfil += perfil.innerHTML[i];
+    }
+
+    nPerfil = parseInt(nPerfil);
+
+    if(sinal=="+"){
+        if(nPerfil<4){
+            nPerfil += 1;
+        }
+        else{
+            nPerfil = 1;
+        }
+    }
+    else if (sinal=="-"){
+        if(nPerfil==1){
+            nPerfil = 4;
+        }
+        else{
+            nPerfil -= 1;
+        }
+    }
+    else{
+        nPerfil = operacao;
+    }
+    perfil.innerHTML = "Perfil " + nPerfil;
+}
+
 const setaAvaliacaoEsquerda = () => {
     let seletores = document.querySelectorAll('.seletores img');
     for(let i=0;i<seletores.length;i++){
@@ -17,6 +61,7 @@ const setaAvaliacaoEsquerda = () => {
             break;
         }
     }
+    getPerfil("-");
 }
 
 const setaAvaliacaoDireita = () => {
@@ -33,6 +78,7 @@ const setaAvaliacaoDireita = () => {
             break;
         }
     }
+    getPerfil("+");
 }
 
 const botaoAvaliacao = (elemento) => {
@@ -45,5 +91,11 @@ const botaoAvaliacao = (elemento) => {
             }
         }
         botao.src = 'img/seletor_cheio_avaliacao.png';
+        for(let i=0;i<seletores.length;i++){
+            if(seletores[i].src.includes('/img/seletor_cheio_avaliacao.png')){
+                getPerfil(i+1);
+            }
+        }
     }
+
 }
