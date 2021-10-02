@@ -146,8 +146,7 @@ window.addEventListener('load', () => {
                 else{
                     let errosNomeB = false;
                     let errosTelefoneB = false;
-                    let errosEmailB1 = false;
-                    let errosEmailB2 = false;
+                    let errosEmailB = false;
                     let errosSenhaB = false;
 
                     //validacao nome
