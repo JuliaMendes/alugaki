@@ -42,3 +42,25 @@ if (window.screen.width < 768) {
 
     }
 }
+
+
+// fetch('https://raw.githubusercontent.com/JuliaMendes/alugaki/main/app/database/db.json')
+// .then(response => response.json())
+// .then(data => console.log(data));
+
+
+function busca() {
+    const localizacao = document.querySelector('#localizacao').value;
+    const categoria = document.querySelector('#categoria').value;
+    const produto = document.querySelector('#produto').value;
+
+    const parametros = {
+        localizacao: localizacao,
+        categoria: categoria,
+        produto: produto
+    }
+
+    window.location.assign(`produtos-por-cat.html?localizacao=${localizacao}&categoria=${categoria}&produto=${produto}`)
+
+
+}
