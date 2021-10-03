@@ -19,6 +19,11 @@ body {
     margin: 0 auto;
 }
 
+button:focus-visible{
+    outline-color: transparent;
+    outline-width: 0px;
+}
+
 /*config. header*/
 header {
     background-color: #F2F1F1;
@@ -209,7 +214,7 @@ form label{
     color: #212121;
 }
 
-form input:not([type="checkbox"]){
+form input:not([type="checkbox"],[type="file"]){
     width: 310px;
     height: 40px;
     background-color: #FFFAFA;

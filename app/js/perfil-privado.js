@@ -3,7 +3,7 @@ function validaNome() {
 
     if(inputNome.value.length<3){
         inputNome.style = 'border-color: #E64A19;';
-        errosNome.innerHTML += "<li> O campo Nome deve ter no mínimo 3 caracetres. </li>";
+        errosNome.innerHTML += "<li> O campo Nome deve ter no mínimo 3 caracteres. </li>";
         erros = true;
     }
     else if (inputNome.value.length > 100){
@@ -90,6 +90,7 @@ function validaPrivacidade(inputPrivacidade) {
 
 window.addEventListener('load', () => {
 
+    //formulario de dados
     formEditar = document.querySelector("section.conteudo #form_editar");
     btnEditar = document.querySelector("section.conteudo #form_editar button");
 
@@ -189,6 +190,32 @@ window.addEventListener('load', () => {
         if(confirm('Tem certeza que deseja excluir sua conta? Todos os dados serão excluídos definitivamente e não será possível recuperar a conta posteriormente.')){
             alert("Conta excluída.");
             location.reload();
+        }
+
+    }
+
+    //imagem
+
+    formImg = document.querySelector("section.barra-lateral form");
+    btnImg= document.querySelector("section.barra-lateral form button");
+    inputImg = document.querySelector("section.barra-lateral form input");
+
+    btnImg.onclick = (evento) => {
+        evento.preventDefault();
+
+        if (btnImg.innerHTML == "Alterar"){
+            btnImg.innerHTML = "Salvar";
+            inputImg.removeAttribute("hidden");
+        }
+        btnImg.onclick = (evento) => {
+            evento.preventDefault();
+
+            if(btnImg.innerHTML = "Salvar"){
+                btnImg.innerHTML = "Alterar";
+                inputImg.setAttribute("hidden", "");
+
+                formImg.submit();
+            }
         }
 
     }
