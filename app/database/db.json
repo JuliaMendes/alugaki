@@ -45,6 +45,17 @@
     },
 
     {
+      "id": 5,
+      "img": "./img/skate.jpg",
+      "titulo": "Skate",
+      "avaliacao": 4.6,
+      "navaliacao": 27,
+      "localizacao": "Rio de Janeiro",
+      "preco": "20/dia",
+      "category": "Esporte e Lazer"
+    },
+
+    {
       "id": 6,
       "img": "./img/jaqueta_jeans.png",
       "titulo": "Jaqueta Jeans",
