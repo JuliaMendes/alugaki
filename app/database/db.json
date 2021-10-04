@@ -96,7 +96,7 @@
       "navaliacao": 13,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "90 /dia",
-      "category": "Eletronicos"
+      "category": "Moda"
     },
 
     {
@@ -107,7 +107,7 @@
       "navaliacao": 6,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "10 /dia",
-      "category": "Eletronicos"
+      "category": "Eletrônicos"
     },
 
     {
@@ -118,7 +118,7 @@
       "navaliacao": 16,
       "localizacao": "São Paulo, SP",
       "preco": "100 /dia",
-      "category": "Eletronicos"
+      "category": "Eletrônicos"
     },
 
     {
@@ -129,7 +129,7 @@
       "navaliacao": 27,
       "localizacao": "São Paulo, SP",
       "preco": "60 /dia",
-      "category": "Eletronicos"
+      "category": "Eletrônicos"
     },
 
     {
@@ -140,7 +140,7 @@
       "navaliacao": 21,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "60 /dia",
-      "category": "Eletronicos"
+      "category": "Eletrônicos"
     },
     
     {
@@ -151,7 +151,7 @@
       "navaliacao": 11,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "90 /dia",
-      "category": "Eletronicos"
+      "category": "Eletrônicos"
     }
   ]
 }
