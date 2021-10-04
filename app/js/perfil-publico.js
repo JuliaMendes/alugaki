@@ -13,6 +13,54 @@ const setaAnuncio = (botao) => {
     anuncios.insertBefore(newCard, botaoAnuncio);
 }
 
+function chamaProdutos() {
+    fetch('https://raw.githubusercontent.com/JuliaMendes/alugaki/main/app/database/db.json')
+        .then(response => response.json())
+        .then(data => {
+            const secaoAnuncios = document.querySelector('section.anuncios');
+            const cardsAnuncios = document.querySelectorAll('section.anuncios .card-produto');
+            const seta = document.querySelector('section.anuncios button');
+        
+            console.log(cardsAnuncios)
+            cardsAnuncios.forEach(card => {
+                 card.innerHTML = '';
+            })
+            console.log(cardsAnuncios)
+
+            produtos = data.products.slice(12, 15)
+            console.log(produtos)
+
+            for(let i=0; i<produtos.length;i++){
+                card = cardsAnuncios[i];
+                elemento = produtos[i];
+
+                card.innerHTML += `
+                    <div class="thumb">
+                        <a href="listagem-prod.html"><img src="${elemento.img}" alt="${elemento.titulo}"></a>
+                    </div>
+                    <div class="info">
+                        <h3>${elemento.titulo}</h3>
+                        <div>
+                            <img src="img/Star 1.png" alt="Ícone estrela">
+                            <div>
+                                <small class="pontuacao">${elemento.avaliacao}</small>
+                                <small>• ${elemento.navaliacao} avaliações</small>
+                            </div>
+                        </div>
+                        <div class="localiz">
+                            <img src="img/location.png" alt="ícone localização">
+                            <small>${elemento.localizacao}</small>
+                        </div>
+                        <h3 class="preco">R$ ${elemento.preco}</h3>
+                    </div>`;
+
+            }
+
+        });
+}
+
+chamaProdutos()
+
 //Conteudo - Avaliacao
 function getPerfil (operacao){
     let perfil = document.querySelector("section.avaliacoes .card-avaliacao .infos h3");
