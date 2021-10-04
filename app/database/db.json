@@ -6,14 +6,14 @@
       "titulo": "Patins 4 Rodas Ajustável",
       "avaliacao": 5,
       "navaliacao": 27,
-      "localizacao": "São Paulo",
+      "localizacao": "São Paulo, SP",
       "preco": "30/dia",
       "category": "Esporte e Lazer"
     },
 
     {
       "id": 2,
-      "img": "./img/bicileta.jpg",
+      "img": "./img/bicicleta.jpg",
       "titulo": "Bicicleta Aro 29",
       "avaliacao": 5,
       "navaliacao": 31,
@@ -41,17 +41,6 @@
       "navaliacao": 60,
       "localizacao": "Rio de Janeiro",
       "preco": "80/dia",
-      "category": "Esporte e Lazer"
-    },
-
-    {
-      "id": 5,
-      "img": "./img/skate.jpg",
-      "titulo": "json-server",
-      "avaliacao": 4.9,
-      "navaliacao": 21,
-      "localizacao": "São Paulo",
-      "preco": "20/dia",
       "category": "Esporte e Lazer"
     },
 
