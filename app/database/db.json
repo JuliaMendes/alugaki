@@ -17,7 +17,7 @@
       "titulo": "Bicicleta Aro 29",
       "avaliacao": 5,
       "navaliacao": 31,
-      "localizacao": "São Paulo",
+      "localizacao": "São Paulo, SP",
       "preco": "40/dia",
       "category": "Esporte e Lazer"
     },
@@ -28,7 +28,7 @@
       "titulo": "Prancha de Surf",
       "avaliacao": 4.8,
       "navaliacao": 42,
-      "localizacao": "Rio de Janeiro",
+      "localizacao": "Rio de Janeiro, RJ",
       "preco": "60/dia",
       "category": "Esporte e Lazer"
     },
@@ -39,7 +39,7 @@
       "titulo": "Barraca de Camping",
       "avaliacao": 4.7,
       "navaliacao": 60,
-      "localizacao": "Rio de Janeiro",
+      "localizacao": "Rio de Janeiro, RJ",
       "preco": "80/dia",
       "category": "Esporte e Lazer"
     },
@@ -50,7 +50,7 @@
       "titulo": "Skate",
       "avaliacao": 4.6,
       "navaliacao": 27,
-      "localizacao": "Rio de Janeiro",
+      "localizacao": "Rio de Janeiro, RJ",
       "preco": "20/dia",
       "category": "Esporte e Lazer"
     },
