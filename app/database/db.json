@@ -117,7 +117,7 @@
       "avaliacao": 4.5,
       "navaliacao": 6,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "10 /dia",
+      "preco": "15 /dia",
       "category": "Eletrônicos"
     },
 
@@ -128,7 +128,7 @@
       "avaliacao": 3.9,
       "navaliacao": 16,
       "localizacao": "São Paulo, SP",
-      "preco": "100 /dia",
+      "preco": "90 /dia",
       "category": "Eletrônicos"
     },
 
@@ -139,7 +139,7 @@
       "avaliacao": 4.9,
       "navaliacao": 27,
       "localizacao": "São Paulo, SP",
-      "preco": "60 /dia",
+      "preco": "5 /dia",
       "category": "Eletrônicos"
     },
 
@@ -150,7 +150,7 @@
       "avaliacao": 4,
       "navaliacao": 21,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "60 /dia",
+      "preco": "40 /dia",
       "category": "Eletrônicos"
     },
     
@@ -161,7 +161,7 @@
       "avaliacao": 3.2,
       "navaliacao": 11,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "90 /dia",
+      "preco": "85 /dia",
       "category": "Eletrônicos"
     }
   ]
