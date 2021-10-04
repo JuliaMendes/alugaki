@@ -21,14 +21,11 @@ function chamaProdutos() {
             const cardsAnuncios = document.querySelectorAll('section.anuncios .card-produto');
             const seta = document.querySelector('section.anuncios button');
         
-            console.log(cardsAnuncios)
             cardsAnuncios.forEach(card => {
                  card.innerHTML = '';
             })
-            console.log(cardsAnuncios)
 
             produtos = data.products.slice(12, 15)
-            console.log(produtos)
 
             for(let i=0; i<produtos.length;i++){
                 card = cardsAnuncios[i];
