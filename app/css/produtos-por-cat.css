@@ -180,7 +180,6 @@ header .container .dropdown .dropdown-menu ul li {
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
-    margin-top: 130px;
 }
 /*filtros*/
 /*menu responsivo*/
@@ -228,7 +227,6 @@ header .container .dropdown .dropdown-menu ul li {
 
 /*lista com os anúncios*/
 .produtos .lista-produtos {
-    position: relative;
     margin-top: 53px;
     display: flex;
     align-items: flex-start;
@@ -242,8 +240,9 @@ header .container .dropdown .dropdown-menu ul li {
     font-family: Abeezee;
     font-size: 30px;
     color: #FF5722;
-    position: absolute;
-    top: -120px;
+    margin-left: 430px;
+    margin-top: 100px;
+    margin-bottom: 0;
 }
 /*card do anúncios*/
 .produtos .lista-produtos .card-produto{
@@ -403,7 +402,13 @@ footer .copyright {
     }
 }
 
-/*769px e 545px*/
+@media (max-width: 1304px){
+    .produtos .titulo{
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 769px){
     .filtros{
        display: none;
