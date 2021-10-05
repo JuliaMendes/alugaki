@@ -14,18 +14,33 @@ document.addEventListener("click", e => {
     })
 })
 
+    // filtro: categoria
+    let filtroCat = document.querySelectorAll('.botao-cat')
+    let valorBtn = 'Esporte e Lazer';
+
+    filtroCat.forEach((botaoQueEuAcabeiDeClicar) => {
+        botaoQueEuAcabeiDeClicar.addEventListener("click", () => {
+            valorBtn = botaoQueEuAcabeiDeClicar.innerText
+            chamaProdutos()
+        })
+    })
+
+
 function chamaProdutos() {
     fetch('https://raw.githubusercontent.com/JuliaMendes/alugaki/main/app/database/db.json')
         .then(response => response.json())
         .then(data => {
             const listaProdutos = document.querySelector('.produtos .lista-produtos')
             const tituloCat = document.querySelector('.produtos .titulo h1')
-            console.log(tituloCat)
-            
-            
+
+            function categoria(elemento) {
+                console.log(elemento.category, valorBtn)
+                return elemento.category === valorBtn
+            }
+    
             listaProdutos.innerHTML = '';
             data.products
-                .filter((elemento) => {return elemento.category == "Esporte e Lazer"})
+                .filter(categoria)
                 .forEach(elemento => {
                     tituloCat.innerHTML = elemento.category
                     listaProdutos.innerHTML += `<div class="card-produto">
