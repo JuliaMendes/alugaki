@@ -19,11 +19,15 @@ function chamaProdutos() {
         .then(response => response.json())
         .then(data => {
             const listaProdutos = document.querySelector('.produtos .lista-produtos')
+            const tituloCat = document.querySelector('.produtos .titulo h1')
+            console.log(tituloCat)
+            
             
             listaProdutos.innerHTML = '';
             data.products
-                .filter((elemento) => { return elemento.category == "Moda"})
+                .filter((elemento) => {return elemento.category == "Esporte e Lazer"})
                 .forEach(elemento => {
+                    tituloCat.innerHTML = elemento.category
                     listaProdutos.innerHTML += `<div class="card-produto">
                         <div class="thumb">
                             <a href="listagem-prod.html"><img src="${elemento.img}" alt="${elemento.titulo}"></a>
