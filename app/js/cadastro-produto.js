@@ -4,8 +4,9 @@ window.addEventListener("load", () => {
 
     let form = document.querySelector("section.formulario form");
     let btnAnunciar = document.querySelector("section.formulario form #btn-anunciar");
-    let  inputTitulo = document.querySelector("section.formulario form #titulo");
+    let inputTitulo = document.querySelector("section.formulario form #titulo");
     let inputDescricao = document.querySelector("section.formulario form #descricao");
+    console.log(inputDescricao);
 
     let preco = document.querySelector("section.formulario form #preco");
     let categoria = document.querySelector("section.formulario form #cat");
