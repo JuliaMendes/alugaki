@@ -167,7 +167,7 @@
     {
       "id": 16,
       "img": "./img/furadeira.jpg",
-      "titulo": "Furadeira e Parafusadeira Black Decker",
+      "titulo": "Furadeira e Parafusadeira",
       "avaliacao": 3.8,
       "navaliacao": 14,
       "localizacao": "Rio de Janeiro, RJ",
@@ -176,7 +176,7 @@
     },
     {
       "id": 17,
-      "img": "./img/serra-circular.jpg",
+      "img": "./img/serra-circular.jpeg",
       "titulo": "Serra Circular",
       "avaliacao": 3.4,
       "navaliacao": 12,
@@ -196,7 +196,7 @@
     },
     {
       "id": 19,
-      "img": "./img/betoneira.webp",
+      "img": "./img/betoneira.jpg",
       "titulo": "Betoneira",
       "avaliacao": 4.3,
       "navaliacao": 21,
