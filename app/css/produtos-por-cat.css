@@ -190,9 +190,7 @@ header .container .dropdown .dropdown-menu ul li {
     display: none;
 }
 /*titulo do filtro e divisor*/
-.filtros {
-    width: 60%;
-}
+
 .produtos .filtros .titulo-filtro{
     display: flex;
     flex-direction: column;
@@ -206,7 +204,7 @@ header .container .dropdown .dropdown-menu ul li {
 }
 /*divisor*/
 .produtos .filtros img{
-    width: 100%;
+    width: 200px;
 }
 /*lista com os filtros*/
 .produtos .filtros ul{

@@ -22,7 +22,7 @@ function chamaProdutos() {
             
             listaProdutos.innerHTML = '';
             data.products
-                .slice(0, 9)
+                .filter((elemento) => { return elemento.category == "Moda"})
                 .forEach(elemento => {
                     listaProdutos.innerHTML += `<div class="card-produto">
                         <div class="thumb">
