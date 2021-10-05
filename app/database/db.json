@@ -163,6 +163,56 @@
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "85 /dia",
       "category": "Eletrônicos"
+    },
+    {
+      "id": 16,
+      "img": "./img/furadeira.jpeg",
+      "titulo": "Furadeira e Parafusadeira Black Decker",
+      "avaliacao": 3.8,
+      "navaliacao": 14,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "20 /dia",
+      "category": "Ferramentas e Utilitários"
+    },
+    {
+      "id": 17,
+      "img": "./img/serra-circular.jpeg",
+      "titulo": "Serra Circular",
+      "avaliacao": 3.4,
+      "navaliacao": 12,
+      "localizacao": "São Paulo, SP",
+      "preco": "35 /dia",
+      "category": "Ferramentas e Utilitários"
+    },
+    {
+      "id": 18,
+      "img": "./img/extratora-de-sujeira.jpeg",
+      "titulo": "Extratora Profissional de Sujeira",
+      "avaliacao": 4.5,
+      "navaliacao": 20,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "70 /dia",
+      "category": "Ferramentas e Utilitários"
+    },
+    {
+      "id": 19,
+      "img": "./img/betoneira.webp",
+      "titulo": "Betoneira",
+      "avaliacao": 4.3,
+      "navaliacao": 21,
+      "localizacao": "São Paulo, SP",
+      "preco": "80 /dia",
+      "category": "Ferramentas e Utilitários"
+    },
+    {
+      "id": 20,
+      "img": "./img/andaime.jpeg",
+      "titulo": "Andaime",
+      "avaliacao": 3.9,
+      "navaliacao": 30,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "90 /dia",
+      "category": "Ferramentas e Utilitários"
     }
   ]
 }

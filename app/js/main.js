@@ -61,12 +61,10 @@ function chamaProdutos() {
         .then(data => {
             const listaProdutos = document.querySelector('.lista-produtos')
 
-
             function categoria(elemento) {
                 console.log(elemento.category, valorBtn)
                 return elemento.category === valorBtn
             }
-
 
             listaProdutos.innerHTML = '';
             data.products
