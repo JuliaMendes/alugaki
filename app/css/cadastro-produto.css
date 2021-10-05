@@ -157,6 +157,14 @@ header .container .botoes button img {
     justify-content: flex-start;
     width: 100px;
 }
+
+/* calendario */
+
+section.formulario .dir img{
+    width: 400px;
+    margin: 0;
+}
+
 /* menuzinho com o período do preço */
 .formulario .container .esq .preco-cat .preco #periodo{
     border-style: none;
@@ -217,7 +225,7 @@ header .container .botoes button img {
     margin-top: 50px;
     margin-bottom: 100px;
 }
-.formulario .container .botoes #btn-publicar {
+.formulario .container .botoes #btn-anunciar {
     background-color: #FF5722;
     color: #FFFFFF;
     font-size: 20px;
@@ -375,3 +383,4 @@ footer .copyright {
         flex-direction: column;
     }
 }
+
