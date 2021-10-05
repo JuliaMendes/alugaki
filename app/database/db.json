@@ -166,7 +166,7 @@
     },
     {
       "id": 16,
-      "img": "./img/furadeira.jpeg",
+      "img": "./img/furadeira.jpg",
       "titulo": "Furadeira e Parafusadeira Black Decker",
       "avaliacao": 3.8,
       "navaliacao": 14,
@@ -176,7 +176,7 @@
     },
     {
       "id": 17,
-      "img": "./img/serra-circular.jpeg",
+      "img": "./img/serra-circular.jpg",
       "titulo": "Serra Circular",
       "avaliacao": 3.4,
       "navaliacao": 12,
@@ -186,7 +186,7 @@
     },
     {
       "id": 18,
-      "img": "./img/extratora-de-sujeira.jpeg",
+      "img": "./img/extratora-de-sujeira.jpg",
       "titulo": "Extratora Profissional de Sujeira",
       "avaliacao": 4.5,
       "navaliacao": 20,
