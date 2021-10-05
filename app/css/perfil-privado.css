@@ -247,6 +247,13 @@ section.barra-lateral .foto{
     align-items: center;
 }
 
+section.barra-lateral .foto form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 section.barra-lateral .foto img{
     width: 150px;
     margin-bottom: 10px;

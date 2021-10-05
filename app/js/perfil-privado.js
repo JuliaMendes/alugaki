@@ -3,12 +3,12 @@ function validaNome() {
 
     if(inputNome.value.length<3){
         inputNome.style = 'border-color: #E64A19;';
-        errosNome.innerHTML += "<li> O campo Nome deve ter no mínimo 3 caracteres. </li>";
+        errosNome.innerHTML = "<li> O campo Nome deve ter no mínimo 3 caracteres. </li>";
         erros = true;
     }
     else if (inputNome.value.length > 100){
         inputNome.style = 'border-color: #E64A19;';
-        errosNome.innerHTML += "<li>O campo Nome deve ter no máximo 100 caraceteres. </li>";
+        errosNome.innerHTML = "<li>O campo Nome deve ter no máximo 100 caraceteres. </li>";
         erros = true;
     }
     else{
@@ -24,7 +24,7 @@ function validaTelefone() {
 
     if(inputTelefone.value.length < 10){
         inputTelefone.style = 'border-color: #E64A19;';
-        errosTelefone.innerHTML += "<li> O campo Telefone deve ter no mínimo 10 caracteres. </li>";
+        errosTelefone.innerHTML = "<li> O campo Telefone deve ter no mínimo 10 caracteres. </li>";
         erros = true;
     }
     else{
@@ -40,18 +40,22 @@ function validaEmail() {
 
     if(inputEmail.value.length < 10){
         inputEmail.style = 'border-color: #E64A19;';
-        errosEmail.innerHTML  += "<li> O campo Email deve ter no mínimo 10 caracteres. </li>";
+        errosEmail.innerHTML  = "<li> O campo Email deve ter no mínimo 10 caracteres. </li>";
+        erros = true;
     }
     else if(inputEmail.value.length > 180){
         inputEmail.style = 'border-color: #E64A19;';
-        errosEmail.innerHTML  += "<li> O campo Email deve ter no máximo 180 caracteres. </li>";
+        errosEmail.innerHTML  = "<li> O campo Email deve ter no máximo 180 caracteres. </li>";
+        erros = true;
     }
     else{
         errosEmail.innerHTML = "";
+        erros = false;
     }
     if(!inputEmail.value.includes("@") || !inputEmail.value.includes(".")){
         inputEmail.style = 'border-color: #E64A19;';
         errosEmail.innerHTML += "<li> O campo Email deve incluir os caracteres '@' e '.' </li>";
+        erros = true;
     }
 
     return erros
@@ -62,14 +66,17 @@ function validaSenha() {
 
     if(inputSenha.value.length < 8){
         inputSenha.style = 'border-color: #E64A19;';
-        errosSenha.innerHTML  += "<li> O campo Senha deve ter no mínimo 8 caracteres. </li>";
+        errosSenha.innerHTML  = "<li> O campo Senha deve ter no mínimo 8 caracteres. </li>";
+        erros = true;
     }
     else if(inputSenha.value.length > 64){
         inputSenha.style = 'border-color: #E64A19;';
-        errosSenha.innerHTML  += "<li> O campo Senha deve ter no máximo 64 caracteres. </li>";
+        errosSenha.innerHTML  = "<li> O campo Senha deve ter no máximo 64 caracteres. </li>";
+        erros = true;
     }
     else{
         errosSenha.innerHTML = "";
+        erros = false;
     }
 
     return erros
@@ -97,15 +104,12 @@ window.addEventListener('load', () => {
     inputNome = document.querySelector("section.conteudo #form_editar #nome");
     inputTelefone = document.querySelector("section.conteudo #form_editar #telefone");
     inputEmail = document.querySelector("section.conteudo #form_editar #email");
-
     inputSenha = document.querySelector("section.conteudo #form_editar #pass");
-
     inputPrivacidade = document.querySelector("section.conteudo #form_editar #priv");
-
     inputExcluir = document.querySelector("section.conteudo div.excluir button");
 
     checked = localStorage.getItem("checked");
-
+    
     if(checked=="true"){
         inputPrivacidade.setAttribute("checked","");
     }
