@@ -1,3 +1,71 @@
+//produto principal
+function getProduto() {
+    fetch('https://raw.githubusercontent.com/JuliaMendes/alugaki/main/app/database/db.json')
+        .then(response => response.json())
+        .then(data => {
+            let produto = data.products.slice(12, 13)[0];
+
+            const produtoPrimeira = document.querySelector('section.primeira .produto');
+            const produtoDescricao = document.querySelector('section.segunda .descricao p');
+            const produtoVendedor = document.querySelector('section.segunda .vendedor');
+
+            produtoPrimeira.innerHTML = '';
+            produtoPrimeira.innerHTML = `
+                <div class="info">
+                    <h1>${produto.titulo}</h1>
+                    <div class="subtitulo">
+                        <img src="img/Star 1.png" alt="">
+                        <small>${produto.avaliacao}</small>
+                        <img src="img/location.png" alt="">
+                        <small style="color: #757575;">${produto.localizacao}</small>
+                    </div>
+                </div>
+                <div class="thumb" style="background-color: darkgray;"><img src=${produto.img}></div>
+                <div class="info2">
+                    <div class="esq">
+                        <img src="img/Star 1.png" alt="">
+                        <small>${produto.avaliacao}</small>
+                        <small style="color: #757575;">• ${produto.navaliacao} avaliações</small> <br>
+                        <small class="price">R$ ${produto.preco}</small>
+                    </div>
+                    <div class="dir">
+                        <button><img class="fav" src="img/favorite_border.png" alt=""></button>
+                        <button><img src="img/share.png" alt=""></button>
+                    </div>
+                </div>
+                `;
+
+            //Alterar apos arrumar o db
+
+            // produtoDescricao.innerHTML = '';
+            // produtoDescricao.innerHTML = `${produto.descricao}
+            // `;
+
+            // produtoVendedor.innerHTML = '';
+            // produtoVendedor.innerHTML = `
+            //     <div class="avatar" style="background-color: darkgray;"></div>
+            //     <div class="info">
+            //         <h3>John Doe</h3>
+            //         <div>
+            //             <img src="img/location.png" alt="">
+            //             <small style="color: #757575;">São Paulo, SP</small>
+            //         </div>
+            //         <div>
+            //             <img src="img/Star 1.png" alt="">
+            //             <small>4,8</small>
+            //             <small style="color: #757575;">• 750 avaliações</small> <br>
+            //         </div>
+            //     </div>
+            //     `;
+            
+
+        });
+}
+
+getProduto()
+
+
+//produtos similares
 const setaAnuncioEsquerda = (botao) => {
     let card = document.querySelector("section.terceira div.lista-produtos");
     let anuncios = document.querySelector("section.terceira .container");
@@ -62,7 +130,10 @@ function chamaProdutos() {
 
 chamaProdutos()
 
+
+//menu Dropdown, coracao favoritar, avaliacoes
 window.onload = () => {
+
     document.addEventListener("click", e => {
         const isDropdownButton = e.target.matches("[data-dropdown-button]")
         if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
@@ -79,18 +150,13 @@ window.onload = () => {
         })
     })
 
+    //clique coracao
     let verificacao = 0
-    console.log("deu bom")
-
     let coracao = document.querySelector('.fav')
-    console.log(coracao)
 
     coracao.onclick = (evento) => {
-
         //previne o evento nativo
         evento.preventDefault()
-
-        console.log("clicou no <3")
 
         if(verificacao == 0){
             coracao.src = "img/red-heart.png"
@@ -100,4 +166,18 @@ window.onload = () => {
             verificacao = 0
         }
     }
+
+    //avaliacoes
+    let botaoCarregar = document.querySelector('#botaoCarregar');
+    let avaliacao = document.querySelector('section.quarta .card-avaliacao');
+    let listaAval = document.querySelector('section.quarta .lista-aval');
+    let breakAval = document.querySelector('section.quarta .lista-aval break');
+
+    botaoCarregar.addEventListener('click', () => {
+        console.log('clicou')
+        let newAvaliacao = avaliacao.cloneNode(true);
+        listaAval.insertBefore(newAvaliacao, breakAval);
+    })
+
+
 }
