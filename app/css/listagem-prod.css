@@ -344,6 +344,13 @@ header .container .dropdown .dropdown-menu ul li {
     font-family: Roboto;
     margin-left: 60px;
 }
+.terceira button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 .terceira .lista-produtos .card-produto{
     width: 240px;
     margin-bottom: 30px;
