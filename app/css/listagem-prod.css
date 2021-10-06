@@ -178,6 +178,11 @@ header .container .dropdown .dropdown-menu ul li {
 
 
 /*primeiro container*/
+button:focus-visible{
+    outline-color: transparent;
+    outline-width: 0px;
+}
+
 .primeira .container{
     display: flex;
     align-items: center;
@@ -265,6 +270,9 @@ header .container .dropdown .dropdown-menu ul li {
     color:#009688;
     font-size: 20px;
 }
+.primeira .calendario a{
+    text-decoration: none;
+}
 .primeira .calendario .botao{
     display: flex;
     justify-content: flex-end;
@@ -278,6 +286,7 @@ header .container .dropdown .dropdown-menu ul li {
     font-family: 'Roboto';
     width: 130px;
     height: 40px;
+    cursor: pointer;
 }
 .primeira .calendario button:hover{
     opacity: 80%;

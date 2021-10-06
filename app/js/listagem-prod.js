@@ -3,7 +3,7 @@ function getProduto() {
     fetch('https://raw.githubusercontent.com/JuliaMendes/alugaki/main/app/database/db.json')
         .then(response => response.json())
         .then(data => {
-            let produto = data.products.slice(16, 17)[0];
+            let produto = data.products[16]
 
             const produtoPrimeira = document.querySelector('section.primeira .produto');
             const produtoDescricao = document.querySelector('section.segunda .descricao p');
@@ -154,9 +154,10 @@ window.onload = () => {
 
     //clique coracao
     let verificacao = 0
+    let botaoCoracao = document.querySelector('section.primeira .dir button')
     let coracao = document.querySelector('.fav')
 
-    coracao.onclick = (evento) => {
+    botaoCoracao.onclick = (evento) => {
         //previne o evento nativo
         evento.preventDefault()
 
