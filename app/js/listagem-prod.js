@@ -3,11 +3,10 @@ function getProduto() {
     fetch('https://raw.githubusercontent.com/JuliaMendes/alugaki/main/app/database/db.json')
         .then(response => response.json())
         .then(data => {
-            let produto = data.products.slice(16, 17)[0];
+            let produto = data.products[16]
 
             const produtoPrimeira = document.querySelector('section.primeira .produto');
             const produtoDescricao = document.querySelector('section.segunda .descricao p');
-            const produtoVendedor = document.querySelector('section.segunda .vendedor');
 
             produtoPrimeira.innerHTML = '';
             produtoPrimeira.innerHTML = `
@@ -29,37 +28,21 @@ function getProduto() {
                         <small class="price">R$ ${produto.preco}</small>
                     </div>
                     <div class="dir">
-                        <button><img class="fav" src="img/favorite_border.png" alt=""></button>
-                        <button><img src="img/share.png" alt=""></button>
+                        <button>
+                            <img class="fav" src="img/favorite_border.png" alt="">
+                        </button>
+                        <button>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://juliamendes.github.io/alugaki/app/listagem-prod.html" target="blank">
+                            <img src="img/share.png" alt="">
+                            </a>
+                        </button>
                     </div>
                 </div>
                 `;
 
-            console.log(produto);
-
             produtoDescricao.innerHTML = '';
             produtoDescricao.innerHTML = `${produto.descricao}
             `;
-
-            //Alterar apos arrumar o db
-
-            // produtoVendedor.innerHTML = '';
-            // produtoVendedor.innerHTML = `
-            //     <div class="avatar" style="background-color: darkgray;"></div>
-            //     <div class="info">
-            //         <h3>John Doe</h3>
-            //         <div>
-            //             <img src="img/location.png" alt="">
-            //             <small style="color: #757575;">São Paulo, SP</small>
-            //         </div>
-            //         <div>
-            //             <img src="img/Star 1.png" alt="">
-            //             <small>4,8</small>
-            //             <small style="color: #757575;">• 750 avaliações</small> <br>
-            //         </div>
-            //     </div>
-            //     `;
-            
 
         });
 }
@@ -134,6 +117,16 @@ chamaProdutos()
 
 
 //menu Dropdown, coracao favoritar, avaliacoes
+function getPerfil(){
+    let perfilAvaliador = document.querySelectorAll('section.quarta .card-avaliacao h3')
+    let nPerfil = 0;
+
+    perfilAvaliador.forEach((elemento) => {        
+        nPerfil += 1;
+        elemento.innerHTML = "Perfil " + nPerfil;
+    })
+}
+
 window.onload = () => {
 
     document.addEventListener("click", e => {
@@ -153,10 +146,11 @@ window.onload = () => {
     })
 
     //clique coracao
-    let verificacao = 0
-    let coracao = document.querySelector('.fav')
+    let verificacao = 0;
+    let botaoCoracao = document.querySelector('section.primeira .dir button');
+    let coracao = document.querySelector('.fav');
 
-    coracao.onclick = (evento) => {
+    botaoCoracao.onclick = (evento) => {
         //previne o evento nativo
         evento.preventDefault()
 
@@ -169,17 +163,22 @@ window.onload = () => {
         }
     }
 
-    //avaliacoes
+    //clique compartilhar
+    let botaoCompartilar = document.querySelector('section.primeira .share');
+
+    //avaliacoes - carregar mais
     let botaoCarregar = document.querySelector('#botaoCarregar');
     let avaliacao = document.querySelector('section.quarta .card-avaliacao');
     let listaAval = document.querySelector('section.quarta .lista-aval');
     let breakAval = document.querySelector('section.quarta .lista-aval break');
 
     botaoCarregar.addEventListener('click', () => {
-        console.log('clicou')
         let newAvaliacao = avaliacao.cloneNode(true);
         listaAval.insertBefore(newAvaliacao, breakAval);
+
+        getPerfil();
     })
 
-
+    //avaliacoes - trocar o n perfil
+    getPerfil();
 }

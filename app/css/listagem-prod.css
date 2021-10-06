@@ -178,6 +178,11 @@ header .container .dropdown .dropdown-menu ul li {
 
 
 /*primeiro container*/
+button:focus-visible{
+    outline-color: transparent;
+    outline-width: 0px;
+}
+
 .primeira .container{
     display: flex;
     align-items: center;
@@ -237,6 +242,7 @@ header .container .dropdown .dropdown-menu ul li {
     border: none;
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 .primeira .produto .info2 button:hover{
     background-color: #C4C4C4;
@@ -265,6 +271,9 @@ header .container .dropdown .dropdown-menu ul li {
     color:#009688;
     font-size: 20px;
 }
+.primeira .calendario a{
+    text-decoration: none;
+}
 .primeira .calendario .botao{
     display: flex;
     justify-content: flex-end;
@@ -278,6 +287,7 @@ header .container .dropdown .dropdown-menu ul li {
     font-family: 'Roboto';
     width: 130px;
     height: 40px;
+    cursor: pointer;
 }
 .primeira .calendario button:hover{
     opacity: 80%;
@@ -302,6 +312,9 @@ header .container .dropdown .dropdown-menu ul li {
 .segunda .descricao p{
     font-family: Montserrat;
     line-height: 23px;
+}
+.segunda a{
+    text-decoration: none;
 }
 .segunda .vendedor{
     margin-top: 70px;
@@ -406,9 +419,12 @@ header .container .dropdown .dropdown-menu ul li {
 .quarta h2{
     font-family: Roboto;
 }
+/* colocado o display none para apresentacao sprint javascript */
+/* ativar depois de implementar api de avaliacoes */
 .quarta .classificacao{
     display: flex;
     align-items: center;
+    display: none;
 }
 .quarta .classificacao img{
     width: 25px;
