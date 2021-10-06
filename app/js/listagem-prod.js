@@ -29,8 +29,14 @@ function getProduto() {
                         <small class="price">R$ ${produto.preco}</small>
                     </div>
                     <div class="dir">
-                        <button><img class="fav" src="img/favorite_border.png" alt=""></button>
-                        <button><img src="img/share.png" alt=""></button>
+                        <button>
+                            <img class="fav" src="img/favorite_border.png" alt="">
+                        </button>
+                        <button>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://juliamendes.github.io/alugaki/app/listagem-prod.html" target="blank">
+                            <img src="img/share.png" alt="">
+                            </a>
+                        </button>
                     </div>
                 </div>
                 `;
@@ -153,9 +159,9 @@ window.onload = () => {
     })
 
     //clique coracao
-    let verificacao = 0
-    let botaoCoracao = document.querySelector('section.primeira .dir button')
-    let coracao = document.querySelector('.fav')
+    let verificacao = 0;
+    let botaoCoracao = document.querySelector('section.primeira .dir button');
+    let coracao = document.querySelector('.fav');
 
     botaoCoracao.onclick = (evento) => {
         //previne o evento nativo
@@ -169,6 +175,9 @@ window.onload = () => {
             verificacao = 0
         }
     }
+
+    //clique compartilhar
+    let botaoCompartilar = document.querySelector('section.primeira .share');
 
     //avaliacoes
     let botaoCarregar = document.querySelector('#botaoCarregar');
