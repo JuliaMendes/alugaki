@@ -184,9 +184,9 @@ header .container .dropdown .dropdown-menu ul li {
 /*section com o formulário*/
 /* título da página */
 .formulario h1{
-    margin-left: 85px;
-    margin-bottom: 40px;
-    margin-top: 50px;
+     margin-left: 40px;
+    /*margin-bottom: 40px;
+    margin-top: 50px; */
     font-family: 'ABeeZee';
     font-weight: 600;
     font-size: 44px;
@@ -195,7 +195,7 @@ header .container .dropdown .dropdown-menu ul li {
 /* formulário */
 .formulario .container form{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 /* div com o preço e categoria */
@@ -301,6 +301,14 @@ section.formulario .dir img{
     transition: all 0.1s ease-in-out;
 }
 
+section.formulario form ul{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #757575;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 
 
 /* titulos h2 */
@@ -413,28 +421,46 @@ footer .copyright {
 @media (max-width: 1255px){
     .container{
         flex-wrap: wrap;
+        width: 100%;
     }
     .formulario .container{
-        margin-left: 30px;
         margin-right: 30px;
         flex-wrap: wrap;
     }
+    header .container{
+        padding: 20px;
+    }
 }
 @media (max-width: 995px){
+    .container{
+        width: 100%;
+    }
     .formulario .container form{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         gap: 20px;
+        width: 100%;
+        margin-left: 0;
     }
     .formulario h1{
         text-align: center;
+        margin-left: 0;
     }
     header .container{
         flex-direction: column;
     }
-    footer .container{
+}
+@media (max-width: 669px){
+    .logo-e-barra{
+        flex-wrap: wrap;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
-
+@media (max-width: 518px){
+    .logo-e-barra .barra input{
+        width: 20%;
+    }
+}

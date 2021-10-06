@@ -25,6 +25,7 @@ filtroCat.forEach((botaoQueEuAcabeiDeClicar) => {
     })
 })
 
+// filtros: preço
 function categoria(elemento) {
     console.log(elemento.category, valorBtn)
     return elemento.category === valorBtn
@@ -111,5 +112,4 @@ todosOsInputsPreco.forEach((umInputPreco) => {
         }
 
     })
-
 })

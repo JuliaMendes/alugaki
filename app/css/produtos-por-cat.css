@@ -179,7 +179,7 @@ header .container .dropdown .dropdown-menu ul li {
 .produtos .container {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 40px;
 }
 /*filtros*/
