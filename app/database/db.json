@@ -64,8 +64,8 @@
       "localizacao": "São Paulo, SP",
       "preco": "200/dia",
       "category": "Esporte e Lazer",
-      "id_anunciante": 0,
-      "descricao": "Tenda grande piramidal para eventos. Capacidade 30 pessoas"
+      "descricao": "Tenda grande piramidal para eventos. Capacidade 30 pessoas",
+      "id_anunciante": 0
     },
     {
       "id": 6,
@@ -176,6 +176,7 @@
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "85 /dia",
       "category": "Eletrônicos",
+      "descricao": "Camera fotografica profissional em perfeito estado, acompanha lente. Modelo XKC-512. Entrada USB C.",
       "id_anunciante": 0
     },
     {
