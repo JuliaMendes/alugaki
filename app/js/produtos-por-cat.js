@@ -14,33 +14,54 @@ document.addEventListener("click", e => {
     })
 })
 
-    // filtro: categoria
-    let filtroCat = document.querySelectorAll('.botao-cat')
-    let valorBtn = 'Esporte e Lazer';
+// filtro: categoria
+let filtroCat = document.querySelectorAll('.botao-cat')
+let valorBtn = 'Esporte e Lazer';
 
-    filtroCat.forEach((botaoQueEuAcabeiDeClicar) => {
-        botaoQueEuAcabeiDeClicar.addEventListener("click", () => {
-            valorBtn = botaoQueEuAcabeiDeClicar.innerText
-            chamaProdutos()
-        })
+filtroCat.forEach((botaoQueEuAcabeiDeClicar) => {
+    botaoQueEuAcabeiDeClicar.addEventListener("click", () => {
+        valorBtn = botaoQueEuAcabeiDeClicar.innerText
+        chamaProdutos()
     })
+})
 
 
-function chamaProdutos() {
+function categoria(elemento) {
+    console.log(elemento.category, valorBtn)
+    return elemento.category === valorBtn
+}
+
+function valorMenor(elemento) {
+    const preco = parseInt(elemento.preco.split('/')[0]);
+
+    return preco <= 99;
+}
+
+function valorMedio(elemento) {
+    const preco = parseInt(elemento.preco.split('/')[0]);
+
+    return preco > 99 && preco <= 199;
+}
+
+function valorMaior(elemento) {
+    const preco = parseInt(elemento.preco.split('/')[0]);
+
+    return preco > 199;
+}
+
+
+
+function chamaProdutos(filterValor = (valor) => valor) {
     fetch('https://raw.githubusercontent.com/JuliaMendes/alugaki/main/app/database/db.json')
         .then(response => response.json())
         .then(data => {
             const listaProdutos = document.querySelector('.produtos .lista-produtos')
             const tituloCat = document.querySelector('.produtos .titulo h1')
 
-            function categoria(elemento) {
-                console.log(elemento.category, valorBtn)
-                return elemento.category === valorBtn
-            }
-    
             listaProdutos.innerHTML = '';
             data.products
                 .filter(categoria)
+                .filter(filterValor)
                 .forEach(elemento => {
                     tituloCat.innerHTML = elemento.category
                     listaProdutos.innerHTML += `<div class="card-produto">
@@ -66,4 +87,30 @@ function chamaProdutos() {
                 })
         });
 }
+
 chamaProdutos()
+
+
+// teste Júlia
+const todosOsInputsPreco = document.querySelectorAll('.preco input')
+// console.log(chamaPreco)
+
+todosOsInputsPreco.forEach((umInputPreco) => {
+    umInputPreco.addEventListener("change", (e) => {
+        let pegandoValorId = e.target.id
+
+        switch (pegandoValorId) {
+            case 'menor':
+                chamaProdutos(valorMenor)
+                break;
+            case 'medio':
+                chamaProdutos(valorMedio)
+                break;
+            case 'maior':
+                chamaProdutos(valorMaior)
+                break;
+        }
+
+    })
+
+})

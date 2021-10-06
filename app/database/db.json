@@ -62,7 +62,7 @@
       "avaliacao": 4.5,
       "navaliacao": 12,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "10 /dia",
+      "preco": "10/dia",
       "category": "Moda"
     },
 
@@ -73,7 +73,7 @@
       "avaliacao": 5.0,
       "navaliacao": 24,
       "localizacao": "São Paulo, SP",
-      "preco": "100 /dia",
+      "preco": "100/dia",
       "category": "Moda"
     },
 
@@ -84,7 +84,7 @@
       "avaliacao": 4.7,
       "navaliacao": 5,
       "localizacao": "São Paulo, SP",
-      "preco": "60 /dia",
+      "preco": "60/dia",
       "category": "Moda"
     },
 
@@ -95,7 +95,7 @@
       "avaliacao": 4.0,
       "navaliacao": 20,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "60 /dia",
+      "preco": "60/dia",
       "category": "Moda"
     },
 
@@ -106,7 +106,7 @@
       "avaliacao": 4.0,
       "navaliacao": 13,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "90 /dia",
+      "preco": "90/dia",
       "category": "Moda"
     },
 
@@ -117,7 +117,7 @@
       "avaliacao": 4.5,
       "navaliacao": 6,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "15 /dia",
+      "preco": "15/dia",
       "category": "Eletrônicos"
     },
 
@@ -128,7 +128,7 @@
       "avaliacao": 3.9,
       "navaliacao": 16,
       "localizacao": "São Paulo, SP",
-      "preco": "90 /dia",
+      "preco": "90/dia",
       "category": "Eletrônicos"
     },
 
@@ -139,7 +139,7 @@
       "avaliacao": 4.9,
       "navaliacao": 27,
       "localizacao": "São Paulo, SP",
-      "preco": "5 /dia",
+      "preco": "5/dia",
       "category": "Eletrônicos"
     },
 
@@ -150,7 +150,7 @@
       "avaliacao": 4.0,
       "navaliacao": 21,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "40 /dia",
+      "preco": "40/dia",
       "category": "Eletrônicos"
     },
     
@@ -161,7 +161,7 @@
       "avaliacao": 3.2,
       "navaliacao": 11,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "85 /dia",
+      "preco": "85/dia",
       "category": "Eletrônicos"
     },
     {
@@ -171,7 +171,7 @@
       "avaliacao": 3.8,
       "navaliacao": 14,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "20 /dia",
+      "preco": "20/dia",
       "category": "Ferramentas e Utilitários"
     },
     {
@@ -181,7 +181,7 @@
       "avaliacao": 3.4,
       "navaliacao": 12,
       "localizacao": "São Paulo, SP",
-      "preco": "35 /dia",
+      "preco": "35/dia",
       "category": "Ferramentas e Utilitários"
     },
     {
@@ -191,7 +191,7 @@
       "avaliacao": 4.5,
       "navaliacao": 20,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "70 /dia",
+      "preco": "70/dia",
       "category": "Ferramentas e Utilitários"
     },
     {
@@ -201,7 +201,7 @@
       "avaliacao": 4.3,
       "navaliacao": 21,
       "localizacao": "São Paulo, SP",
-      "preco": "80 /dia",
+      "preco": "80/dia",
       "category": "Ferramentas e Utilitários"
     },
     {
@@ -211,7 +211,7 @@
       "avaliacao": 3.9,
       "navaliacao": 30,
       "localizacao": "Rio de Janeiro, RJ",
-      "preco": "90 /dia",
+      "preco": "90/dia",
       "category": "Ferramentas e Utilitários"
     }
   ]
