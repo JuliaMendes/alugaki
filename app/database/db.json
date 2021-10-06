@@ -192,6 +192,17 @@
       "id_anunciante": 0
     },
     {
+      "id": 23,
+      "img": "./img/equipamento-dj.jpeg",
+      "titulo": "Equipamento DJ",
+      "avaliacao": 4.0,
+      "navaliacao": 9,
+      "localizacao": "São Paulo, SP",
+      "preco": "150 /dia",
+      "category": "Eletrônicos",
+      "id_anunciante": 0
+    },
+    {
       "id": 16,
       "img": "./img/furadeira.jpg",
       "titulo": "Furadeira e Parafusadeira",
