@@ -52,6 +52,7 @@ header .container .barra form{
 }
 
 header .container .barra form input{
+    padding: 0 0 0 20px;
     width: 450px;
     height: 40px;
     border-radius: 20px;
@@ -342,6 +343,13 @@ header .container .dropdown .dropdown-menu ul li {
 .terceira h2{
     font-family: Roboto;
     margin-left: 60px;
+}
+.terceira button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 .terceira .lista-produtos .card-produto{
     width: 240px;
