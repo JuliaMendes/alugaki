@@ -313,6 +313,9 @@ button:focus-visible{
     font-family: Montserrat;
     line-height: 23px;
 }
+.segunda a{
+    text-decoration: none;
+}
 .segunda .vendedor{
     margin-top: 70px;
     display: flex;
@@ -416,9 +419,12 @@ button:focus-visible{
 .quarta h2{
     font-family: Roboto;
 }
+/* colocado o display none para apresentacao sprint javascript */
+/* ativar depois de implementar api de avaliacoes */
 .quarta .classificacao{
     display: flex;
     align-items: center;
+    display: none;
 }
 .quarta .classificacao img{
     width: 25px;
@@ -437,6 +443,7 @@ button:focus-visible{
     font-weight: bold;
     color:#757575;
     font-size: 15px;
+    display:
 }
 .quarta .classificacao a img{
     width: 10px;
