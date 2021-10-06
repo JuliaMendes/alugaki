@@ -68,6 +68,18 @@
       "descricao": "Tenda grande piramidal para eventos. Capacidade 30 pessoas"
     },
     {
+      "id": 22,
+      "img": "./img/tenda-grande.jpeg",
+      "titulo": "Brinquedo Inflável",
+      "avaliacao": 5.0,
+      "navaliacao": 45,
+      "localizacao": "Rio de Janeiro, RJ",
+      "preco": "180/dia",
+      "category": "Esporte e Lazer",
+      "id_anunciante": 0,
+      "descricao": "Brinquedo inflável para festa infantil"
+    },
+    {
       "id": 6,
       "img": "./img/jaqueta_jeans.png",
       "titulo": "Jaqueta Jeans",
