@@ -9,36 +9,63 @@
     <title>AlugaKi - minha conta</title>
 </head>
 <body>
-  <header>
-    <div class="container">
-        <div class="logo-e-barra">
-            <div class="logo">
-                <a href="index.html"><img src="img/alugaKi-removebg-preview.png" alt="Logo alugaki"></a>
+    <header>
+        <div class="container">
+            <div class="logo-e-barra">
+                <div class="logo">
+                    <a href="index.html"><img src="img/alugaKi-removebg-preview.png" alt="Logo alugaki"></a>
+                </div>
+                <div class="barra">
+                    <form>
+                        <input type="text" id="barra" name="barra">
+                        <button class="lupa"><img src="img/lupa.png" alt="Icone de lupa"></button>
+                    </form>
+                </div>
             </div>
-            <div class="barra">
-                <form>
-                    <input type="text" id="barra" name="barra">
-                    <button class="lupa"><img src="img/lupa.png" alt="Icone de lupa"></button>
-                </form>
+            <div class="botoes">
+                <a href="cadastro-produto.html"><button>Anunciar</button></a>
+                <div class="dropdown" data-dropdown>
+                    <button class="login" data-dropdown-button><img src="img/btn_login.png"
+                            alt="Botao de Menu"></button>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>
+                                <a href="cadastro-usuario.html">
+                                    Cadastre-se
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html">
+                                    Login
+                                </a>
+                            </li>
+                            <li>
+                                <a href="perfil-privado.html">
+                                    Meu perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cadastro-produto.html">
+                                    Anunciar
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="botoes">
-            <button>Anunciar</button>
-            <button><img src="img/btn_login.png" alt="Botao de Menu"></button>
-        </div>
-    </div>
-</header>
+    </header>
 ​
 <section class="formulario">
   <h1>Anuncie aki</h1>
   <div class="container">
     <form>
     <div class="esq">
-      
         <label for="titulo">Título</label> <br>
         <input type="" id="titulo" name="titulo" required> <br>
         <label for="descricao" required maxlength="300">Descrição</label> <br>
-        <textarea name="descricao" required></textarea> <br>
+        <textarea  id="descricao" name="descricao" required></textarea> <br>
 ​
         <div class="preco-cat">
           <div class="preco">
@@ -51,6 +78,8 @@
                <option value="por-mes">/ Mês</option>
                <option value="por-hora">/ Hora</option>
             </select>
+            
+
           </div>
           </div>
 ​
@@ -79,7 +108,7 @@
         <label for="localizacao">Localização</label>
         <br>
         <input type="text" id="localizacao" placeholder="CEP ">
-        
+        <ul class="erros"></ul>
     </div>
 ​
     <div class="dir">
@@ -102,11 +131,10 @@
           <br>
       </div> 
     </div>
-​
-​
+
     <div class="botoes">
       <button id= "btn-cancelar" type="button">Cancelar</button>
-      <button id= "btn-publicar" type="submit">Publicar</button>
+      <button id="btn-anunciar" type="submit">Anunciar</button>
   </div>
   </form>
   </div>
@@ -143,5 +171,6 @@
   </div>
 </footer>
 <script src="js/main.js"></script>
+<script src="js/cadastro-produto.js"></script>
 </body>
 </html>

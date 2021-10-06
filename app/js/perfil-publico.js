@@ -1,7 +1,3 @@
-console.log('JS conectado!');
-
-let toggleCategoria = true;
-
 //Conteudo - Anuncios
 
 const setaAnuncio = (botao) => {
