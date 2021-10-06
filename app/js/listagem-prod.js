@@ -3,7 +3,7 @@ function getProduto() {
     fetch('https://raw.githubusercontent.com/JuliaMendes/alugaki/main/app/database/db.json')
         .then(response => response.json())
         .then(data => {
-            let produto = data.products.slice(12, 13)[0];
+            let produto = data.products.slice(16, 17)[0];
 
             const produtoPrimeira = document.querySelector('section.primeira .produto');
             const produtoDescricao = document.querySelector('section.segunda .descricao p');
@@ -95,7 +95,7 @@ function chamaProdutos() {
                  card.innerHTML = '';
             })
 
-            produtos = data.products.slice(11, 15)
+            produtos = data.products.slice(12, 16)
 
             for(let i=0; i<produtos.length;i++){
                 card = cardsAnuncios[i];
