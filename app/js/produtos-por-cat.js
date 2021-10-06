@@ -40,7 +40,7 @@ function valorMenor(elemento) {
 function valorMedio(elemento) {
     const preco = parseInt(elemento.preco.split('/')[0]);
 
-    return preco > 99 && preco <= 199;
+    return (preco > 99 && preco <= 199);
 }
 
 function valorMaior(elemento) {
