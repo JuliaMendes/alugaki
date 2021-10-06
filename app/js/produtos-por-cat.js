@@ -113,3 +113,21 @@ todosOsInputsPreco.forEach((umInputPreco) => {
 
     })
 })
+
+let botoesPagination = document.querySelectorAll('.pagination a')
+console.log(botoesPagination)
+let valorPag = '1';
+
+botoesPagination.forEach((botaoQueEuAcabeiDeClicar) => {
+     botaoQueEuAcabeiDeClicar.addEventListener("click", () => {
+         if (!botaoQueEuAcabeiDeClicar.classList.contains("ativo")) {
+             botaoQueEuAcabeiDeClicar.classList.add("ativo")
+             valorBtn = botaoQueEuAcabeiDeClicar.innerText
+         }
+         botoesPagination.forEach((botao) => {
+            if (botao !== botaoQueEuAcabeiDeClicar) {
+                 botao.classList.remove("ativo")
+             }
+         })
+     })
+     })

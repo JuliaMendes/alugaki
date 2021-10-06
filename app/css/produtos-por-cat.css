@@ -315,9 +315,6 @@ header .container .dropdown .dropdown-menu ul li {
 .produtos .container-fim li:first-child{
     transform: rotate(180deg);
 }
-.produtos .container-fim li:nth-child(2) a{
-    color:#FF5722;
-}
 .produtos .container-fim li a{
     text-decoration: none;
     color: #484848;
@@ -326,7 +323,9 @@ header .container .dropdown .dropdown-menu ul li {
     color:#FF5722;
     transition: 0.5s;
 }
-
+.produtos .container-fim li a.ativo{
+    color:#FF5722;
+}
 /*footer*/
 footer {
     background-color: #484848;
