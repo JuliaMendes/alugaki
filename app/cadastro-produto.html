@@ -64,8 +64,10 @@
     <div class="esq">
         <label for="titulo">Título</label> <br>
         <input type="" id="titulo" name="titulo" required> <br>
+        <ul id="erros-titulo"></ul>
         <label for="descricao" required maxlength="300">Descrição</label> <br>
         <textarea  id="descricao" name="descricao" required></textarea> <br>
+        <ul id="erros-descricao"></ul>
 ​
         <div class="preco-cat">
           <div class="preco">
@@ -107,7 +109,11 @@
 ​
         <label for="localizacao">Localização</label>
         <br>
-        <input type="text" id="localizacao" placeholder="CEP ">
+        <input type="text" id="localizacao" placeholder="CEP "><br>
+        <label for="endereco"> Endereço <br> <input type="text" id="endereco"> </label><br>
+        <label for="bairro"> Bairro<br><input type="text" id="bairro"> </label><br>
+        <label for="cidade"> Cidade<br><input type="text" id="cidade"> </label><br>
+        <label for="estado"> Estado<br><input type="text" id="estado"> </label><br>
         <ul class="erros"></ul>
     </div>
 ​

@@ -300,6 +300,14 @@ section.formulario .dir img{
     transition: all 0.1s ease-in-out;
 }
 
+section.formulario form ul{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #757575;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 
 
 /* titulos h2 */
