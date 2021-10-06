@@ -16,8 +16,23 @@ window.addEventListener("load", () => {
     
         let inputPreco = document.querySelector("#preco");
         let inputCategoria = document.querySelector("#categoria");
-        let inputFotos = document.querySelector("#fotos");
+        //let inputFotos = document.querySelector("#fotos");
         evento.preventDefault();
+
+
+        let errosTitulo = document.querySelector("#erros-titulo");
+        errosTitulo.innerHTML = "";
+
+        let errosDescricao = document.querySelector("#erros-descricao");
+        errosDescricao.innerHTML = "";
+
+
+        let errosPreco = document.querySelector("#erros-preco");
+        errosPreco.innerHTML = "";
+
+
+        let errosCategoria = document.querySelector("#erros-cat");
+        errosCategoria.innerHTML = "";
 
         //let htmlErros = document.querySelector("ul.erros");
         //console.log(htmlErros);
@@ -30,32 +45,31 @@ window.addEventListener("load", () => {
         
 
         if(inputTitulo.value.length < 2 || inputTitulo.value.length > 100){
-            let errosTitulo = document.querySelector("#erros-titulo");
-            errosTitulo.innerHTML = "";
             errosTitulo.innerHTML += "<li>" + "O Campo Título deve conter de 2 a 100 caracteres" + "</li>";
             erroTit = true;
+        }else{
+            errosTitulo.innerHTML = "";
         }
 
         if(inputDescricao.value.length < 10){
-            let errosDescricao = document.querySelector("#erros-descricao");
-            errosDescricao.innerHTML = "";
             errosDescricao.innerHTML += "<li>" + "O campo Descrição deve conter no mínimo 10 caracteres." + "</li>";
             erroDesc = true;
-            
+        }else{
+            errosDescricao.innerHTML = "";
         }
 
         if ((inputPreco.value == inputPreco.placeholder) || (inputPreco.value == "")){
-            let errosPreco = document.querySelector("#erros-preco");
-            errosPreco.innerHTML = "";
             errosPreco.innerHTML += "<li>" + "Por favor, insira o preço do produto." + "</li>";
             erroPre = true;
+        }else{
+            errosPreco.innerHTML = "";
         }
 
         if (inputCategoria.value == ""){
-            let errosCategoria = document.querySelector("#erros-cat");
-            errosCategoria.innerHTML = "";
             errosCategoria.innerHTML += "<li>" + "Por favor, selecione uma categoria para o produto." + "</li>";
             erroCat = true;
+        }else{
+            errosCategoria.innerHTML = "";
         }
         
         if(!(erroTit || erroDesc || erroPre || erroCat)){
