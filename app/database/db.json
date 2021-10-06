@@ -8,9 +8,9 @@
       "navaliacao": 27,
       "localizacao": "São Paulo, SP",
       "preco": "30/dia",
-      "category": "Esporte e Lazer"
+      "category": "Esporte e Lazer",
+      "id_anunciante": 2
     },
-
     {
       "id": 2,
       "img": "./img/bicicleta.jpg",
@@ -19,9 +19,9 @@
       "navaliacao": 31,
       "localizacao": "São Paulo, SP",
       "preco": "40/dia",
-      "category": "Esporte e Lazer"
+      "category": "Esporte e Lazer",
+      "id_anunciante": 0
     },
-
     {
       "id": 3,
       "img": "./img/prancha.jpg",
@@ -30,9 +30,9 @@
       "navaliacao": 42,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "60/dia",
-      "category": "Esporte e Lazer"
+      "category": "Esporte e Lazer",
+      "id_anunciante": 0
     },
-
     {
       "id": 4,
       "img": "./img/barraca.jpg",
@@ -41,9 +41,9 @@
       "navaliacao": 60,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "80/dia",
-      "category": "Esporte e Lazer"
+      "category": "Esporte e Lazer",
+      "id_anunciante": 0
     },
-
     {
       "id": 5,
       "img": "./img/skate.jpg",
@@ -52,9 +52,9 @@
       "navaliacao": 27,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "20/dia",
-      "category": "Esporte e Lazer"
+      "category": "Esporte e Lazer",
+      "id_anunciante": 0
     },
-
     {
       "id": 6,
       "img": "./img/jaqueta_jeans.png",
@@ -63,9 +63,9 @@
       "navaliacao": 12,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "10 /dia",
-      "category": "Moda"
+      "category": "Moda",
+      "id_anunciante": 0
     },
-
     {
       "id": 7,
       "img": "./img/sapato_louboutin.png",
@@ -74,9 +74,9 @@
       "navaliacao": 24,
       "localizacao": "São Paulo, SP",
       "preco": "100 /dia",
-      "category": "Moda"
+      "category": "Moda",
+      "id_anunciante": 0
     },
-
     {
       "id": 8,
       "img": "./img/mochila_fall.png",
@@ -85,9 +85,9 @@
       "navaliacao": 5,
       "localizacao": "São Paulo, SP",
       "preco": "60 /dia",
-      "category": "Moda"
+      "category": "Moda",
+      "id_anunciante": 0
     },
-
     {
       "id": 9,
       "img": "./img/doc.png",
@@ -96,9 +96,9 @@
       "navaliacao": 20,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "60 /dia",
-      "category": "Moda"
+      "category": "Moda",
+      "id_anunciante": 0
     },
-
     {
       "id": 10,
       "img": "./img/jordan.png",
@@ -107,9 +107,10 @@
       "navaliacao": 13,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "90 /dia",
-      "category": "Moda"
+      "category": "Moda",
+      "descricao": "Jordan University tam 42 masculino, pouco usado",
+      "id_anunciante": 1
     },
-
     {
       "id": 11,
       "img": "./img/sombluetooth.jpeg",
@@ -118,9 +119,9 @@
       "navaliacao": 6,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "15 /dia",
-      "category": "Eletrônicos"
+      "category": "Eletrônicos",
+      "id_anunciante": 0
     },
-
     {
       "id": 12,
       "img": "./img/xboxone.jpeg",
@@ -129,9 +130,9 @@
       "navaliacao": 16,
       "localizacao": "São Paulo, SP",
       "preco": "90 /dia",
-      "category": "Eletrônicos"
+      "category": "Eletrônicos",
+      "id_anunciante": 0
     },
-
     {
       "id": 13,
       "img": "./img/arduino.jpeg",
@@ -140,9 +141,9 @@
       "navaliacao": 27,
       "localizacao": "São Paulo, SP",
       "preco": "5 /dia",
-      "category": "Eletrônicos"
+      "category": "Eletrônicos",
+      "id_anunciante": 0
     },
-
     {
       "id": 14,
       "img": "./img/roboaspirador.jpeg",
@@ -151,9 +152,9 @@
       "navaliacao": 21,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "40 /dia",
-      "category": "Eletrônicos"
+      "category": "Eletrônicos",
+      "id_anunciante": 0
     },
-    
     {
       "id": 15,
       "img": "./img/cameraprofissional.jpeg",
@@ -162,7 +163,8 @@
       "navaliacao": 11,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "85 /dia",
-      "category": "Eletrônicos"
+      "category": "Eletrônicos",
+      "id_anunciante": 0
     },
     {
       "id": 16,
@@ -172,7 +174,8 @@
       "navaliacao": 14,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "20 /dia",
-      "category": "Ferramentas e Utilitários"
+      "category": "Ferramentas e Utilitários",
+      "id_anunciante": 0
     },
     {
       "id": 17,
@@ -182,7 +185,8 @@
       "navaliacao": 12,
       "localizacao": "São Paulo, SP",
       "preco": "35 /dia",
-      "category": "Ferramentas e Utilitários"
+      "category": "Ferramentas e Utilitários",
+      "id_anunciante": 0
     },
     {
       "id": 18,
@@ -192,7 +196,8 @@
       "navaliacao": 20,
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "70 /dia",
-      "category": "Ferramentas e Utilitários"
+      "category": "Ferramentas e Utilitários",
+      "id_anunciante": 0
     },
     {
       "id": 19,
@@ -202,7 +207,8 @@
       "navaliacao": 21,
       "localizacao": "São Paulo, SP",
       "preco": "80 /dia",
-      "category": "Ferramentas e Utilitários"
+      "category": "Ferramentas e Utilitários",
+      "id_anunciante": 0
     },
     {
       "id": 20,
@@ -213,6 +219,75 @@
       "localizacao": "Rio de Janeiro, RJ",
       "preco": "90 /dia",
       "category": "Ferramentas e Utilitários"
+    }
+  ],
+  "avaliacoes": [
+    {
+      "id": 1,
+      "avaliacao": 5.0,
+      "descricao": "Coube perfeitamente e parece novo. Recomendo.",
+      "id_produto": 10,
+      "id_avaliador": 1
+    },
+    {
+      "id": 2,
+      "avaliacao": 4.0,
+      "descricao": "Gostei.",
+      "id_produto": 10,
+      "id_avaliador": 2
+    },
+    {
+      "id": 3,
+      "avaliacao": 4.5,
+      "descricao": "Anunciante se atrasou para entregar o item, mas o produto em si esta perfeito.",
+      "id_produto": 10,
+      "id_avaliador": 3
+    },
+    {
+      "id": 4,
+      "avaliacao": 5.0,
+      "descricao": "Adorei! Pretendo alugar de novo no futuro.",
+      "id_produto": 10,
+      "id_avaliador": 4
+    },
+    {
+      "id": 5,
+      "avaliacao": 3.5,
+      "descricao": "okay",
+      "id_produto": 10,
+      "id_avaliador": 5
+    }
+  ],
+  "perfis": [
+    {
+      "id": 1,
+      "avaliacao": 5.0,
+      "nome": "João",
+      "foto_perfil": "./img/pessoa1.jpg"
+    },
+    {
+      "id": 2,
+      "avaliacao": 5.0,
+      "nome": "Ana",
+      "foto_perfil": "./img/pessoa2.jpg"
+    },
+    {
+      "id": 3,
+      "avaliacao": 5.0,
+      "nome": "Carlos",
+      "foto_perfil": "./img/pessoa3.jpg"
+    },
+    {
+      "id": 4,
+      "avaliacao": 5.0,
+      "nome": "Cristina",
+      "foto_perfil": "./img/pessoa4.jpg"
+    },
+    {
+      "id": 5,
+      "avaliacao": 5.0,
+      "nome": "Laura",
+      "foto_perfil": "./img/pessoa5.jpg"
     }
   ]
 }

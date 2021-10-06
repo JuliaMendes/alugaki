@@ -1,9 +1,9 @@
 function validaNome() {
     let errosNome = document.querySelector("#erros-nome");
 
-    if(inputNome.value.length<3){
+    if(inputNome.value.length<6){
         inputNome.style = 'border-color: #E64A19;';
-        errosNome.innerHTML = "<li> O campo Nome deve ter no mínimo 3 caracteres. </li>";
+        errosNome.innerHTML = "<li> O campo Nome deve ter no mínimo 6 caracteres. </li>";
         erros = true;
     }
     else if (inputNome.value.length > 100){
