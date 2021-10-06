@@ -15,9 +15,9 @@ document.addEventListener("click", e => {
 })
 
 
-let latitude;
-let longitude;
-let estado;
+// let latitude;
+// let longitude;
+// let estado;
 
 if (window.screen.width < 768) {
     if ('geolocation' in navigator) {

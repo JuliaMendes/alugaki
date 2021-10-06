@@ -56,6 +56,18 @@
       "id_anunciante": 0
     },
     {
+      "id": 21,
+      "img": "./img/tenda-grande.jpeg",
+      "titulo": "Tenda Grande",
+      "avaliacao": 4.9,
+      "navaliacao": 36,
+      "localizacao": "São Paulo, SP",
+      "preco": "200/dia",
+      "category": "Esporte e Lazer",
+      "id_anunciante": 0,
+      "descricao": "Tenda grande piramidal para eventos. Capacidade 30 pessoas"
+    },
+    {
       "id": 6,
       "img": "./img/jaqueta_jeans.png",
       "titulo": "Jaqueta Jeans",
