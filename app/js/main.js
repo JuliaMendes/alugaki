@@ -14,17 +14,29 @@ document.addEventListener("click", e => {
     })
 })
 
+let latitude;
+let longitude;
+let estado;
 
 if (window.screen.width < 768) {
     if ('geolocation' in navigator) {
         navigator.geolocation.getCurrentPosition(function (position) {
             console.log(position)
+            latitude = position.coords.latitude
+            longitude = position.coords.longitude
+
+           fetch(`https://geolocation.contrateumdev.com.br/api/geocode?lat=${latitude}7&lon=${longitude}`) 
+           .then(response => response.json())
+           .then(data => {
+               estado = data.address.state
+               console.log(estado)
+           })
+        
         }, function (error) {
             console.log(error)
         })
     } else {
         alert('ops, não foi possível pegar a sua localização')
-
     }
 }
 
@@ -36,6 +48,13 @@ function busca() {
     window.location.assign(`produtos-por-cat.html?localizacao=${localizacao}&categoria=${categoria}&produto=${produto}`)
 }
 
+function buscaMobile() {
+    const localizacao = estado
+    const produto = document.querySelector('#produto-mobile').value;
+
+    window.location.assign(`produtos-por-cat.html?localizacao=${localizacao}&produto=${produto}`)
+}
+
 let menuBotoesCategoria = document.querySelectorAll('.botoes-categoria button')
 let valorBtn = 'Esporte e Lazer';
 
@@ -45,7 +64,6 @@ menuBotoesCategoria.forEach((botaoQueEuAcabeiDeClicar) => {
             botaoQueEuAcabeiDeClicar.classList.add("ativo")
             valorBtn = botaoQueEuAcabeiDeClicar.innerText
             chamaProdutos()
-
         }
         menuBotoesCategoria.forEach((botao) => {
             if (botao !== botaoQueEuAcabeiDeClicar) {
@@ -95,6 +113,5 @@ function chamaProdutos() {
                 })
         });
 }
-
 
 chamaProdutos()

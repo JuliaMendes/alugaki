@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/app/img/favicon128.ico">
     <link rel="stylesheet" href="./css/cadastro-produto.css">
-    <title>AlugaKi - minha conta</title>
+    <title>Anuncie aqui | alugaKi</title>
 </head>
 <body>
     <header>
@@ -58,14 +58,16 @@
     </header>
 ​
 <section class="formulario">
-  <h1>Anuncie aki</h1>
   <div class="container">
+    <h1>Anuncie aki</h1>
     <form>
     <div class="esq">
         <label for="titulo">Título</label> <br>
         <input type="" id="titulo" name="titulo" required> <br>
+        <ul id="erros-titulo"></ul>
         <label for="descricao" required maxlength="300">Descrição</label> <br>
         <textarea  id="descricao" name="descricao" required></textarea> <br>
+        <ul id="erros-descricao"></ul>
 ​
         <div class="preco-cat">
           <div class="preco">
@@ -107,7 +109,11 @@
 ​
         <label for="localizacao">Localização</label>
         <br>
-        <input type="text" id="localizacao" placeholder="CEP ">
+        <input type="text" id="localizacao" placeholder="CEP "><br>
+        <label for="endereco"> Endereço <br> <input type="text" id="endereco"> </label><br>
+        <label for="bairro"> Bairro<br><input type="text" id="bairro"> </label><br>
+        <label for="cidade"> Cidade<br><input type="text" id="cidade"> </label><br>
+        <label for="estado"> Estado<br><input type="text" id="estado"> </label><br>
         <ul class="erros"></ul>
     </div>
 ​
