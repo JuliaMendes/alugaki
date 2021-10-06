@@ -31,6 +31,7 @@ function categoria(elemento) {
     return elemento.category === valorBtn
 }
 
+
 function valorMenor(elemento) {
     const preco = parseInt(elemento.preco.split('/')[0]);
 
@@ -91,9 +92,8 @@ function chamaProdutos(filterValor = (valor) => valor) {
 chamaProdutos()
 
 
-// teste Júlia
+
 const todosOsInputsPreco = document.querySelectorAll('.preco input')
-// console.log(chamaPreco)
 
 todosOsInputsPreco.forEach((umInputPreco) => {
     umInputPreco.addEventListener("change", (e) => {
