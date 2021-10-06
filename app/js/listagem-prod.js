@@ -35,11 +35,13 @@ function getProduto() {
                 </div>
                 `;
 
-            //Alterar apos arrumar o db
+            console.log(produto);
 
-            // produtoDescricao.innerHTML = '';
-            // produtoDescricao.innerHTML = `${produto.descricao}
-            // `;
+            produtoDescricao.innerHTML = '';
+            produtoDescricao.innerHTML = `${produto.descricao}
+            `;
+
+            //Alterar apos arrumar o db
 
             // produtoVendedor.innerHTML = '';
             // produtoVendedor.innerHTML = `
