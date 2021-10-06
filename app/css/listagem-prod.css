@@ -286,6 +286,12 @@ header .container .dropdown .dropdown-menu ul li {
     width: 20px;
     height: 20px;
 }
+.primeira .produto .thumb img{
+    width: 550px;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 25px;
+}
 
 .segunda{
     margin-top: 50px;
@@ -457,16 +463,20 @@ header .container .dropdown .dropdown-menu ul li {
 .quarta .card-avaliacao .avaliador .infos p{
     font-family: Montserrat;
 }
-.quarta a{
+.quarta button{
+    font-size: 16px;
     text-decoration: none;
     font-family: Roboto;
     color:#757575;
     font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
-.quarta a:hover{
+.quarta button:hover{
     text-decoration: underline;
 }
-.quarta a img{
+.quarta button img{
     margin-left: 5px;
     width: 10px;
     height: 10px;
