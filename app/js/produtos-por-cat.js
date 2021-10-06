@@ -1,3 +1,4 @@
+const selecionado = [1, 2, 3, 4, 5]
 document.addEventListener("click", e => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]")
     if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
@@ -63,6 +64,7 @@ function chamaProdutos(filterValor = (valor) => valor) {
             data.products
                 .filter(categoria)
                 .filter(filterValor)
+                .filter(filtraNotas)
                 .forEach(elemento => {
                     tituloCat.innerHTML = elemento.category
                     listaProdutos.innerHTML += `<div class="card-produto">
@@ -91,8 +93,6 @@ function chamaProdutos(filterValor = (valor) => valor) {
 
 chamaProdutos()
 
-
-
 const todosOsInputsPreco = document.querySelectorAll('.preco input')
 
 todosOsInputsPreco.forEach((umInputPreco) => {
@@ -114,6 +114,49 @@ todosOsInputsPreco.forEach((umInputPreco) => {
     })
 })
 
+// filtro checkbox
+const checkboxAvaliacao = document.querySelectorAll('input[name="avaliacao"]')
+// const selecionado = []
+
+// checkboxAvaliacao.forEach((avaliacao) => {
+//     avaliacao.addEventListener("change", (e) => {
+//         if(e.target.checked){
+//             console.log(e.target)
+//             selecionado.push(e.target.value)
+//         } else {
+//             selecionado.pop()
+//         }
+//     })
+// })
+
+function validacaoCheckbox(){
+        const checkboxAvaliacao = document.querySelectorAll('input[name="avaliacao"]')
+
+        checkboxAvaliacao.forEach((avaliacao) => {
+            avaliacao.addEventListener("change", (e) => {
+                if(e.target.checked){
+                    console.log(e.target)
+                    selecionado.push(parseInt(e.target.value))
+                } else {
+                    selecionado.pop()
+                }
+            })
+        })
+    
+    return selecionado
+}
+
+function filtraNotas(objeto){
+    // console.log(objeto)
+    const maiorNota = Math.max(...selecionado)
+    const menorNota = Math.min(...selecionado)
+    if(objeto.avaliacao <= maiorNota && objeto.avaliacao >= menorNota){
+        return true
+    }
+    return false
+}
+
+// pagination
 let botoesPagination = document.querySelectorAll('.pagination a')
 console.log(botoesPagination)
 let valorPag = '1';
