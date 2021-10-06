@@ -242,6 +242,7 @@ button:focus-visible{
     border: none;
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 .primeira .produto .info2 button:hover{
     background-color: #C4C4C4;
@@ -311,6 +312,9 @@ button:focus-visible{
 .segunda .descricao p{
     font-family: Montserrat;
     line-height: 23px;
+}
+.segunda a{
+    text-decoration: none;
 }
 .segunda .vendedor{
     margin-top: 70px;
@@ -415,9 +419,12 @@ button:focus-visible{
 .quarta h2{
     font-family: Roboto;
 }
+/* colocado o display none para apresentacao sprint javascript */
+/* ativar depois de implementar api de avaliacoes */
 .quarta .classificacao{
     display: flex;
     align-items: center;
+    display: none;
 }
 .quarta .classificacao img{
     width: 25px;

@@ -7,7 +7,6 @@ function getProduto() {
 
             const produtoPrimeira = document.querySelector('section.primeira .produto');
             const produtoDescricao = document.querySelector('section.segunda .descricao p');
-            const produtoVendedor = document.querySelector('section.segunda .vendedor');
 
             produtoPrimeira.innerHTML = '';
             produtoPrimeira.innerHTML = `
@@ -41,31 +40,9 @@ function getProduto() {
                 </div>
                 `;
 
-            console.log(produto);
-
             produtoDescricao.innerHTML = '';
             produtoDescricao.innerHTML = `${produto.descricao}
             `;
-
-            //Alterar apos arrumar o db
-
-            // produtoVendedor.innerHTML = '';
-            // produtoVendedor.innerHTML = `
-            //     <div class="avatar" style="background-color: darkgray;"></div>
-            //     <div class="info">
-            //         <h3>John Doe</h3>
-            //         <div>
-            //             <img src="img/location.png" alt="">
-            //             <small style="color: #757575;">São Paulo, SP</small>
-            //         </div>
-            //         <div>
-            //             <img src="img/Star 1.png" alt="">
-            //             <small>4,8</small>
-            //             <small style="color: #757575;">• 750 avaliações</small> <br>
-            //         </div>
-            //     </div>
-            //     `;
-            
 
         });
 }
@@ -140,6 +117,16 @@ chamaProdutos()
 
 
 //menu Dropdown, coracao favoritar, avaliacoes
+function getPerfil(){
+    let perfilAvaliador = document.querySelectorAll('section.quarta .card-avaliacao h3')
+    let nPerfil = 0;
+
+    perfilAvaliador.forEach((elemento) => {        
+        nPerfil += 1;
+        elemento.innerHTML = "Perfil " + nPerfil;
+    })
+}
+
 window.onload = () => {
 
     document.addEventListener("click", e => {
@@ -179,17 +166,19 @@ window.onload = () => {
     //clique compartilhar
     let botaoCompartilar = document.querySelector('section.primeira .share');
 
-    //avaliacoes
+    //avaliacoes - carregar mais
     let botaoCarregar = document.querySelector('#botaoCarregar');
     let avaliacao = document.querySelector('section.quarta .card-avaliacao');
     let listaAval = document.querySelector('section.quarta .lista-aval');
     let breakAval = document.querySelector('section.quarta .lista-aval break');
 
     botaoCarregar.addEventListener('click', () => {
-        console.log('clicou')
         let newAvaliacao = avaliacao.cloneNode(true);
         listaAval.insertBefore(newAvaliacao, breakAval);
+
+        getPerfil();
     })
 
-
+    //avaliacoes - trocar o n perfil
+    getPerfil();
 }
