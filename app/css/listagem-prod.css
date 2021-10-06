@@ -242,6 +242,7 @@ button:focus-visible{
     border: none;
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 .primeira .produto .info2 button:hover{
     background-color: #C4C4C4;
