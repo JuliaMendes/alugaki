@@ -62,14 +62,9 @@
       "avaliacao": 4.5,
       "navaliacao": 12,
       "localizacao": "Rio de Janeiro, RJ",
-<<<<<<< HEAD
       "preco": "10 /dia",
       "category": "Moda",
       "id_anunciante": 0
-=======
-      "preco": "10/dia",
-      "category": "Moda"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 7,
@@ -78,14 +73,9 @@
       "avaliacao": 5.0,
       "navaliacao": 24,
       "localizacao": "São Paulo, SP",
-<<<<<<< HEAD
       "preco": "100 /dia",
       "category": "Moda",
       "id_anunciante": 0
-=======
-      "preco": "100/dia",
-      "category": "Moda"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 8,
@@ -94,14 +84,9 @@
       "avaliacao": 4.7,
       "navaliacao": 5,
       "localizacao": "São Paulo, SP",
-<<<<<<< HEAD
       "preco": "60 /dia",
       "category": "Moda",
       "id_anunciante": 0
-=======
-      "preco": "60/dia",
-      "category": "Moda"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 9,
@@ -110,14 +95,9 @@
       "avaliacao": 4.0,
       "navaliacao": 20,
       "localizacao": "Rio de Janeiro, RJ",
-<<<<<<< HEAD
       "preco": "60 /dia",
       "category": "Moda",
       "id_anunciante": 0
-=======
-      "preco": "60/dia",
-      "category": "Moda"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 10,
@@ -126,15 +106,10 @@
       "avaliacao": 4.0,
       "navaliacao": 13,
       "localizacao": "Rio de Janeiro, RJ",
-<<<<<<< HEAD
       "preco": "90 /dia",
       "category": "Moda",
       "descricao": "Jordan University tam 42 masculino, pouco usado",
       "id_anunciante": 1
-=======
-      "preco": "90/dia",
-      "category": "Moda"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 11,
@@ -143,14 +118,9 @@
       "avaliacao": 4.5,
       "navaliacao": 6,
       "localizacao": "Rio de Janeiro, RJ",
-<<<<<<< HEAD
       "preco": "15 /dia",
       "category": "Eletrônicos",
       "id_anunciante": 0
-=======
-      "preco": "15/dia",
-      "category": "Eletrônicos"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 12,
@@ -159,14 +129,9 @@
       "avaliacao": 3.9,
       "navaliacao": 16,
       "localizacao": "São Paulo, SP",
-<<<<<<< HEAD
       "preco": "90 /dia",
       "category": "Eletrônicos",
       "id_anunciante": 0
-=======
-      "preco": "90/dia",
-      "category": "Eletrônicos"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 13,
@@ -175,14 +140,9 @@
       "avaliacao": 4.9,
       "navaliacao": 27,
       "localizacao": "São Paulo, SP",
-<<<<<<< HEAD
       "preco": "5 /dia",
       "category": "Eletrônicos",
       "id_anunciante": 0
-=======
-      "preco": "5/dia",
-      "category": "Eletrônicos"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 14,
@@ -191,14 +151,9 @@
       "avaliacao": 4.0,
       "navaliacao": 21,
       "localizacao": "Rio de Janeiro, RJ",
-<<<<<<< HEAD
       "preco": "40 /dia",
       "category": "Eletrônicos",
       "id_anunciante": 0
-=======
-      "preco": "40/dia",
-      "category": "Eletrônicos"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 15,
@@ -207,14 +162,9 @@
       "avaliacao": 3.2,
       "navaliacao": 11,
       "localizacao": "Rio de Janeiro, RJ",
-<<<<<<< HEAD
       "preco": "85 /dia",
       "category": "Eletrônicos",
       "id_anunciante": 0
-=======
-      "preco": "85/dia",
-      "category": "Eletrônicos"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 16,
@@ -223,14 +173,9 @@
       "avaliacao": 3.8,
       "navaliacao": 14,
       "localizacao": "Rio de Janeiro, RJ",
-<<<<<<< HEAD
       "preco": "20 /dia",
       "category": "Ferramentas e Utilitários",
       "id_anunciante": 0
-=======
-      "preco": "20/dia",
-      "category": "Ferramentas e Utilitários"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 17,
@@ -239,14 +184,9 @@
       "avaliacao": 3.4,
       "navaliacao": 12,
       "localizacao": "São Paulo, SP",
-<<<<<<< HEAD
       "preco": "35 /dia",
       "category": "Ferramentas e Utilitários",
       "id_anunciante": 0
-=======
-      "preco": "35/dia",
-      "category": "Ferramentas e Utilitários"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 18,
@@ -255,14 +195,9 @@
       "avaliacao": 4.5,
       "navaliacao": 20,
       "localizacao": "Rio de Janeiro, RJ",
-<<<<<<< HEAD
       "preco": "70 /dia",
       "category": "Ferramentas e Utilitários",
       "id_anunciante": 0
-=======
-      "preco": "70/dia",
-      "category": "Ferramentas e Utilitários"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 19,
@@ -271,14 +206,9 @@
       "avaliacao": 4.3,
       "navaliacao": 21,
       "localizacao": "São Paulo, SP",
-<<<<<<< HEAD
       "preco": "80 /dia",
       "category": "Ferramentas e Utilitários",
       "id_anunciante": 0
-=======
-      "preco": "80/dia",
-      "category": "Ferramentas e Utilitários"
->>>>>>> 8350a763db8b19d748b36e607eee5afc87872284
     },
     {
       "id": 20,
