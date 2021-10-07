@@ -58,7 +58,7 @@ function validaEmail() {
 function validaPassword() {
     let inputPassword = document.querySelector('#pass');
 
-    if (inputPassword.value.length < 8 || inputPassword.value.length > 100) {
+    if (inputPassword.value.length < 8 || inputPassword.value.length > 64) {
         const estaNaLista = oErroJaEstaNaLista(erros.password_errado);
 
         if (!estaNaLista) {
@@ -66,7 +66,7 @@ function validaPassword() {
         }
 
         inputPassword.style = 'border-color: #E64A19;'
-         
+
     } else {
         listaErros = removeEsseErroDaLista(erros.password_errado)
         inputPassword.style = ''
@@ -95,26 +95,26 @@ window.addEventListener('load', () => {
 
         if (!inputEmail.value.includes('@') || !inputEmail.value.includes('.')) {
             const estaNaLista = oErroJaEstaNaLista(erros.email_errado);
-    
+
             if (!estaNaLista) {
                 listaErros.push(erros.email_errado);
             }
-    
+
             inputEmail.style = 'border-color: #E64A19;'
         } else {
             listaErros = removeEsseErroDaLista(erros.email_errado)
             inputEmail.style = ''
         }
 
-        if (inputPassword.value.length < 8 || inputPassword.value.length > 100) {
+        if (inputPassword.value.length < 8 || inputPassword.value.length > 64) {
             const estaNaLista = oErroJaEstaNaLista(erros.password_errado);
-    
+
             if (!estaNaLista) {
                 listaErros.push(erros.password_errado);
             }
-    
+
             inputPassword.style = 'border-color: #E64A19;'
-             
+
         } else {
             listaErros = removeEsseErroDaLista(erros.password_errado)
             inputPassword.style = ''
@@ -127,7 +127,7 @@ window.addEventListener('load', () => {
             })
 
         } else {
-            form.submit();        
+            form.submit();
         }
     }
 })

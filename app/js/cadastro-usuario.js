@@ -68,7 +68,6 @@ function validaEmail() {
         if (!estaNaLista) {
             listaErros.push(erros.email_errado);
         }
-
         inputEmail.style = 'border-color: #E64A19;'
     } else {
         listaErros = removeEsseErroDaLista(erros.email_errado)

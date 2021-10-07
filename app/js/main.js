@@ -26,13 +26,13 @@ if (window.screen.width < 768) {
             latitude = position.coords.latitude
             longitude = position.coords.longitude
 
-           fetch(`https://geolocation.contrateumdev.com.br/api/geocode?lat=${latitude}7&lon=${longitude}`) 
-           .then(response => response.json())
-           .then(data => {
-               estado = data.address.state
-               console.log(estado)
-           })
-        
+            fetch(`https://geolocation.contrateumdev.com.br/api/geocode?lat=${latitude}7&lon=${longitude}`)
+                .then(response => response.json())
+                .then(data => {
+                    estado = data.address.state
+                    console.log(estado)
+                })
+
         }, function (error) {
             console.log(error)
         })
